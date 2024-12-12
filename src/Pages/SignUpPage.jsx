@@ -23,8 +23,12 @@ function SignUpPage() {
 
                         <div>
                             <select id="countryCode" name="countryCode">
-                                <option value="+91">+91</option>
-                                {/* Place other codes */}
+                                <option value="+91" selected>+91</option> {/* India */}
+                                <option value="+92">+92</option> {/* Pakistan */}
+                                <option value="+92">+94</option> {/* Sri Lanka */}
+                                <option value="+92">+95</option> {/* Mayanmar */}
+                                <option value="+92">+977</option> {/* Nepal */}
+                                {/* Refactor to generate automatically if need to display all codes. */}
                             </select>
                             <input
                                 type="tel"
