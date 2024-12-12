@@ -1,5 +1,6 @@
 
 import './App.css'
+import AssignmentPage from './Pages/loginpage'
 
 function App() {
   
@@ -7,7 +8,7 @@ function App() {
   return (
     <>
         <div>
-             <h1>welcome LMS project</h1>
+           <AssignmentPage/>
         </div>
     </>
   )
