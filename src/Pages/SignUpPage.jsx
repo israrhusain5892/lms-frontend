@@ -16,10 +16,26 @@ function SignUpPage() {
                 </header>
 
                 <form action="">
-                    {/* All form related stuff */}
-                    <div>
-                        {/* Core form elements */}
-                    </div>
+                    <fieldset>
+                        <div>
+                            <label htmlFor="userMobileNumber">Enter mobile no.*</label>
+                        </div>
+                        
+                        <div>
+                            <select id="countryCode" name="countryCode">
+                                <option value="+91">+91</option>
+                                {/* Place other codes */}
+                            </select>
+                            <input
+                                type="tel"
+                                id="userMobileNumber"
+                                name="userMobileNumber"
+                                value={userMobileNumber}
+                                onChange={handleUserMobileChange}
+                                required
+                            />
+                        </div>
+                    </fieldset>
 
                     <p>
                         {/* Don't have an account... */}
