@@ -47,8 +47,8 @@ function SignUpPage() {
                         Don’t have an account? <a href="#">Continue without account</a>
                     </p>
 
-                    <button type="submit">
-                        GET CODE
+                    <button type="submit" className="getCodeButton">
+                        Get Code
                     </button>
                 </form>
 
