@@ -11,7 +11,8 @@ function SignUpPage() {
         <main>
             <section>
                 <header>
-                    {/* Main Page Header */}
+                    <h1>Create Account</h1>
+                    <p>We have sent you an <strong>One Time Password (OTP)</strong> on this mobile number.</p>
                 </header>
 
                 <form action="">
