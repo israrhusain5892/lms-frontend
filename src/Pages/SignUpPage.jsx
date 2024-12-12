@@ -48,7 +48,10 @@ function SignUpPage() {
                 </form>
 
                 <footer>
-                    {/* Register with Google btn */}
+                    <p>Or Register with</p>
+                    <button >
+                        {/* Place Google Icon */}
+                    </button>
                 </footer>
             </section>
         </main>
