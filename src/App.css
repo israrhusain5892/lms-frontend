@@ -46,10 +46,10 @@
     background: none;
 	color: inherit;
 	border: none;
-	padding: 0;
 	font: inherit;
 	cursor: pointer;
-	outline: inherit;
+    outline: 1px solid #C3C3C3;
+    padding: 1.25rem 3rem;
 }
 
 .inputRow {
@@ -75,6 +75,18 @@
     flex: 1;
     padding: 0.5rem;
     outline: 1px solid #c3c3c3;
+}
+
+.signUpFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.signUpFooter button {
+   
 }
 
   
