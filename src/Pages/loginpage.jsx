@@ -15,7 +15,7 @@ const AssignmentPage = () => {
         />
         <h1 className="title">Submit your assignments</h1>
         <p className="subtitle">
-          Submit your assignments on time, make study more motivated
+          Submit your assignments on time, make study more motivated !!!!!!
         </p>
         <div className="pagination">
           <span className="dot active"></span>
