@@ -17,6 +17,17 @@ function SignUpPage() {
 
                 <form action="">
                     {/* All form related stuff */}
+                    <div>
+                        {/* Core form elements */}
+                    </div>
+
+                    <p>
+                        {/* Don't have an account... */}
+                    </p>
+
+                    <button>
+                        {/* Get Code btn */}
+                    </button>
                 </form>
 
                 <footer>
