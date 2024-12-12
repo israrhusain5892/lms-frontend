@@ -36,50 +36,51 @@ function SignUpPage() {
             <section className="signUpSection">
                 <header className="signUpHeader">
                     <h1 className="signUpTitle">Create Account</h1>
-                    <p className="signUpDescription">We have sent you an <strong>One Time Password (OTP)</strong> on this mobile number.</p>
+                    <p className="signUpDescription">We have sent you a <strong>One Time Password (OTP)</strong> on this mobile number.</p>
                 </header>
 
                 <form action="" className="signUpForm" onSubmit={handleUserMobilePhoneSubmit}>
-                    <fieldset>
-                        <div>
-                            <label htmlFor="userMobileNumber">Enter mobile no.*</label>
+                    <fieldset className="signUpFormFieldset">
+                        <div className="signUpFormLabelContainer">
+                            <label htmlFor="userMobileNumber" className="signUpFormLabel">Enter mobile no.*</label>
                         </div>
 
-                        <div className="inputRow">
-                            <select id="countryCode" name="countryCode" defaultValue="+91">
-                                <option value="+91">+91</option> {/* India */}
-                                <option value="+92">+92</option> {/* Pakistan */}
-                                <option value="+92">+94</option> {/* Sri Lanka */}
-                                <option value="+92">+95</option> {/* Mayanmar */}
-                                <option value="+92">+977</option> {/* Nepal */}
+                        <div className="signUpFormInputContainer">
+                            <select id="countryCode" name="countryCode" defaultValue="+91" className="signUpFormCountryCodeSelect">
+                                <option value="+91" className="signUpFormCountryCodeOption">+91</option> {/* India */}
+                                <option value="+92" className="signUpFormCountryCodeOption">+92</option> {/* Pakistan */}
+                                <option value="+92" className="signUpFormCountryCodeOption">+94</option> {/* Sri Lanka */}
+                                <option value="+92" className="signUpFormCountryCodeOption">+95</option> {/* Mayanmar */}
+                                <option value="+92" className="signUpFormCountryCodeOption">+977</option> {/* Nepal */}
                                 {/* Refactor to generate automatically if need to display all codes. */}
                             </select>
                             <input
                                 type="tel"
                                 id="userMobileNumber"
+                                className="signUpFormUserMobileNumberInput"
                                 name="userMobileNumber"
                                 value={userMobileNumber}
                                 onChange={handleUserMobileChange}
                                 required
                             />
                         </div>
-                        {errorMessage && <p className="errorText">{errorMessage}</p>}
+                        {errorMessage && <p className="signUpFormErrorText">{errorMessage}</p>}
                     </fieldset>
 
                     {/* Refactor later to use "Link" */}
                     <p>
-                        Don’t have an account? <a href="#">Continue without account</a>
+                        Don’t have account? <a href="#">Continue without account</a>
                     </p>
 
-                    <button type="submit" className="getCodeButton" disabled={!isMobileValid}>
+                    <button type="submit" className="signUpFormGetCodeButton" disabled={!isMobileValid}>
                         Get Code
                     </button>
                 </form>
 
                 <footer className="signUpFooter">
-                    <p>Or Register with</p>
-                    <button >
-                        <img src={googleLogo} alt="Google Logo" />
+                    <p className="signUpFooterText">Or Register with</p>
+                    <button className="signUpFooterGoogleLogoButton">
+                        <img src={googleLogo} alt="Google Logo" className="signUpFooterGoogleLogo" />
                     </button>
                 </footer>
             </section>

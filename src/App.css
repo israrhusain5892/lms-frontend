@@ -1,81 +1,189 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+/* Styling done based on specifications given in the Figma design */
 
+/* FONTS: Poppins and Inter */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+
+/* NOTE:
+The following styles on "#root" is required to center the page content.
+When merging, handle it accordingly.
+*/
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
 .signUpMain {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
     background-color: #ffffff;
     font-family: 'Poppins', sans-serif;
+    border: 1px solid #C3C3C3;
+    width: 462px;
+    height: 568px;
+    border-radius: 10px;
+    padding: 32px 67px;
+    box-sizing: border-box;
 }
 
 .signUpSection {
-    outline: 1px solid #C3C3C3;
-    padding: 1rem 4rem;
-    border-radius: 8px;
+    width: 328px;
+    height: 478px;
 }
 
-.signUpSection fieldset {
+.signUpHeader {
+    width: 297px;
+    height: 98px;
+    margin-bottom: 53px;
+}
+
+.signUpTitle {
+    font-size: 30px;
+    font-weight: 600px;
+    line-height: 45px;
+    letter-spacing: 0.33px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signUpDescription {
+    color: #858597;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.33px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.signUpDescription strong {
+    font-weight: 600px;
+}
+
+.signUpForm {
+
+}
+
+.signUpFormFieldset {
     border: 0;
     padding: 0;
+    margin-bottom: 31px;
 }
 
-.signUpHeader p, .signUpSection form label, .signUpSection form p, .signUpSection footer {
+.signUpFormLabel {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18.15px;
     color: #858597;
 }
 
-.signUpSection form a {
-    color: #3D5CFF;
+.signUpFormInputContainer {
+    display: flex;
+    gap: 10px;
+    width: 100%;
 }
 
-.signUpSection form button {
+.signUpFormCountryCodeSelect {
+    width: 75.05px;
+    height: 48px;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    padding: 12px 10px;
+}
+
+.signUpFormCountryCodeOption {
+
+}
+
+.signUpFormUserMobileNumberInput {
+    flex: 1;
+    height: 20px;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    padding: 12px 10px;
+}
+
+.signUpForm p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #858597;
+}
+
+.signUpForm p a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500px;
+    font-size: 14px;
+    line-height: 16.94px;
+    color: #3D5CFF;
+    text-decoration: none;
+}
+
+.signUpFormGetCodeButton {
     background-color: #3D5CFF;
     color: #ffffff;
-	border: none;
-    padding: 0.75rem;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-    width: 100%;
-    border-radius: 4px;
-
-}
-
-.signUpSection footer button {
-    background: none;
-	color: inherit;
-	border: none;
-	font: inherit;
-	cursor: pointer;
-    outline: 1px solid #C3C3C3;
-    padding: 1.25rem 3rem;
-}
-
-.inputRow {
-    display: flex;
-    gap: 1rem;
-    width: 100%;
-}
-
-
-
-#countryCode, #userMobileNumber {
-    outline: 1px solid #c3c3c3;
-    padding: 0.5rem;
-    border-radius: 4px;
     border: none;
+    padding: 10px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    width: 316px;
+    height: 39px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 19.36px;
+    letter-spacing: 2%;
+    text-align: center;
+    font-weight: 500px;
+    font-family: 'Inter', sans-serif;
 }
 
-#countryCode {
-    width: 4rem;    
+.signUpFormGetCodeButton:disabled {
+    cursor: not-allowed;
 }
-  
-#userMobileNumber {
-    flex: 1;
-    padding: 0.5rem;
-    outline: 1px solid #c3c3c3;
+
+.signUpFormErrorText {
+    text-align: center;
+    /* Add color later */
 }
+
+.signUpFooter {
+
+}
+
+.signUpFooterText {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 17.5px;
+    color: #858597;
+}
+
+.signUpFooterGoogleLogoButton {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 18px 45px;
+    width: 97.66px;
+    height: 56px;
+    border-radius: 10px;
+    border: 1px solid #DDE2ED;
+}
+
+.signUpFooterGoogleLogo {
+    width: 20px;
+    height: 20px;
+}
+
 
 .signUpFooter {
     display: flex;
@@ -85,19 +193,4 @@
     gap: 1rem;
 }
 
-.signUpHeader {
-    margin-bottom: 3rem;
-}
 
-.getCodeButton:disabled {
-    cursor: not-allowed;
-}
-
-.errorText {
-    text-align: center;
-    /* Add color later */
-}
-
-
-
-  
