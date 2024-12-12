@@ -9,14 +9,14 @@ function SignUpPage() {
     };
 
     return (
-        <main>
-            <section>
-                <header>
+        <main className="signUpMain">
+            <section className="signUpSection">
+                <header className="signUpHeader">
                     <h1>Create Account</h1>
                     <p>We have sent you an <strong>One Time Password (OTP)</strong> on this mobile number.</p>
                 </header>
 
-                <form action="">
+                <form action="" className="signUpForm">
                     <fieldset>
                         <div>
                             <label htmlFor="userMobileNumber">Enter mobile no.*</label>
@@ -52,7 +52,7 @@ function SignUpPage() {
                     </button>
                 </form>
 
-                <footer>
+                <footer className="signUpFooter">
                     <p>Or Register with</p>
                     <button >
                         <img src={logo} alt="Google Logo" />
