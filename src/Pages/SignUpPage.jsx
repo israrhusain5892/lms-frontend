@@ -54,7 +54,7 @@ function SignUpPage() {
                 <footer>
                     <p>Or Register with</p>
                     <button >
-                        {/* Place Google Icon */}
+                        <img src="../Images/google-logo.png" alt="Google Logo" />
                     </button>
                 </footer>
             </section>
