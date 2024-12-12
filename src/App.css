@@ -62,7 +62,7 @@ When merging, handle it accordingly.
 
 .signUpTitle {
     font-size: 30px;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 45px;
     letter-spacing: 0.33px;
     color: var(--color-text-heading);
@@ -71,7 +71,7 @@ When merging, handle it accordingly.
 
 .signUpDescription {
     color: var(--color-text-main);
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.33px;
@@ -79,7 +79,7 @@ When merging, handle it accordingly.
 }
 
 .signUpDescription strong {
-    font-weight: 600px;
+    font-weight: 600;
 }
 
 .signUpForm {
@@ -128,7 +128,7 @@ When merging, handle it accordingly.
 
 .signUpForm p {
     font-family: 'Inter', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
     color: var(--color-text-main);
@@ -136,7 +136,7 @@ When merging, handle it accordingly.
 
 .signUpForm p a {
     font-family: 'Inter', sans-serif;
-    font-weight: 500px;
+    font-weight: 500;
     font-size: 14px;
     line-height: 16.94px;
     color: var(--color-action-primary);
@@ -160,7 +160,7 @@ When merging, handle it accordingly.
     line-height: 19.36px;
     letter-spacing: 2%;
     text-align: center;
-    font-weight: 500px;
+    font-weight: 500;
     font-family: 'Inter', sans-serif;
 }
 
@@ -179,7 +179,7 @@ When merging, handle it accordingly.
 
 .signUpFooterText {
     font-family: 'Inter', sans-serif;
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17.5px;
     color: var(--color-text-main);
