@@ -6,3 +6,9 @@
     background-color: #ffffff;
 }
 
+.signUpSection {
+    outline: 1px solid #C3C3C3;
+    padding: 32px 67px;
+    border-radius: 8px;
+    width: 462px;
+}
