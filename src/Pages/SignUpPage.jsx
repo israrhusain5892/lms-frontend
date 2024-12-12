@@ -6,6 +6,24 @@ function SignUpPage() {
     const handleUserMobileChange = (e) => {
         setUserMobileNumber(e.target.value);
     };
+
+    return (
+        <main>
+            <section>
+                <header>
+                    {/* Main Page Header */}
+                </header>
+
+                <form action="">
+                    {/* All form related stuff */}
+                </form>
+
+                <footer>
+                    {/* Register with Google btn */}
+                </footer>
+            </section>
+        </main>
+    )
 }
 
 export default SignUpPage;
