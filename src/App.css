@@ -143,6 +143,11 @@ When merging, handle it accordingly.
     text-decoration: none;
 }
 
+/* Hover effect on link. Not specified in Figma.  */
+.signUpForm p a:hover {
+    filter: brightness(1.5);
+}
+
 .signUpFormGetCodeButton {
     background-color: var(--color-action-primary);
     color: var(--color-background-page);
@@ -162,6 +167,11 @@ When merging, handle it accordingly.
     text-align: center;
     font-weight: 500;
     font-family: 'Inter', sans-serif;
+}
+
+/* Hover effect on button. Not specified in Figma. */
+.signUpFormGetCodeButton:hover {
+    filter: brightness(1.2);
 }
 
 .signUpFormGetCodeButton:disabled {
