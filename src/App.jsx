@@ -1,14 +1,13 @@
 
 import './App.css'
+import SignUpPage from './Pages/SignUpPage';
 
 function App() {
   
 
   return (
     <>
-        <div>
-             <h1>welcome LMS project</h1>
-        </div>
+      <SignUpPage />
     </>
   )
 }
