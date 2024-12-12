@@ -48,3 +48,28 @@
 	cursor: pointer;
 	outline: inherit;
 }
+
+.inputRow {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+
+
+#countryCode, #userMobileNumber {
+    outline: 1px solid #c3c3c3;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+#countryCode {
+    width: 4rem;    
+}
+  
+.mobile-input {
+    flex: 1;
+    padding: 0.5rem;
+    width: 8rem;
+}
+  

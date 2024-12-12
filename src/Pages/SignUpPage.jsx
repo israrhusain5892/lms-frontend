@@ -22,7 +22,7 @@ function SignUpPage() {
                             <label htmlFor="userMobileNumber">Enter mobile no.*</label>
                         </div>
 
-                        <div>
+                        <div className="inputRow">
                             <select id="countryCode" name="countryCode" defaultValue="+91">
                                 <option value="+91">+91</option> {/* India */}
                                 <option value="+92">+92</option> {/* Pakistan */}
