@@ -89,4 +89,15 @@
     margin-bottom: 3rem;
 }
 
+.getCodeButton:disabled {
+    cursor: not-allowed;
+}
+
+.errorText {
+    text-align: center;
+    /* Add color later */
+}
+
+
+
   

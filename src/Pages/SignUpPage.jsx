@@ -3,6 +3,7 @@ import googleLogo from "../Images/google-logo.png";
 
 function SignUpPage() {
     const [userMobileNumber, setUserMobileNumber] = useState(""); // To store an manage user's mobile number
+    const [isMobileValid, setIsMobileValid] = useState(false);
     const [errorMessage, setErrorMessage] = useState("");
 
     const handleUserMobileChange = (e) => {
@@ -10,8 +11,16 @@ function SignUpPage() {
         if (/^\d{0,10}$/.test(value)) {
             setUserMobileNumber(value);
             setErrorMessage("");
+
+            if (value.length === 10) {
+                setIsMobileValid(true);
+            } else {
+                setIsMobileValid(false);
+            }
+
         } else {
             setErrorMessage("Please enter a valid 10-digit mobile number.");
+            setIsMobileValid(false);
         }
     };
 
@@ -62,7 +71,7 @@ function SignUpPage() {
                         Don’t have an account? <a href="#">Continue without account</a>
                     </p>
 
-                    <button type="submit" className="getCodeButton">
+                    <button type="submit" className="getCodeButton" disabled={!isMobileValid}>
                         Get Code
                     </button>
                 </form>
