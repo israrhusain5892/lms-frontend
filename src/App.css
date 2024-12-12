@@ -4,7 +4,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* VARIABLES */
+.signUpMain {
+    /* COLORS */
 
+    /* Backgrounds */
+    --color-background-page: #ffffff; /* Page background color */
+  
+    /* Borders */
+    --color-border-primary: #c3c3c3; /* 1st border color */
+    --color-border-secondary: #d9d9d9; /* 2nd border color */
+    --color-border-tertiary: #dde2ed; /* 3rd border color */
+  
+    /* Text */
+    --color-text-heading: #000000; /* Heading text color */
+    --color-text-main: #858597; /* Main text color */
+  
+    /* Links and Buttons */
+    --color-action-primary: #3d5cff; /* Links and button backgrounds */
+}
+  
 /* NOTE:
 The following styles on "#root" is required to center the page content.
 When merging, handle it accordingly.
@@ -20,9 +39,9 @@ When merging, handle it accordingly.
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--color-background-page);
     font-family: 'Poppins', sans-serif;
-    border: 1px solid #C3C3C3;
+    border: 1px solid var(--color-border-primary);
     width: 462px;
     height: 568px;
     border-radius: 10px;
@@ -46,12 +65,12 @@ When merging, handle it accordingly.
     font-weight: 600px;
     line-height: 45px;
     letter-spacing: 0.33px;
-    color: black;
+    color: var(--color-text-heading);
     font-family: 'Poppins', sans-serif;
 }
 
 .signUpDescription {
-    color: #858597;
+    color: var(--color-text-main);
     font-weight: 400px;
     font-size: 14px;
     line-height: 21px;
@@ -78,7 +97,7 @@ When merging, handle it accordingly.
     font-weight: 400;
     font-size: 15px;
     line-height: 18.15px;
-    color: #858597;
+    color: var(--color-text-main);
 }
 
 .signUpFormInputContainer {
@@ -91,7 +110,7 @@ When merging, handle it accordingly.
     width: 75.05px;
     height: 48px;
     border-radius: 7px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--color-border-secondary);
     padding: 12px 10px;
 }
 
@@ -103,7 +122,7 @@ When merging, handle it accordingly.
     flex: 1;
     height: 20px;
     border-radius: 7px;
-    border: 1px solid #D9D9D9;
+    border: 1px solid var(--color-border-secondary);
     padding: 12px 10px;
 }
 
@@ -112,7 +131,7 @@ When merging, handle it accordingly.
     font-weight: 400px;
     font-size: 14px;
     line-height: 16.94px;
-    color: #858597;
+    color: var(--color-text-main);
 }
 
 .signUpForm p a {
@@ -120,13 +139,13 @@ When merging, handle it accordingly.
     font-weight: 500px;
     font-size: 14px;
     line-height: 16.94px;
-    color: #3D5CFF;
+    color: var(--color-action-primary);
     text-decoration: none;
 }
 
 .signUpFormGetCodeButton {
-    background-color: #3D5CFF;
-    color: #ffffff;
+    background-color: var(--color-action-primary);
+    color: var(--color-background-page);
     border: none;
     padding: 10px;
     font: inherit;
@@ -163,7 +182,7 @@ When merging, handle it accordingly.
     font-weight: 400px;
     font-size: 14px;
     line-height: 17.5px;
-    color: #858597;
+    color: var(--color-text-main);
 }
 
 .signUpFooterGoogleLogoButton {
@@ -176,7 +195,7 @@ When merging, handle it accordingly.
     width: 97.66px;
     height: 56px;
     border-radius: 10px;
-    border: 1px solid #DDE2ED;
+    border: 1px solid var(--color-border-tertiary);
 }
 
 .signUpFooterGoogleLogo {
