@@ -1,31 +1,95 @@
 import React from "react";
-import './loginpage.css'; // Link your CSS file here for custom styling
+import { Carousel } from "react-responsive-carousel";
+import './loginpage.css';
+import loginImage from '../assets/login.png';
+import accessImage from '../assets/access.png';
+import accessImage2 from '../assets/access2.png'
 
-const AssignmentPage = () => {
+
+const AssignmentCarousel = () => {
   return (
-    <div className="page-container">
-      <div className="header">
-        <span className="skip-button">Skip</span>
-      </div>
-      <div className="content">
-        <img
-          src="your-image-url-here"
-          alt="Illustration of assignment submission"
-          className="illustration"
-        />
-        <h1 className="title">Submit your assignments</h1>
-        <p className="subtitle">
-          Submit your assignments on time, make study more motivated !!!!!!
-        </p>
-        <div className="pagination">
-          <span className="dot active"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
+    <div className="loginpageContainer">
+      <div className="loginLeft">
+        
+            
+            <Carousel
+        showThumbs={false}
+        infiniteLoop
+        autoPlay
+        showStatus={false}
+        interval={5000}
+        className="w-50"
+        showIndicators={true}
+
+      >
+
+
+ <div className="loginDesc">
+          <img
+            src= {accessImage} 
+            alt="Submit your assignments"
+             className="mb-3"
+            style={{ width: "411px", height: "356px" }}
+          />
+         <div className="loginPara"> 
+            <h2 >Receive announcements</h2>
+         <p>Easy and fast announcements to
+         always keep you updated</p></div>
         </div>
-        <button className="login-button">Log in</button>
+
+      
+        <div className="loginDesc">
+          <img
+            src= {accessImage} 
+            alt="Submit your assignments"
+             className="mb-3"
+            style={{ width: "411px", height: "356px" }}
+          />
+         <div className="loginPara"> 
+            
+            <h2 >Receive announcements</h2>
+         <p>Easy and fast announcements to
+         always keep you updated</p></div>
+        </div>
+
+       
+        <div className="loginDesc">
+          <img
+            src={loginImage}  
+            alt="Track Progress"
+            className="mb-3"
+            style={{  width: "411px", height: "356px"  }}
+          />
+          <div className="loginPara">
+            <h2 >Track your progress</h2>
+          <p>Stay organized and achieve your learning goals faster.</p>
+          
+          </div>
+          <div className="loginButton">
+                <button>login</button>
+
+            </div>
+        </div>
+        
+
+      </Carousel>
+
+            </div>
+            
+           
+       
+      
+
+      
+
+      <div className="loginRight">
+        
+       
+          <a href="#" className="">Skip</a>
+        
       </div>
     </div>
   );
 };
 
-export default AssignmentPage;
+export default AssignmentCarousel;

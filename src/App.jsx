@@ -1,6 +1,8 @@
 
 import './App.css'
-import AssignmentPage from './Pages/loginpage'
+import AssignmentCarousel from './Pages/loginpage'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+
 
 function App() {
   
@@ -8,7 +10,7 @@ function App() {
   return (
     <>
         <div>
-           <AssignmentPage/>
+           <AssignmentCarousel/>
         </div>
     </>
   )

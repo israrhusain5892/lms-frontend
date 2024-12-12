@@ -1,74 +1,162 @@
-.page-container {
+
+.loginpageContainer {
+    display: flex;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 90vh;
+    overflow-y: hidden;
+    flex-wrap: wrap; 
+  }
+  
+  .loginLeft {
+    width: 100%;
+    position: relative;
+    top: 80px;
+  }
+  
+  .loginRight {
+    position: absolute;
+    right: 40px;
+    top: 40px;
+  }
+  
+  .loginRight a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #858597;
+  }
+  
+  
+  .carousel .control-dots .dot {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .carousel .control-dots .dot.selected {
+    background-color: #007bff;
+  }
+  
+ 
+  .loginDesc {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .header {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
-  
-  .skip-button {
-    margin-right: 20px;
-    font-size: 16px;
-    color: #666;
-    cursor: pointer;
-  }
-  
-  .content {
-    text-align: center;
-  }
-  
-  .illustration {
-    max-width: 300px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .subtitle {
-    font-size: 16px;
-    color: #888;
-    margin-bottom: 20px;
-  }
-  
-  .pagination {
-    display: flex;
     justify-content: center;
-    margin-bottom: 20px;
   }
   
-  .dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: inline-block;
+  .loginPara {
+    width: 400px;
+    text-align: left;
+    margin-bottom: 80px;
+    margin-top: -40px;
   }
   
-  .dot.active {
-    background-color: #007bff;
+  .loginPara h2 {
+    font-size: 30px;
+    font-weight: 600;
   }
   
-  .login-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  .loginPara p {
+    font-weight: 400;
+    font-size: 20px;
+    color: #858597;
+    margin-top: -15px;
+  }
+  
+
+  .loginButton button {
+    outline: none;
+    border: 1px solid #3D5CFF;
+    color: #3D5CFF;
+    width: 127px;
+    height: 44px;
+    background-color: transparent;
+    border-radius: 3px;
+  }
+  
+  .loginButton {
+    position: relative;
+    top: -70px;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .loginpageContainer {
+      flex-direction: column; 
+      height: auto;
+      overflow-y: scroll;
+    }
+  
+    .loginLeft {
+      width: 100%;
+      top: 20px;
+    }
+  
+    .loginDesc {
+      width: 100%; 
+      align-items: center;
+    }
+  
+    .loginPara {
+      width: 90%;
+      text-align: center; 
+      margin-top: 20px;
+    }
+  
+    .loginPara h2 {
+      font-size: 24px; 
+    }
+  
+    .loginPara p {
+      font-size: 16px;
+    }
+  
+    .loginButton button {
+      width: 100%;
+      padding: 8px 30px;
+
+    }
+  
+    .loginRight {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+  
+  
+  @media (max-width: 1024px) {
+    .loginpageContainer {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .loginLeft {
+      width: 100%;
+      top: 30px;
+    }
+  
+    .loginPara {
+      width: 80%;
+    }
+  
+    .loginPara h2 {
+      font-size: 26px; 
+    }
+  
+    .loginPara p {
+      font-size: 18px; 
+    }
+  
+    .loginButton button {
+      width: 100%; 
+    }
+  
+    .loginRight {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
   }
   
