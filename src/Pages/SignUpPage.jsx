@@ -15,6 +15,13 @@ function SignUpPage() {
         }
     };
 
+    const handleUserMobilePhoneSubmit = (e) => {
+        e.preventDefault();
+        // Backend integration here
+        console.log(`User's mobile number: ${userMobileNumber}`);
+    };
+
+
     return (
         <main className="signUpMain">
             <section className="signUpSection">
@@ -23,7 +30,7 @@ function SignUpPage() {
                     <p className="signUpDescription">We have sent you an <strong>One Time Password (OTP)</strong> on this mobile number.</p>
                 </header>
 
-                <form action="" className="signUpForm">
+                <form action="" className="signUpForm" onSubmit={handleUserMobilePhoneSubmit}>
                     <fieldset>
                         <div>
                             <label htmlFor="userMobileNumber">Enter mobile no.*</label>
