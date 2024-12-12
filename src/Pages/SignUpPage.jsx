@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../Images/google-logo.png"
+import logo from "../Images/google-logo.png";
 
 function SignUpPage() {
     const [userMobileNumber, setUserMobileNumber] = useState(""); // To store an manage user's mobile number
