@@ -12,8 +12,8 @@ function SignUpPage() {
         <main className="signUpMain">
             <section className="signUpSection">
                 <header className="signUpHeader">
-                    <h1>Create Account</h1>
-                    <p>We have sent you an <strong>One Time Password (OTP)</strong> on this mobile number.</p>
+                    <h1 className="signUpTitle">Create Account</h1>
+                    <p className="signUpDescription">We have sent you an <strong>One Time Password (OTP)</strong> on this mobile number.</p>
                 </header>
 
                 <form action="" className="signUpForm">
