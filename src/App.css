@@ -61,15 +61,16 @@
     outline: 1px solid #c3c3c3;
     padding: 0.5rem;
     border-radius: 4px;
+    border: none;
 }
 
 #countryCode {
     width: 4rem;    
 }
   
-.mobile-input {
+#userMobileNumber {
     flex: 1;
     padding: 0.5rem;
-    width: 8rem;
+    outline: 1px solid #c3c3c3;
 }
   
