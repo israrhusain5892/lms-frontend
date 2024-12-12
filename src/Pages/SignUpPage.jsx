@@ -3,9 +3,16 @@ import logo from "../Images/google-logo.png";
 
 function SignUpPage() {
     const [userMobileNumber, setUserMobileNumber] = useState(""); // To store an manage user's mobile number
+    const [errorMessage, setErrorMessage] = useState("");
 
     const handleUserMobileChange = (e) => {
-        setUserMobileNumber(e.target.value);
+        const value = e.target.value;
+        if (/^\d{0,10}$/.test(value)) {
+            setUserMobileNumber(value);
+            setErrorMessage("");
+        } else {
+            setErrorMessage("Please enter a valid 10-digit mobile number.");
+        }
     };
 
     return (
@@ -40,6 +47,7 @@ function SignUpPage() {
                                 required
                             />
                         </div>
+                        {errorMessage && <p className="errorText">{errorMessage}</p>}
                     </fieldset>
 
                     {/* Refactor later to use "Link" */}
