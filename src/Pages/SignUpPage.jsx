@@ -20,7 +20,7 @@ function SignUpPage() {
                         <div>
                             <label htmlFor="userMobileNumber">Enter mobile no.*</label>
                         </div>
-                        
+
                         <div>
                             <select id="countryCode" name="countryCode">
                                 <option value="+91">+91</option>
@@ -37,12 +37,13 @@ function SignUpPage() {
                         </div>
                     </fieldset>
 
+                    {/* Refactor later to use "Link" */}
                     <p>
-                        {/* Don't have an account... */}
+                        Don’t have an account? <a href="#">Continue without account</a>
                     </p>
 
-                    <button>
-                        {/* Get Code btn */}
+                    <button type="submit">
+                        GET CODE
                     </button>
                 </form>
 
