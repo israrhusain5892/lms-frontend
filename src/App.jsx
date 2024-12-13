@@ -1,13 +1,14 @@
 
 import './App.css'
 import SignUpPage from './Pages/SignUpPage';
+import OTPVerification from './Pages/OTPVerification';
 
 function App() {
   
 
   return (
     <>
-      <SignUpPage />
+      <OTPVerification />
     </>
   )
 }

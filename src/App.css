@@ -5,7 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* VARIABLES */
-.signUpMain {
+.signUpMain,
+.OTPVerificationMain {
     /* COLORS */
 
     /* Backgrounds */
@@ -22,7 +23,7 @@
   
     /* Links and Buttons */
     --color-action-primary: #3d5cff; /* Links and button backgrounds */
-    
+
 
     /* FONTS */
     --font-poppins: "Poppins", system-ui, sans-serif; /* Poppins font */
@@ -40,7 +41,12 @@ When merging, handle it accordingly.
     height: 100vh;
 }
 
-.signUpMain {
+* {
+    box-sizing: border-box;
+}
+
+.signUpMain,
+.OTPVerificationMain {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,8 +55,15 @@ When merging, handle it accordingly.
     width: 462px;
     height: 568px;
     border-radius: 10px;
-    padding: 32px 67px;
     box-sizing: border-box;
+}
+
+.signUpMain {
+    padding: 32px 67px;
+}
+
+.OTPVerificationMain {
+    padding: 34px 64px;
 }
 
 .signUpSection {
@@ -58,10 +71,21 @@ When merging, handle it accordingly.
     height: 478px;
 }
 
+.OTPVerificationSection {
+    width: 387px;
+    height: 258px;
+}
+
 .signUpHeader {
     width: 297px;
     height: 98px;
     margin-bottom: 53px;
+}
+
+.OTPVerificationHeader {
+    width: 387px;
+    height: 92px;
+    margin-bottom: 50px;
 }
 
 .signUpTitle {
@@ -73,12 +97,29 @@ When merging, handle it accordingly.
     font-family: var(--font-poppins);
 }
 
+.OTPVerificationTitle {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 41.6px;
+    letter-spacing: 0.33px;
+    color: var(--color-text-heading);
+    font-family: var(--font-poppins);
+}
+
 .signUpDescription {
     color: var(--color-text-main);
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.33px;
+    font-family: var(--font-poppins);
+}
+
+.OTPVerificationDescription {
+    color: var(--color-text-main);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     font-family: var(--font-poppins);
 }
 
@@ -96,6 +137,12 @@ When merging, handle it accordingly.
     margin-bottom: 31px;
 }
 
+.OTPVerificationFormFieldset {
+    border: 0;
+    padding: 0;
+    margin-bottom: 35px;
+}
+
 .signUpFormLabel {
     font-family: var(--font-inter);
     font-weight: 400;
@@ -108,6 +155,20 @@ When merging, handle it accordingly.
     display: flex;
     gap: 10px;
     width: 100%;
+}
+
+.OTPVerificationInputContainer {
+    display: flex;
+    gap: 9px;
+    width: 387px;
+}
+
+.userOTPInput {
+    width: 56px;
+    height: 61px;
+    border-radius: 10px;
+    border: 1px solid var(--color-text-heading);
+    padding: 10px;
 }
 
 .signUpFormCountryCodeSelect {
@@ -195,11 +256,25 @@ When merging, handle it accordingly.
     gap: 1rem;
 }
 
+.OTPVerificationFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
 .signUpFooterText {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
     font-weight: 400;
     font-size: 14px;
     line-height: 17.5px;
+    color: var(--color-text-main);
+}
+
+.OTPVerificationFooterText,
+.OTPVerificationFooterTimer {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
     color: var(--color-text-main);
 }
 

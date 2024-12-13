@@ -1,4 +1,5 @@
 function OTPVerification() {
+    
     return (
         <main className="OTPVerificationMain">
             <section className="OTPVerificationSection">
