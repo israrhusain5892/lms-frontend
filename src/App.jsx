@@ -1,19 +1,26 @@
-
-import './App.css'
-import AssignmentCarousel from './Pages/loginpage'
+import './App.css';
+import AssignmentCarousel from './Pages/loginpage';
+import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-
 function App() {
-  
-
   return (
-    <>
-        <div>
-           <AssignmentCarousel/>
-        </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/" element={<AssignmentCarousel />} />
+        <Route path="/next-page" element={<NextPage />} />
+      </Routes>
+    </Router>
+  );
 }
 
-export default App
+const NextPage = () => {
+  return (
+    <div style={{ textAlign: 'center', marginTop: '100px' }}>
+      <h1>Welcome to the next page!</h1>
+      <p>This is where you land after clicking the "Skip" button.</p>
+    </div>
+  );
+};
+
+export default App;
