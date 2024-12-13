@@ -1,6 +1,6 @@
 
 import './App.css'
-import AssignmentCarousel from './Pages/loginpage'
+import AssignmentCarousel from './Pages/OnBoardingCarousal/carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
