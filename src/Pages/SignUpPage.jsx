@@ -24,9 +24,12 @@ function SignUpPage() {
         }
     };
 
+    // BACKEND
     const handleUserMobilePhoneSubmit = (e) => {
         e.preventDefault();
+
         // Backend integration here
+        
         console.log(`User's mobile number: ${userMobileNumber}`);
     };
 

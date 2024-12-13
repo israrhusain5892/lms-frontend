@@ -22,6 +22,11 @@
   
     /* Links and Buttons */
     --color-action-primary: #3d5cff; /* Links and button backgrounds */
+    
+
+    /* FONTS */
+    --font-poppins: "Poppins", system-ui, sans-serif; /* Poppins font */
+    --font-inter: "Inter", system-ui, sans-serif; /* Inter font */
 }
   
 /* NOTE:
@@ -40,7 +45,6 @@ When merging, handle it accordingly.
     justify-content: center;
     align-items: center;
     background-color: var(--color-background-page);
-    font-family: 'Poppins', sans-serif;
     border: 1px solid var(--color-border-primary);
     width: 462px;
     height: 568px;
@@ -66,7 +70,7 @@ When merging, handle it accordingly.
     line-height: 45px;
     letter-spacing: 0.33px;
     color: var(--color-text-heading);
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .signUpDescription {
@@ -75,7 +79,7 @@ When merging, handle it accordingly.
     font-size: 14px;
     line-height: 21px;
     letter-spacing: 0.33px;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .signUpDescription strong {
@@ -93,7 +97,7 @@ When merging, handle it accordingly.
 }
 
 .signUpFormLabel {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
     font-weight: 400;
     font-size: 15px;
     line-height: 18.15px;
@@ -127,7 +131,7 @@ When merging, handle it accordingly.
 }
 
 .signUpForm p {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
     font-weight: 400;
     font-size: 14px;
     line-height: 16.94px;
@@ -135,7 +139,7 @@ When merging, handle it accordingly.
 }
 
 .signUpForm p a {
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
     font-weight: 500;
     font-size: 14px;
     line-height: 16.94px;
@@ -166,7 +170,7 @@ When merging, handle it accordingly.
     letter-spacing: 2%;
     text-align: center;
     font-weight: 500;
-    font-family: 'Inter', sans-serif;
+    font-family: var(--font-inter);
 }
 
 /* Hover effect on button. Not specified in Figma. */
@@ -184,7 +188,11 @@ When merging, handle it accordingly.
 }
 
 .signUpFooter {
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
 }
 
 .signUpFooterText {
@@ -213,13 +221,5 @@ When merging, handle it accordingly.
     height: 20px;
 }
 
-
-.signUpFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
 
 
