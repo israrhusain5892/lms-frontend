@@ -221,5 +221,33 @@ When merging, handle it accordingly.
     height: 20px;
 }
 
+@media (max-width: 768px) {
+    .signUpMain{
+        width: 100%!important;
+    }
+    .signUpSection {
+        width: 100%!important;
+    }
+
+    .signUpTitle {
+        font-size: 1.5rem;
+    }
+
+    .signUpDescription {
+        font-size: 0.9rem;
+    }
+
+     
+    .signUpFormUserMobileNumberInput {
+       
+        width: 80%!important;
+    }
+
+    .signUpFormGetCodeButton{
+        width: 100%;
+    }
+}
+
+
 
 
