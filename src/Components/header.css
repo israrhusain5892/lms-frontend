@@ -8,7 +8,8 @@
   
   body {
     font-size: 16px; /* Base size for rem units */
-    font-family: 'Arial', sans-serif;
+    font-family:'poppins', 'Arial', sans-serif;
+    font-weight: 500;
 }
   
   /* Header Container */

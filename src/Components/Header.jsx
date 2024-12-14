@@ -35,7 +35,7 @@ const Header = () => {
       {/* Search Bar */}
       <div className="searchBar">
   <i className="fas fa-search searchIcon"></i> {/* FontAwesome search icon */}
-  <i class="fa-solid fa-filter filterIcon"></i>  
+  <i class="fa-solid fa-filter filterIcon"></i>  {/* FontAwesome filter icon */}
     <input type="text" placeholder="Search courses" />
 </div>
 
@@ -48,7 +48,7 @@ const Header = () => {
         <button className="logOutBtn">Log Out</button>
       </div>
 
-      <a href=""><img src={profile} className="profile" alt="profile"/></a>
+      <a href="#"><img src={profile} className="profile" alt="profile"/></a>
 
 
       {/* Mobile Menu Toggle */}
