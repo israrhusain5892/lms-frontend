@@ -4,6 +4,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 /* VARIABLES */
 .signUpMain {
     /* COLORS */
@@ -27,6 +35,11 @@
     /* FONTS */
     --font-poppins: "Poppins", system-ui, sans-serif; /* Poppins font */
     --font-inter: "Inter", system-ui, sans-serif; /* Inter font */
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
 }
   
 /* NOTE:
@@ -37,7 +50,7 @@ When merging, handle it accordingly.
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .signUpMain {
@@ -46,28 +59,46 @@ When merging, handle it accordingly.
     align-items: center;
     background-color: var(--color-background-page);
     border: 1px solid var(--color-border-primary);
-    width: 462px;
-    height: 568px;
-    border-radius: 10px;
-    padding: 32px 67px;
-    box-sizing: border-box;
+    border-radius: 0.525rem;
+    padding: 2rem 4rem;
+    max-width: 28.875rem;
+    width: 100%;
+    height: auto;
 }
 
 .signUpSection {
-    width: 328px;
-    height: 478px;
+    max-width: 20.5rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signUpContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signUpContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3.25rem;
 }
 
 .signUpHeader {
-    width: 297px;
-    height: 98px;
-    margin-bottom: 53px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
 }
 
+
 .signUpTitle {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
+    font-size: 1.875rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 2.8125rem;
     letter-spacing: 0.33px;
     color: var(--color-text-heading);
     font-family: var(--font-poppins);
@@ -75,15 +106,21 @@ When merging, handle it accordingly.
 
 .signUpDescription {
     color: var(--color-text-main);
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
     line-height: 21px;
     letter-spacing: 0.33px;
     font-family: var(--font-poppins);
 }
 
 .signUpDescription strong {
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
+}
+
+.signUpFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 .signUpForm {
@@ -93,29 +130,29 @@ When merging, handle it accordingly.
 .signUpFormFieldset {
     border: 0;
     padding: 0;
-    margin-bottom: 31px;
 }
 
 .signUpFormLabel {
     font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
     line-height: 18.15px;
     color: var(--color-text-main);
 }
 
 .signUpFormInputContainer {
     display: flex;
-    gap: 10px;
+    gap: 0.625rem;
     width: 100%;
 }
 
 .signUpFormCountryCodeSelect {
-    width: 75.05px;
-    height: 48px;
+    width: 4.6875rem;
     border-radius: 7px;
     border: 1px solid var(--color-border-secondary);
-    padding: 12px 10px;
+    padding: 0.75rem 0.625rem;
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
 }
 
 .signUpFormCountryCodeOption {
@@ -124,25 +161,26 @@ When merging, handle it accordingly.
 
 .signUpFormUserMobileNumberInput {
     flex: 1;
-    height: 20px;
     border-radius: 7px;
     border: 1px solid var(--color-border-secondary);
-    padding: 12px 10px;
+    padding: 0.75rem 0.625rem;
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
 }
 
-.signUpForm p {
+.signUpFormContainer p {
     font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.94px;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 1rem;
     color: var(--color-text-main);
 }
 
-.signUpForm p a {
+.signUpFormContainer p a {
     font-family: var(--font-inter);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16.94px;
+    font-weight: var(--font-weight-medium);
+    font-size: 0.875rem;
+    line-height: 1rem;
     color: var(--color-action-primary);
     text-decoration: none;
 }
@@ -156,20 +194,19 @@ When merging, handle it accordingly.
     background-color: var(--color-action-primary);
     color: var(--color-background-page);
     border: none;
-    padding: 10px;
+    padding: 0.625rem;
     font: inherit;
     cursor: pointer;
     outline: inherit;
-    width: 316px;
-    height: 39px;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
+    max-width: 19.75rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    font-size: 1rem;
     line-height: 19.36px;
     letter-spacing: 2%;
     text-align: center;
-    font-weight: 500;
+    font-weight: var(--font-weight-medium);
     font-family: var(--font-inter);
 }
 
@@ -192,13 +229,15 @@ When merging, handle it accordingly.
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    max-width: 6.625rem;
+    margin: 0 auto;
 }
 
 .signUpFooterText {
     font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
     line-height: 17.5px;
     color: var(--color-text-main);
 }
@@ -209,19 +248,20 @@ When merging, handle it accordingly.
     border: none;
     font: inherit;
     cursor: pointer;
-    padding: 18px 45px;
-    width: 97.66px;
-    height: 56px;
-    border-radius: 10px;
+    padding: 1.125rem 2.875rem;
+    max-width: 6.125rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
     border: 1px solid var(--color-border-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.signUpFooterGoogleLogo {
-    width: 20px;
-    height: 20px;
-}
 
-@media (max-width: 768px) {
+/* NOTE: Kept the following uncommented for now. Will tackle this later. */
+/* @media (max-width: 768px) {
     .signUpMain{
         width: 100%!important;
     }
@@ -248,6 +288,6 @@ When merging, handle it accordingly.
     }
 }
 
-
+ */
 
 
