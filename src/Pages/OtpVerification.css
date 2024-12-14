@@ -1,0 +1,126 @@
+/* CSS for OtpVerification Component */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+:root {
+    --font-family: 'poppins','Arial, sans-serif';
+    --primary-color: #000;
+    --secondary-color: #555;
+    --error-color: #ff0000;
+    --border-radius: 0.5em;
+    --input-border-color: #d2bdbd;
+    --input-focus-border-color: #007bff;
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --spacing: 1em;
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.otp-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: var(--spacing);
+    box-sizing: border-box;
+}
+
+.otp-box {
+    background: #fff;
+    border: 2px solid var(--input-border-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px var(--box-shadow-color);
+    padding: 2rem;
+    text-align: center;
+    width: 100%;
+    max-width: 25rem;
+}
+
+h2 {
+    margin-bottom: 0.1rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: start;
+}
+
+p {
+    margin-bottom: 1rem;
+    font-size: 1 rem;
+    text-align: start;
+    color: var(--secondary-color);
+    
+}
+
+.otp-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.otp-input {
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    text-align: center;
+    border: 2px solid var(--input-border-color);    /*  Color for Default input */
+    border-radius: var(--border-radius);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.otp-input:focus {
+    border-color: var(--input-focus-border-color);
+    box-shadow: 0 0 4px var(--input-focus-border-color);
+}
+
+.error-message {
+    color: var(--error-color);
+    font-size: 0.85rem;
+    margin-top: 1.6rem;
+    margin-bottom: 1rem;
+}
+.outertext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.resend {
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.timer {
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .otp-box {
+        padding: 1.5rem;
+    }
+
+    .otp-input {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+}
