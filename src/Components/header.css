@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-size: 16px; /* Base size for rem units */
+    font-family: 'Arial', sans-serif;
+}
+  
+  /* Header Container */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #3D5CFF;
+    display: flex;
+    justify-content: center;   
+    align-items: center;
+  }
+  
+  /* Navigation Links */
+  .nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navList {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  
+  .navList li {
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .navList li span {
+    font-size: 0.8rem;
+    margin-left: 0.5em;
+  }
+  
+  
+
+ /* Search Bar */
+.searchBar {
+    position: relative;
+    display: flex;
+    gap: 0.5rem;
+    margin-right: 4.1rem;
+    box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1); /* Increased shadow */
+    border-radius: 0.5em;
+    
+  }
+
+  
+  .searchBar input {
+    padding: 0.5em 0.5em 0.5em 2.5em; /* Increased left padding for icon */
+    font-size: 1rem;
+    border :none;
+    border-radius: 0.5em;
+    width: 23rem;
+    height: 3rem;
+    outline: none;
+  }
+
+  .searchBar input:focus + .searchIcon {
+    display: none;
+  }
+  
+  .searchBar .searchIcon {
+    position: absolute;
+    left: 1rem; /* Adjusted left position */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #66666647; /* Accent color for the icon */
+  }
+  .searchBar .filterIcon {
+    position: absolute;
+    right: 1rem; /* Adjusted left position */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: #0961f5; /* Accent color for the icon */
+  }
+  
+  
+  .gray-bar {
+    width: 0.2rem; /* Full width */
+    height: 2.5rem; /* Set the height of the bar */
+    background-color: #cccccc3e; /* Gray color */
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    gap: 1rem;
+    margin-right: 2rem;
+  }
+  
+  .downloadBtn,
+  .logOutBtn {
+    padding: 0.5em 1em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+  }
+  
+  .downloadBtn {
+    background-color: #3D5CFF;
+    color: #000;
+  }
+  
+  .logOutBtn {
+    background-color: #f5f5f5;
+    color: #000;
+  }
+  
+  /* Menu Toggle for Mobile */
+  .menuToggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Updated CSS for Better Dropdown Styling in Small Devices */
+  
+  @media (max-width: 768px) {
+    .menuToggle {
+      display: block;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #fff;
+      width: 100%;
+      display: none;
+      flex-direction: column;
+      padding: 1rem 0;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      border-top: 2px solid #2563eb; /* Highlight border */
+      border-radius: 0 0 10px 10px; /* Rounded corners */
+    }
+  
+    .nav.open {
+      display: flex;
+    }
+  
+    .navList {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .navList li {
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-bottom: 1px solid #eaeaea; /* Light divider */
+      color: #333;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+  
+    .navList li:last-child {
+      border-bottom: none;
+    }
+  
+    .navList li:hover {
+      background-color: #f8f8f8; /* Subtle hover effect */
+    }
+  
+    .navList li span {
+      margin-left: 0.5em;
+      color: #2563eb; /* Accent color */
+    }
+  
+    /* Search Bar and Buttons Hidden on Small Devices */
+    .searchBar,
+    .buttons {
+      display: none;
+    }
+    .profile{
+        display: none;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      padding: 1rem;
+    }
+  
+    .logo {
+      font-size: 1.2rem;
+      
+    }
+    .logoimg{
+        width: 20px;
+        height: 20px;
+        margin-right: 0.1rem;
+    }
+  
+    .menuToggle {
+      font-size: 1.2rem;
+    }
+    .profile{
+        display: none;
+    }
+
+  }
+  
