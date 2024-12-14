@@ -4,8 +4,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* RESETS */
+/* NOTE: Universal selector is used. Merge accordingly. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* The following is needed to remove the arrow counter for input type of number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
 /* VARIABLES */
-.signUpMain,
 .OTPVerificationMain {
     /* COLORS */
 
@@ -20,14 +40,20 @@
     /* Text */
     --color-text-heading: #000000; /* Heading text color */
     --color-text-main: #858597; /* Main text color */
+    --color-text-error: #FF0000;
   
     /* Links and Buttons */
     --color-action-primary: #3d5cff; /* Links and button backgrounds */
-
+    
 
     /* FONTS */
     --font-poppins: "Poppins", system-ui, sans-serif; /* Poppins font */
     --font-inter: "Inter", system-ui, sans-serif; /* Inter font */
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
 }
   
 /* NOTE:
@@ -38,262 +64,126 @@ When merging, handle it accordingly.
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-.signUpMain,
 .OTPVerificationMain {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--color-background-page);
     border: 1px solid var(--color-border-primary);
-    width: 462px;
-    height: 568px;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-
-.signUpMain {
-    padding: 32px 67px;
-}
-
-.OTPVerificationMain {
-    padding: 34px 64px;
-}
-
-.signUpSection {
-    width: 328px;
-    height: 478px;
+    border-radius: 0.525rem;
+    padding: 4rem 2rem;
+    max-width: 28.875rem;
+    width: 100%;
+    height: auto;
 }
 
 .OTPVerificationSection {
-    width: 387px;
-    height: 258px;
+    max-width: 24.1875rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.signUpHeader {
-    width: 297px;
-    height: 98px;
-    margin-bottom: 53px;
+.OTPVerificationContentContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
 }
 
 .OTPVerificationHeader {
-    width: 387px;
-    height: 92px;
-    margin-bottom: 50px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
 }
 
-.signUpTitle {
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 45px;
-    letter-spacing: 0.33px;
-    color: var(--color-text-heading);
-    font-family: var(--font-poppins);
-}
 
 .OTPVerificationTitle {
-    font-size: 32px;
-    font-weight: 600;
-    line-height: 41.6px;
-    letter-spacing: 0.33px;
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
     color: var(--color-text-heading);
     font-family: var(--font-poppins);
-}
-
-.signUpDescription {
-    color: var(--color-text-main);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    letter-spacing: 0.33px;
-    font-family: var(--font-poppins);
+    text-align: left; 
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
 .OTPVerificationDescription {
     color: var(--color-text-main);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: var(--font-weight-normal);
+    font-size: 1rem;
+    line-height: 1.3;
     font-family: var(--font-poppins);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
 }
 
-.signUpDescription strong {
-    font-weight: 600;
-}
-
-.signUpForm {
-
-}
-
-.signUpFormFieldset {
-    border: 0;
-    padding: 0;
-    margin-bottom: 31px;
+.OTPVerificationDescription span {
+    font-weight: var(--font-weight-medium);
 }
 
 .OTPVerificationFormFieldset {
     border: 0;
     padding: 0;
-    margin-bottom: 35px;
-}
-
-.signUpFormLabel {
-    font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 18.15px;
-    color: var(--color-text-main);
-}
-
-.signUpFormInputContainer {
-    display: flex;
-    gap: 10px;
-    width: 100%;
 }
 
 .OTPVerificationInputContainer {
     display: flex;
-    gap: 9px;
-    width: 387px;
+    gap: 0.625rem;
 }
 
 .userOTPInput {
-    width: 56px;
-    height: 61px;
-    border-radius: 10px;
+    min-width: 3.5rem;
+    width: 100%;
+    min-height: 3.8125rem;
+    height: auto;
+    border-radius: 0.625rem;
     border: 1px solid var(--color-text-heading);
-    padding: 10px;
-}
-
-.signUpFormCountryCodeSelect {
-    width: 75.05px;
-    height: 48px;
-    border-radius: 7px;
-    border: 1px solid var(--color-border-secondary);
-    padding: 12px 10px;
-}
-
-.signUpFormCountryCodeOption {
-
-}
-
-.signUpFormUserMobileNumberInput {
-    flex: 1;
-    height: 20px;
-    border-radius: 7px;
-    border: 1px solid var(--color-border-secondary);
-    padding: 12px 10px;
-}
-
-.signUpForm p {
-    font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16.94px;
-    color: var(--color-text-main);
-}
-
-.signUpForm p a {
-    font-family: var(--font-inter);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 16.94px;
-    color: var(--color-action-primary);
-    text-decoration: none;
-}
-
-/* Hover effect on link. Not specified in Figma.  */
-.signUpForm p a:hover {
-    filter: brightness(1.5);
-}
-
-.signUpFormGetCodeButton {
-    background-color: var(--color-action-primary);
-    color: var(--color-background-page);
-    border: none;
-    padding: 10px;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-    width: 316px;
-    height: 39px;
-    border-radius: 3px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    line-height: 19.36px;
-    letter-spacing: 2%;
+    padding: 0.625rem;
     text-align: center;
-    font-weight: 500;
-    font-family: var(--font-inter);
+    /* TODO:
+    Set a font size, and other typography styles.
+    Not Specified in Figma design.
+    */
 }
 
-/* Hover effect on button. Not specified in Figma. */
-.signUpFormGetCodeButton:hover {
-    filter: brightness(1.2);
+/* ERRORS: Use the following in JSX when implementing it!  */
+
+/* Border color will change */
+.userOTPInput.invalidOTP {
+    border: 1px solid var(--color-text-error);
 }
 
-.signUpFormGetCodeButton:disabled {
-    cursor: not-allowed;
+/* Error text  */
+.userOTPErrorText {
+    text-align: left;
+    color: var(--color-text-error);
 }
 
-.signUpFormErrorText {
-    text-align: center;
-    /* Add color later */
-}
-
-.signUpFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-}
+/* FOOTER */
 
 .OTPVerificationFooter {
     display: flex;
     justify-content: space-between;
 }
 
-.signUpFooterText {
-    font-family: var(--font-inter);
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17.5px;
-    color: var(--color-text-main);
-}
-
 .OTPVerificationFooterText,
 .OTPVerificationFooterTimer {
     font-family: var(--font-poppins);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: var(--font-weight-normal);
+    font-size: 1rem;
+    line-height: 1.25rem;
     color: var(--color-text-main);
-}
-
-.signUpFooterGoogleLogoButton {
-    background: none;
-    color: inherit;
-    border: none;
-    font: inherit;
-    cursor: pointer;
-    padding: 18px 45px;
-    width: 97.66px;
-    height: 56px;
-    border-radius: 10px;
-    border: 1px solid var(--color-border-tertiary);
-}
-
-.signUpFooterGoogleLogo {
-    width: 20px;
-    height: 20px;
 }
 
 
