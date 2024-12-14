@@ -1,6 +1,4 @@
-
-import './App.css'
-import SignUpPage from './Pages/SignUpPage';
+import './App.css';
 import OTPVerification from './Pages/OTPVerification';
 
 function App() {
