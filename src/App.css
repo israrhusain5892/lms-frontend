@@ -99,7 +99,7 @@ When merging, handle it accordingly.
 .signUpTitle {
     font-size: 1.875rem;
     font-weight: var(--font-weight-bold);
-    line-height: 2.8125rem;
+    line-height: 1;
     letter-spacing: 0.33px;
     color: var(--color-text-heading);
     font-family: var(--font-poppins);
@@ -204,7 +204,7 @@ When merging, handle it accordingly.
     height: auto;
     border-radius: 0.25rem;
     font-size: 1rem;
-    line-height: 19.36px;
+    line-height: 0.84;
     letter-spacing: 2%;
     text-align: center;
     font-weight: var(--font-weight-medium);
@@ -262,9 +262,9 @@ When merging, handle it accordingly.
 
 
 /* NOTE: Kept the following uncommented for now. Will tackle this later. */
-/* @media (max-width: 768px) {
+ /* @media (max-width: 768px) {
     .signUpMain{
-        width: 100%!important;
+        width: 90%!important;
     }
     .signUpSection {
         width: 100%!important;
@@ -287,8 +287,8 @@ When merging, handle it accordingly.
     .signUpFormGetCodeButton{
         width: 100%;
     }
-}
+}  */
 
- */
+ 
 
 
