@@ -31,7 +31,7 @@
 /* Default indicator style */
 .carousel .control-dots .dot {
   
-  background-color:#858597;
+  background-color:#858597 !important;
  width: 12px; /* Default width */
   height: 12px; /* Default height */
   border-radius: 6px; /* Keep it circular */
@@ -41,7 +41,7 @@
 
 /* Active indicator style */
 .carousel .control-dots .dot.selected {
-  background-color: #007bff; /* Active color */
+  background-color: #007bff !important; /* Active color */
   width: 30px; /* Make it wide */
   border-radius: 10px; /* Rounded edges */
 }
