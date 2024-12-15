@@ -1,6 +1,6 @@
 
 import './App.css'
-import AssignmentPage from './Pages/loginpage'
+
 
 function App() {
   
@@ -8,7 +8,7 @@ function App() {
   return (
     <>
         <div>
-           <AssignmentPage/>
+          
         </div>
     </>
   )
