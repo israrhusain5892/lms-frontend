@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.title {
+    font-size: 0.875rem;
+    font-family: 'poppins', sans-serif;
+    line-height: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    width: 12rem;
+
+}
+
+.time {
+    font-family: 'poppins', sans-serif;
+    color: #334155;
+    font-size: 12px;
+    line-height: 10px;
+    padding: 0;
+
+}
+
+
+
+.price {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+
+}
+
+.rating {
+    font-family: 'Poppins',sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+
+}
+.img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.img{
+    width:200px;
+    margin: auto;
+    margin-top: 0.8rem;
+}
+
+.badge{
+    background: #E7D5FF;
+    box-shadow: 0px 1px 2px 0px #0000000F inset;
+     color: var(--Blue-Ribbon-950, #141457);
+     
+
+}
+
+.secondPrice {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--Blue-Ribbon-800, #1719B6);
+
+    display: block;
+    float: right;
+
+
+}
+
+.carda{
+    padding: 0.8rem;
+    width:100%;
+    cursor: pointer;
+}
+
+@media(max-width:768px) {
+    /* .card {
+        width: 100%!important;
+    } */
+    .img{
+        width: 100%!important;
+    }
+    .img img{
+        width: 100%;
+    }
+}
