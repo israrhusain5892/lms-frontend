@@ -57,7 +57,7 @@ const AssignmentCarousel = () => {
             />
             <div className="loginPara">
               <h2>Submit your assignments</h2>
-              <p>Submit your assignments on time, 
+              <p>Submit your assignments on time, xyz
               make study more motivated</p>
             </div>
             <div className="loginButton">
