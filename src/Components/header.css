@@ -149,33 +149,9 @@ body {
 
 /* Updated CSS for Tablet View */
 @media (max-width: 1024px) {
-    .headerContainer {
-        padding: 1rem 1.5rem; /* Slightly reduced padding */
-    }
-
-    .headerLogo {
-        font-size: 1.5rem;
-    }
-
-    .headerNav {
-        flex: none;
-        width: 100%;
-    }
-
-    .headerNavList {
-        gap: 1.5rem; /* Reduced gap between nav items */
-    }
-
-    .headerSearchBar {
-        margin-right: 2rem; /* Reduced space for search bar */
-    }
-
-    .headerSearchBarInput {
-        width: 18rem; /* Reduced search bar width */
-    }
-
-    .headerButtons {
-        gap: 0.8rem; /* Reduced gap between buttons */
+    
+    .profile{
+        display: none;
     }
 }
 
@@ -262,6 +238,42 @@ body {
     }
 
     .headerProfile {
+        display: none;
+    }
+}
+
+
+/* Updated CSS for 1024px to 1440px */
+@media (max-width: 1440px) {
+    .headerContainer {
+        padding: 1.5rem 3rem; /* Adjust padding for mid-sized screens */
+    }
+
+    .headerLogo {
+        font-size: 2rem; /* Scale logo font size */
+    }
+
+    .headerNavList {
+        gap: 2.5rem; /* Slightly increase gap between navigation items */
+    }
+    
+    .headerSearchBar {
+        
+        display:none;
+    }
+    
+    
+    .headerButtons {
+        display:none;
+       
+    }
+
+    .headerDownloadBtn,
+    .headerLogOutBtn {
+        padding: 0.75em 1.5em; /* Larger buttons for better clickability */
+        font-size: 1.1rem; /* Adjust font size */
+    }
+    .profile{
         display: none;
     }
 }
