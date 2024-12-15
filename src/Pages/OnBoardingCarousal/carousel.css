@@ -31,13 +31,13 @@
   .loginLeft {
     width: 100%;
     position: relative;
-    top: 80px;
+    top: 5rem;
   }
   
   .loginRight {
     position: absolute;
-    right: 40px;
-    top: 40px;
+    right: 2.5rem;
+    top: 2.5rem;
   }
   
   .loginRight a {
@@ -65,23 +65,23 @@
   }
   
   .loginPara {
-    width: 420px;
+    width: 26.25rem;
     text-align: left;
-    margin-bottom: 80px;
-    margin-top: -40px;
+    margin-bottom: 100px!important;
+    margin-top: -40px!important;
   }
   
   .loginPara h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     font-family: 'poppins',sans-serif;
   }
   
   .loginPara p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
     color: #858597;
-    margin-top: -15px;
+    margin-top: -0.93rem;
     font-family: 'poppins',sans-serif;
   }
   .skip-btn{
