@@ -7,6 +7,7 @@
     --darkGray: #66666647;
     --hoverColor: #f8f8f8;
     --borderColor: #ddd;
+    --darkcolor : #1b2128;
 }
 
 * {
@@ -53,6 +54,7 @@ body {
     display: flex;
     gap: 2rem;
     list-style: none;
+    color:var(--darkcolor);
 }
 
 .headerNavListItem {
@@ -137,7 +139,7 @@ body {
 
 .headerLogOutBtn {
     background-color: var(--lightGray);
-    color: #000;
+    color: var(--darkcolor);
 }
 
 /* Menu Toggle for Mobile */
@@ -147,12 +149,12 @@ body {
     cursor: pointer;
 }
 
-/* Updated CSS for Tablet View */
-@media (max-width: 1024px) {
+.headerProfile{
+    width: 2.8125rem;
+    height: 2.8125rem;
+    border-radius: 50%;
+    /* object-fit: cover; */
     
-    .profile{
-        display: none;
-    }
 }
 
 /* Updated CSS for Mobile and Small Devices */
