@@ -2,6 +2,7 @@
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import AssignmentCarousel from './Pages/loginpage';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   return (

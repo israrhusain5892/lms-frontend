@@ -94,6 +94,10 @@
   position: relative;
   top: -70px;
 }
+.loginDesc .image{
+   width: 25rem !important;
+   height: 22rem !important;
+}
 
 
 @media (max-width: 768px) {
