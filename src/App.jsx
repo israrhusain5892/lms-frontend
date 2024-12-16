@@ -1,17 +1,18 @@
 
-import './App.css'
-import AssignmentPage from './Pages/loginpage'
+import './App.css';
+import Footer from './Components/footer/footer';
+
+
 
 function App() {
   
 
   return (
-    <>
-        <div>
-           <AssignmentPage/>
-        </div>
-    </>
+    <div>
+      < Footer/>
+    </div>
   )
+    
 }
 
 export default App
