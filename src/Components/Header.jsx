@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unknown-property */
+ 
 import { useState } from "react"; 
 import "./header.css";
 import logo from "../assets/logomark.png"; 

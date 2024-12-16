@@ -55,6 +55,8 @@ body {
     gap: 2rem;
     list-style: none;
     color:var(--darkcolor);
+    cursor: pointer;
+
 }
 
 .headerNavListItem {
@@ -248,15 +250,16 @@ body {
 /* Updated CSS for 1024px to 1440px */
 @media (max-width: 1440px) {
     .headerContainer {
-        padding: 1.5rem 3rem; /* Adjust padding for mid-sized screens */
+        padding: 1.5rem 2rem; /* Adjust padding for mid-sized screens */
     }
 
     .headerLogo {
-        font-size: 2rem; /* Scale logo font size */
+        font-size: 1.8rem; /* Scale logo font size */
     }
 
     .headerNavList {
-        gap: 2.5rem; /* Slightly increase gap between navigation items */
+        padding: 0.8rem;
+        gap: 2.3rem; /* Slightly increase gap between navigation items */
     }
     
     .headerSearchBar {
