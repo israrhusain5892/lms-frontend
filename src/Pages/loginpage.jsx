@@ -14,19 +14,17 @@ const AssignmentCarousel = () => {
       <div className="loginLeft">
         <Carousel
           showThumbs={false}
-          infiniteLoop
-          autoPlay
           showStatus={false}
           interval={5000}
-          className="w-50"
+          className="w-100"
           showIndicators={true}
         >
           <div className="loginDesc">
             <img
               src={accessImage}
               alt="Access your class material"
-              className="mb-3"
-              style={{ width: "411px", height: "356px" }}
+              className="mb-3 image"
+              // style={{ width: "411px", height: "356px" }}
             />
             <div className="loginPara">
               <h2>Access your class material</h2>
@@ -37,8 +35,8 @@ const AssignmentCarousel = () => {
             <img
               src={accessImage2}
               alt="Access materials"
-              className="mb-3"
-              style={{ width: "349px", height: "316px" }}
+              className="mb-3 image"
+             
             />
             <br/>
             <br/>
@@ -52,8 +50,8 @@ const AssignmentCarousel = () => {
             <img
               src={loginImage}
               alt="Track progress"
-              className="mb-3"
-              style={{ width: "411px", height: "356px" }}
+              className="mb-3 image"
+             
             />
             <div className="loginPara">
               <h2>Submit your assignments</h2>
