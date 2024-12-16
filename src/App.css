@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+.carouselApp {
+  /* Main container for the carousel, centers the content on the page */
+  margin: 0;
+  font-family: 'Poppins', 'Arial', sans-serif;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselContainer {
+  /* Centers and restricts the carousel width */
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carouselSkipButton {
+  /* Skip button positioned at the top-right corner */
+  position: fixed;
+  top: 60px;
+  right: 60px;
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 1000; /* Ensure the button stays on top */
+}
+
+.carouselContent {
+  /* Aligns the carousel content vertically and centers it */
+  margin-top: 145px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselIllustration {
+  /* Styles for the image inside the carousel */
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.carouselTitle {
+  /* Title styling for the carousel content */
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin: 14px 0 10px;
+  text-align: left;
+}
+
+.carouselDescription {
+  /* Description styling for the carousel content */
+  font-size: 16px;
+  align-self: baseline;
+  text-align: left;
+  color: #666;
+  margin: 0;
+}
+
+.carouselPagination {
+  /* Pagination container styling for dots */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.carouselDot {
+  /* Default dot styling */
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 20%;
+}
+
+.carouselDot.active {
+  /* Styling for the active pagination dot */
+  width: 22px;
+  height: 6px; /* Different size for the active dot */
+  background-color: #4a90e2;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+  .carouselContainer {
+      /* Adjust container width for tablets */
+      width: 80%;
+  }
+
+  .carouselTitle {
+      /* Reduce font size for titles on smaller screens */
+      font-size: 20px;
+  }
+
+  .carouselDescription {
+      /* Adjust description text size */
+      font-size: 14px;
+  }
+
+  .carouselIllustration {
+      /* Reduce image size */
+      max-width: 200px;
+  }
+
+  .carouselContent {
+      /* Increase top margin for content */
+      margin-top: 300px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  /* Similar adjustments as the smaller screens */
+  .carouselContainer {
+      width: 80%;
+  }
+
+  .carouselTitle {
+      font-size: 20px;
+  }
+
+  .carouselDescription {
+      font-size: 14px;
+  }
+
+  .carouselIllustration {
+      max-width: 200px;
+  }
+
+  .carouselContent {
+      margin-top: 350px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .carouselContainer {
+      /* Adjust width for mobile devices */
+      width: 90%;
+  }
+
+  .carouselContent {
+      /* Adjust margin for mobile view */
+      margin-top: 170px;
+  }
+
+  .carouselSkipButton {
+      /* Reduce size and reposition the skip button for mobile */
+      top: 50px;
+      right: 50px;
+      font-size: 14px;
+  }
+
+  .carouselTitle {
+      /* Smaller title font size for mobile */
+      font-size: 18px;
+  }
+
+  .carouselDescription {
+      /* Smaller description font size */
+      font-size: 12px;
+  }
+
+  .carouselIllustration {
+      /* Reduce image size further for smaller screens */
+      max-width: 150px;
+  }
+}
