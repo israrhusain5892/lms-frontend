@@ -88,18 +88,11 @@
   height: 44px;
   background-color: transparent;
   border-radius: 3px;
-  cursor: pointer;
 }
 
 .loginButton {
   position: relative;
   top: -70px;
-  cursor: pointer;
-}
-
-.loginDesc .image{
-   width: 25rem!important;
-   height: 22rem !important;
 }
 
 

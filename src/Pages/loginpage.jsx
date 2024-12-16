@@ -16,7 +16,7 @@ const AssignmentCarousel = () => {
           showThumbs={false}
           showStatus={false}
           interval={5000}
-          className="w-100"
+          className="w-50"
           showIndicators={true}
         >
           <div className="loginDesc">
