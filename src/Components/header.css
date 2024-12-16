@@ -48,15 +48,17 @@ body {
     flex: 1;
     display: flex;
     justify-content: center;
-   
-   
+    align-items: center;
+  
 }
 
 .headerNavList {
     display: flex;
     gap: 2rem;
     list-style: none;
-    
+    justify-content: center;
+    align-items: center;
+   
    
 }
 
@@ -94,6 +96,10 @@ body {
 .headerSearchBarInput:focus + .headerSearchIcon,
 .headerSearchBarInput:focus + .headerSearchIcon + .headerFilterIcon {
     display: none;
+}
+
+.headerNavList{
+    margin-bottom: 0px;
 }
 
 .headerSearchIcon {
@@ -173,11 +179,11 @@ body {
     }
 
     .headerSearchBar {
-        margin-right: 2rem; /* Reduced space for search bar */
+        margin-right: 2rem; 
     }
 
     .headerSearchBarInput {
-        width: 18rem; /* Reduced search bar width */
+        width: 18rem; 
     }
 
     .headerButtons {
@@ -188,8 +194,15 @@ body {
 @media (max-width:1400px) {
 
      .headerSearchBar {
-        margin-right: 1.5rem; /* Reduced space for search bar */
+        margin-right: 2rem;  
         width:20rem;
+    }
+
+    .headerNavList{
+        margin-bottom: 0px;
+    }
+    .headerNav{
+        margin-right: 1.5rem;
     }
 
 }

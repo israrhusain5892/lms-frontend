@@ -7,6 +7,7 @@ import Footer from './Components/footer/footer';
 import Header from './Components/Header';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import Layout from './Components/Layout';
 
 
 function App() {
@@ -14,11 +15,8 @@ function App() {
 
   return (
     <div>
-      < Footer/>
-  
-           <Header/>
-           {/* <AssignmentCarousel/> */}
-        </div>
+         <Layout/>
+    </div>
     
   )
     
