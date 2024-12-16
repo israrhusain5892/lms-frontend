@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
 .loginpageContainer {
   display: flex;
   width: 100%;
@@ -6,8 +5,7 @@
   justify-content: space-between;
   height: 90vh;
   overflow-y: hidden;
-  flex-wrap: wrap;
-  font-family: "Poppins", system-ui, sans-serif; 
+  flex-wrap: wrap; 
 }
 
 .loginLeft {
@@ -30,13 +28,24 @@
 }
 
 
+/* Default indicator style */
 .carousel .control-dots .dot {
-  background-color: rgba(0, 0, 0, 0.5);
+  
+  background-color:#858597 !important;
+ width: 12px; /* Default width */
+  height: 12px; /* Default height */
+  border-radius: 6px; /* Keep it circular */
+  margin: 0 5px; /* Space between dots */
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
+/* Active indicator style */
 .carousel .control-dots .dot.selected {
-  background-color: #007bff;
+  background-color: #007bff !important; /* Active color */
+  width: 30px; /* Make it wide */
+  border-radius: 10px; /* Rounded edges */
 }
+
 
 
 .loginDesc {
@@ -54,9 +63,9 @@
 }
 
 .loginPara h2 {
+  
   font-size: 30px;
   font-weight: 600;
-  
 }
 
 .loginPara p {
