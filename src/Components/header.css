@@ -140,7 +140,8 @@ body {
 }
 
 .headerLogOutBtn {
-    background-color: var(--lightGray);
+    background-color: #fff;
+    border : 1px solid #c1bbbb;
     color: var(--darkcolor);
 }
 
