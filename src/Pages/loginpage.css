@@ -1,74 +1,180 @@
-.page-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
+.loginpageContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  overflow-y: hidden;
+  flex-wrap: wrap; 
+}
+
+.loginLeft {
+  width: 100%;
+  position: relative;
+  /* top: 80px; */
+}
+
+.loginRight {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+.loginRight a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 400;
+  color: #858597;
+}
+
+
+/* Default indicator style */
+.carousel .control-dots{
+   margin: 0px 0px!important;
+}
+.carousel .control-dots .dot {
   
-  .header {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-  }
+  background-color:#858597 !important;
+ width: 12px; /* Default width */
+  height: 12px; /* Default height */
+  border-radius: 6px; /* Keep it circular */
+  margin: 0 5px; /* Space between dots */
+  transition: all 0.3s ease; /* Smooth transition */
+  margin-bottom: 2rem!important;
+}
+
+/* Active indicator style */
+.carousel .control-dots .dot.selected {
+  background-color: #007bff !important; /* Active color */
+  width: 30px; /* Make it wide */
+  border-radius: 10px; /* Rounded edges */
+}
+
+
+
+.loginDesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginPara {
+  width: 400px;
+  text-align: left;
+  margin-bottom: 80px;
+  margin-top: -40px;
+}
+
+.loginPara h2 {
   
-  .skip-button {
-    margin-right: 20px;
-    font-size: 16px;
-    color: #666;
-    cursor: pointer;
-  }
-  
-  .content {
-    text-align: center;
-  }
-  
-  .illustration {
-    max-width: 300px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.loginPara p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #858597;
+  margin-top: -15px;
+}
+
+
+.loginButton button {
+  outline: none;
+  border: 1px solid #3D5CFF;
+  color: #3D5CFF;
+  width: 127px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 3px;
+}
+
+.loginButton {
+  position: relative;
+  top: -70px;
+}
+.loginDesc .image{
+   width: 25rem !important;
+   height: 22rem !important;
+}
+
+
+@media (max-width: 768px) {
+  .loginpageContainer {
+    flex-direction: column; 
     height: auto;
-    margin-bottom: 20px;
+    overflow-y: scroll;
   }
-  
-  .title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
+
+  .loginLeft {
+    width: 100%;
+    top: 20px;
   }
-  
-  .subtitle {
+
+  .loginDesc {
+    width: 100%; 
+    align-items: center;
+  }
+
+  .loginPara {
+    width: 90%;
+    text-align: center; 
+    margin-top: 20px;
+  }
+
+  .loginPara h2 {
+    font-size: 24px; 
+  }
+
+  .loginPara p {
     font-size: 16px;
-    color: #888;
-    margin-bottom: 20px;
   }
-  
-  .pagination {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+
+  .loginButton button {
+    width: 100%;
+    padding: 8px 30px;
+
   }
-  
-  .dot {
-    height: 10px;
-    width: 10px;
-    margin: 0 5px;
-    background-color: #ccc;
-    border-radius: 50%;
-    display: inline-block;
+
+  .loginRight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
-  
-  .dot.active {
-    background-color: #007bff;
+}
+
+
+@media (max-width: 1024px) {
+  .loginpageContainer {
+    flex-direction: column;
+    height: auto;
   }
-  
-  .login-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+
+  .loginLeft {
+    width: 100%;
+    top: 30px;
   }
-  
+
+  .loginPara {
+    width: 80%;
+  }
+
+  .loginPara h2 {
+    font-size: 26px; 
+  }
+
+  .loginPara p {
+    font-size: 18px; 
+  }
+
+  .loginButton button {
+    width: 100%; 
+  }
+
+  .loginRight {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}
