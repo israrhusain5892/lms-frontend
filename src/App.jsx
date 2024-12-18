@@ -1,16 +1,14 @@
-
-import './App.css'
+// USE THIS TO VIEW YOUR COMPONENT RENDER
+// Step 1: import your component here
 
 function App() {
-  
-
   return (
     <>
-        <div>
-             <h1>welcome LMS project</h1>
-        </div>
+      {/* Step 2: Use it here */}
     </>
-  )
+  );
 }
 
-export default App
+
+
+export default App;
