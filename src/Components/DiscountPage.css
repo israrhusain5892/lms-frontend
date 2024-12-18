@@ -1,0 +1,9 @@
+.ml-20 {
+    margin-left: 20px;
+  }
+  
+  @media (min-width: 992px) { /* lg breakpoint */
+    .ml-lg-86 {
+      margin-left: 86px;
+    }
+  }
