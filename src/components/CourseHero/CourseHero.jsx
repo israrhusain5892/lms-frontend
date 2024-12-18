@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unknown-property */
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import heroimage from '../assets/courseimage.png';
-import './CourseHero.css';
+import heroimage from '../../assets/images/courseimage.png';
+import './course-hero.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Importing FontAwesome icons for use in the navigation
 
 const CourseHero = () => {

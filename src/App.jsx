@@ -1,12 +1,6 @@
 
-import './App.css'
-import CourseHero from './Components/CourseHero';
-
-// import OtpVerification from './pages/OtpVerification';
-import Header from './Components/Header';
-// import Loginpage from './Pages/Loginpage';
-
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import CourseHero from './components/CourseHero/CourseHero';
+import Header from './components/Header/Header';
 
 
 function App() {
@@ -16,8 +10,7 @@ function App() {
     <>
         
            <Header/>
-           {/* <OtpVerification/> */}
-           {/* <Loginpage/> */}
+           
            <CourseHero/>
         
     </>

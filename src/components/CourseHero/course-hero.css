@@ -3,7 +3,7 @@
 :root {
   --primary-color: #DBE6FE;
   --secondary-color: #656565;
-  --light-bg: #1386fa;
+  --light-bg: #ffffff;
   --info-color: #17a2b8;
   --warning-color: #ffc107;
   --text-muted: var(--secondary-color);
