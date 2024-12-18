@@ -1,7 +1,9 @@
+// import a component here
+
 function App() {
   return (
     <>
-      <h1>Hello</h1>
+      {/* Render the component here */}
     </>
   );
 }
