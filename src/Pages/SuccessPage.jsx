@@ -1,5 +1,5 @@
 import React from "react";
-import SuccessImage from "../Assets/success.svg";
+import SuccessImage from "../assets/images/success.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function SuccessPage() {

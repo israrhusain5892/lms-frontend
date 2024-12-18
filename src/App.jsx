@@ -1,14 +1,10 @@
-import SuccsessPage from './Pages/SuccessPage'
-import './App.css'
-
+import SuccsessPage from './Pages/SuccessPage';
 
 function App() {
-  
 
   return (
     <>
         <div>
-             {/* <h1>welcome LMS project</h1> */}
              <SuccsessPage/>
         </div>
     </>
