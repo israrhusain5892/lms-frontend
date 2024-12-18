@@ -1,5 +1,5 @@
 import { useState } from "react";
-import googleLogo from "../../assets//images/google-logo.png";
+import googleLogo from "../../../public/images/google-logo.png";
 import "./sign-up-page.css";
 
 function SignUpPage() {
