@@ -13,7 +13,7 @@
 }
 
 /* Base styling for the body */
-body {
+#root {
     margin: 0;
     font-family: 'poppins', system-ui, sans-serif; /* Apply Poppins font */
     background-color: var(--color-background); /* Light gray background */

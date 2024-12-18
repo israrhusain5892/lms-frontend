@@ -1,22 +1,13 @@
 
-import './App.css'
-// import AssignmentCarousel from './Pages/loginpage'
-import OtpVerification from './Pages/OtpVerification';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-
-
-function App() {
-  
-
+import OtpVerification from './components/OtpVerification/OtpVerification';
+const App = () => {
   return (
     <>
-        <div>
-           {/* <AssignmentCarousel/> */}
-           <OtpVerification/>
 
-        </div>
+    <OtpVerification/>
+      
     </>
   )
 }
 
-export default App
+export default App;
