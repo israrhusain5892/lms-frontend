@@ -1,8 +1,6 @@
-import TopTutors from './Components/TopTutors.jsx'
-
+import TopTutors from './Components/TopTutors.jsx';
 
 function App() {
-  
 
   return (
     <>
