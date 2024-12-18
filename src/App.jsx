@@ -1,6 +1,4 @@
 
-import './App.css';
-
 import OtpVerification from './components/OtpVerification/OtpVerification';
 import Header from './components/Header/Header';
 
@@ -14,7 +12,7 @@ function App() {
     <>
         
            <Header/>
-           <OtpVerification/>
+           {/* <OtpVerification/> */}
         
     </>
   )
