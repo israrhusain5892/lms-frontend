@@ -1,8 +1,8 @@
 
-import './App.css'
+import './App.css';
 
-import OtpVerification from './pages/OtpVerification';
-import Header from './Components/Header';
+import OtpVerification from './components/OtpVerification/OtpVerification';
+import Header from './components/Header/Header';
 
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 

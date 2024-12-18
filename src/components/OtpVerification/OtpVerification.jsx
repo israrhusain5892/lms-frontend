@@ -1,7 +1,8 @@
 import { useState } from "react"; // Importing useState hook for state management
-import "./Otpverification.css"; // Linking to the CSS file for styling
+import "./otp-verification.css"; // Linking to the CSS file for styling
 
-const Otp = () => {
+const OtpVerification = () => 
+  {
   const [otp, setOtp] = useState(new Array(6).fill("")); // State to store 6-digit OTP input
 
   // Handles changes in the OTP input fields
@@ -61,4 +62,4 @@ const Otp = () => {
   );
 };
 
-export default Otp; // Exporting the component for reuse
+export default OtpVerification; // Exporting the component for reuse
