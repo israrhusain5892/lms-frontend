@@ -1,10 +1,10 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import weekly_top_tutor1 from "../Assets/images/Albert-Flores.svg";
-import weekly_top_tutor2 from "../Assets/images/Darrell-Steward.svg";
-import weekly_top_tutor3 from "../Assets/images/Jane-Cooper.svg";
-import weekly_top_tutor4 from "../Assets/images/Julia-Anatole.svg";
-import weekly_top_tutor5 from "../Assets/images/Michael-Roberts.svg";
+import weekly_top_tutor1 from "../assets/images/Albert-Flores.svg";
+import weekly_top_tutor2 from "../assets/images/Darrell-Steward.svg";
+import weekly_top_tutor3 from "../assets/images/Jane-Cooper.svg";
+import weekly_top_tutor4 from "../assets/images/Julia-Anatole.svg";
+import weekly_top_tutor5 from "../assets/images/Michael-Roberts.svg";
 
 function TopTutors() {
   return (
