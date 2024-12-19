@@ -1,10 +1,22 @@
-// USE THIS TO VIEW YOUR COMPONENT RENDER
-// Step 1: import your component here
+
+import CourseBody from './components/CourseBody/CourseBody';
+import CourseHero from './components/CourseHero/CourseHero';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+
 
 function App() {
   return (
     <>
-      {/* Step 2: Use it here */}
+        
+           <Header/>
+           
+           <CourseHero/>
+
+           <CourseBody/>
+
+           <Footer/>
+        
     </>
   );
 }

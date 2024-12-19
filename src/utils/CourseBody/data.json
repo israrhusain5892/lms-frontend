@@ -1,0 +1,46 @@
+{
+  "about": "The Advanced Front-End Programming course sharpens students' critical thinking, creativity, and analytical skills, empowering them to effectively tackle complex challenges in web development.The Advanced Front-End Programming course sharpens students' critical thinking, creativity, and analytical skills, empowering them to effectively tackle complex challenges in web development.",
+  "materials": [
+    { "icon": "▶️", "names": "HTML and CSS Basics" },
+    { "icon": "▶️", "names": "JavaScript & DOM" },
+    { "icon": "🗒️", "names": "Responsive Design" },
+    { "icon": "▶️", "names": "Advanced JavaScript" },
+    { "icon": "💡", "names": "Assignements" },
+    { "icon": "▶️", "names": "React UI Building" }
+    
+  ],
+  "reviews": [
+    {
+      "name": "Sarbajit",
+      "date": "16 Feb 2024",
+      "rating": 5,
+      "comment": "Insightful course with practical examples and clear explanations. Perfect for developers!"
+    },
+    {
+      "name": "Sarbajit Acharjee",
+      "date": "20 Feb 2024",
+      "rating": 4,
+      "comment": "I wish Muhammad Shahin was my class teacher. His teaching technique is awesome."
+    }
+  ],
+  "author": {
+    "name": "Julia Anatole",
+    "qualification": "Harvard Business School",
+    "rating": "4.5 (39)",
+    "description": "I'm Julia, a developer passionate about teaching. As the lead instructor, I've helped many students and taught at top companies worldwide.",
+    "experience": [
+      {
+        "role": "Engineering",
+        "institution": "University of Oxford",
+        "years": "2020-2024",
+        "color":"purple"
+      },
+      {
+        "role": "SSC",
+        "institution": "Habibton High School",
+        "years": "2019",
+        "color":"blue"
+      }
+    ]
+  }
+}
