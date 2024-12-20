@@ -25,16 +25,18 @@ const CourseBody = () => {
           Course Materials
         </h2>
         <ul className="space-y-4">
-          {data.materials.map((material, index) => (
-            <div
-              key={index}
-              className="flex items-center bg-red-00 p-3 space-x-3 border-b-2 border-[#cbd5e169] "
-            >
-              <span className="">{material.icon}</span>
-              <span className="text-black text-base">{material.names}</span>
-            </div>
-          ))}
-        </ul>
+  {data.materials.map((material, index) => (
+    <div
+      key={index}
+      className="flex items-center p-3 space-x-3 border-b-2 border-[#cbd5e169]"
+    >
+      {/* Render Font Awesome icon */}
+      <i className={`${material.icon} greyText text-2xl`}></i>
+      <span className="text-black text-base">{material.names}</span>
+    </div>
+  ))}
+</ul>
+
       </section>
 
       {/* Reviews Section */}
@@ -84,14 +86,14 @@ const CourseBody = () => {
             </h3>
             <p className="text-md greyText ">{data.author.qualification}</p>
             <div className="flex items-center gap-2 mt-2">
-              <div className="text-orange-400 text-sm">{`⭐ ${data.author.rating}`}</div>
+              <div className="text-orange-400 text-sm border-2 border-orange-400 bg-orange-50 rounded-3xl p-1 "><i className="fa-solid fa-star text-orange-400 mr-1"></i>{data.author.rating}</div>
             </div>
           </div>
         </div>
 
         {/* Author Description Section */}
         <div className="wrapper pb-2 shadow-sm mb-4">
-          <div className="mb-6  w-[650px] ">
+          <div className="mb-6  lg:w-[650px] ">
             <p className="text-sm greyText">{data.author.description}</p>
           </div>
         </div>
@@ -102,7 +104,7 @@ const CourseBody = () => {
             {data.author.experience.map((exp, index) => (
               <li
                 key={index}
-                className="flex items-center justify-between py-6 shadow-sm"
+                className="flex items-center justify-between py-6 shadow-sm pr-4"
               >
                 <div className="flex justify-center items-center gap-2">
                   <i

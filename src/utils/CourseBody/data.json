@@ -1,14 +1,14 @@
 {
   "about": "The Advanced Front-End Programming course sharpens students' critical thinking, creativity, and analytical skills, empowering them to effectively tackle complex challenges in web development.The Advanced Front-End Programming course sharpens students' critical thinking, creativity, and analytical skills, empowering them to effectively tackle complex challenges in web development.",
   "materials": [
-    { "icon": "▶️", "names": "HTML and CSS Basics" },
-    { "icon": "▶️", "names": "JavaScript & DOM" },
-    { "icon": "🗒️", "names": "Responsive Design" },
-    { "icon": "▶️", "names": "Advanced JavaScript" },
-    { "icon": "💡", "names": "Assignements" },
-    { "icon": "▶️", "names": "React UI Building" }
-    
-  ],
+  { "icon": "fa-regular fa-circle-play", "names": "HTML and CSS Basics" },
+  { "icon": "fa-regular fa-circle-play", "names": "JavaScript & DOM" },
+  { "icon": "fa-regular fa-file-lines", "names": "Responsive Design" },
+  { "icon": "fa-regular fa-circle-play", "names": "Advanced JavaScript" },
+  { "icon": "fa-regular fa-lightbulb", "names": "Assignments" },
+  { "icon": "fa-regular fa-circle-play", "names": "React UI Building" }
+]
+,
   "reviews": [
     {
       "name": "Sarbajit",
