@@ -1,7 +1,7 @@
 
-import OtpVerification from './components/OtpVerification/OtpVerification';
+// import OtpVerification from './components/OtpVerification/OtpVerification';
 import Header from './components/Header/Header';
-
+import HeroSection from './components/HeroSection';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
@@ -12,7 +12,8 @@ function App() {
     <>
         
            <Header/>
-           <OtpVerification/>
+           <HeroSection/>
+           {/* <OtpVerification/> */}
         
     </>
   )
