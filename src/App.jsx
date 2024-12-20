@@ -1,14 +1,16 @@
-import TopTutors from './Components/TopTutors.jsx';
+import ReviewPage from './components/ReviewPage/ReviewPage.jsx';
 
 function App() {
 
   return (
     <>
-        <div>
-             <TopTutors/>
-        </div>
+      <div>
+        <ReviewPage />
+      </div>
     </>
   )
 }
 
 export default App;
+
+
