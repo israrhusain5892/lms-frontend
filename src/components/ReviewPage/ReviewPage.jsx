@@ -1,25 +1,54 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import WomenImage from "../../assets/images/women.svg";
+import ReviewCard from "./ReviewCard";
+
+const DATA = [
+    {
+        rating: 4,
+        reviewTitle: "Great Course",
+        reviewText: "The instructor is very knowledgeable and has a good understanding of the subject matter.",
+        date: "2019-01-01T00:00:00.000Z",
+        name: "Alexandria Novak",
+        photo: "https://picsum.photos/200/300",
+        id: 1
+    },
+    {
+        rating: 2,
+        reviewTitle: "Highly Recommend",
+        reviewText: "I learned a lot about Python from this course. Highly recommend!",
+        date: "2019-01-01T00:00:00.000Z",
+        name: "Alexandria Novak",
+        photo: "https://picsum.photos/200/300",
+        id: 2
+    },
+    {
+        rating: 5,
+        reviewTitle: "Good for Beginners",
+        reviewText: "This course is perfect for beginners. The instructor explains concepts clearly.",
+        date: "2024-12-26T00:00:00.000Z",
+        name: "Alexandria Novak",
+        photo: "https://picsum.photos/200/300",
+        id: 3
+    },
+]
 
 function ReviewPage() {
     return (
-        <>
-            <div style={{ height: "151px", width: "1336px", gap: "4px", marginLeft: "48px", backgroundColor: "#FBFCFE" }}>
+        <main style={{ backgroundColor: "#FFFFFF", }} className="container">
+            <div style={{ backgroundColor: "#FBFCFE", padding: "18px" }}>
                 <div className="d-flex justify-content-between align-items-center">
-                    <h1 className="mt-5 bold" style={{ fontSize: "28px", color: "#1B2128" }}>Python Basics</h1>
+                    <h1 className="bold" style={{ fontSize: "28px", color: "#1B2128" }}>Python Basics</h1>
                     <div className="d-flex align-items-center">
-                        <span className="me-2 mt-5" style={{ color: "#3D5CFF" }}>★</span>
-                        <span className="mt-5">4.5</span>
+                        <span className="" style={{ color: "#3D5CFF", marginRight: "4px", fontSize: "16px" }}>★</span>
+                        <span className="">4.5</span>
                     </div>
                 </div>
-                <span className=" mt-0 bold" style={{ fontSize: "16px", color: "#14202E9E" }}>2023·1·programming</span>
-                <div>
-                    <p style={{ fontSize: "16px" }}>Learn the basics of Python programming language in this comprehensive course.</p>
-                </div>
+                <span className="" style={{ fontSize: "16px", fontWeight: "600", color: "#14202E9E", marginTop: "4px" }}>2023 · 1 · programming</span>
+                <p style={{ fontSize: "16px", marginTop: '6px', marginBottom: "0" }}>Learn the basics of Python programming language in this comprehensive course.</p>
             </div>
 
-            <div className="mt-3" style={{ height: "610px", width: "1336px", marginLeft: "48px", backgroundColor: "#FBFCFE" }}>
+            <div className="" style={{ padding: "18px", marginTop: "15px", backgroundColor: "#FBFCFE" }}>
                 <div className="d-flex justify-content-between align-items-center">
                     <h5 className="m-0" style={{ fontSize: "24px" }}>User Reviews</h5>
                     <span className="text-primary" role="button">See All</span>
@@ -27,7 +56,7 @@ function ReviewPage() {
 
                 <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
                     <div style={{ fontSize: "48px", fontWeight: "bold", margin: "0", fontFamily: "Poppins", color: "#1B2128" }}>4.5</div>
-                    <div style={{ textAlign: "center" }}>
+                    <div style={{}}>
                         <div style={{ display: "flex", gap: "4px", justifyContent: "center" }}>
                             <span style={{ color: "#3D5CFF", fontSize: "20px" }}>★</span>
                             <span style={{ color: "#3D5CFF", fontSize: "20px" }}>★</span>
@@ -35,7 +64,7 @@ function ReviewPage() {
                             <span style={{ color: "#3D5CFF", fontSize: "20px" }}>★</span>
                             <span style={{ color: "#3D5CFF", fontSize: "20px" }}>★</span>
                         </div>
-                        <div style={{ fontSize: "14px", color: "#000000", marginLeft: "2px", }}>200</div>
+                        <div style={{ fontSize: "14px", color: "#000000" }}>200</div>
                     </div>
                 </div>
 
@@ -51,78 +80,17 @@ function ReviewPage() {
                             />
                         </div>
                         {/* Add Review Section */}
-                        <div style={{ flex: 1, backgroundColor: '#F2F4F7', height: '34px', display: 'flex', alignItems: 'center' }}>
-                            <h5 className="mb-0" style={{ fontSize: "12px" }}>Add Review</h5>
-                        </div>
+                        <input style={{ backgroundColor: '#F2F4F7', width: "100%", border: "none", padding: "8px", }} placeholder="Add review" />
+
                     </div>
                 </div>
-                <hr />
 
+                {/* TODO: create separate component */}
                 {/* Reviews */}
-                <div className="card mb-3 border-0" style={{ height: "124px" }}>
-                    <div className="d-flex justify-content-between align-items-center">
-                        <h4 className="fw-bold mb-2 mt-4 " style={{ fontSize: "16px" }}>Great Course</h4>
-                        <span style={{ color: "#3D5CFF" }}>★<span style={{ color: "#1B2128" }}> 5 star</span></span>
-
-                    </div>
-                    <p className="mb-3" style={{ color: "#14202E9E", fontSize: "14px" }}>This course is very informative and easy to follow.</p>
-                    <div className="d-flex align-items-center">
-                        <img
-                            src={WomenImage}
-                            alt="Alexandria Novak"
-                            className="rounded-circle me-3"
-                            style={{ width: "16px", height: "16px", objectFit: "cover" }}
-                        />
-                        <div>
-                            <h6 className="mb-0" style={{ fontSize: "14px" }}>Alexandria Novak · 2 days ago</h6>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-
-                <div className="card mb-3 border-0 " style={{ height: "124px" }}>
-                    <div className="d-flex justify-content-between align-items-center">
-                        <h4 className="fw-bold mb-2 mt-4" style={{ fontSize: "16px" }}>Highly Recommend</h4>
-                        <span style={{ color: "#3D5CFF" }}>★<span style={{ color: "#1B2128" }}> 4.5 star</span></span>
-                    </div>
-                    <p className="mb-3" style={{ color: "#14202E9E", fontSize: "14px" }}>I learned a lot about Python from this course. Highly recommend!</p>
-                    <div className="d-flex align-items-center">
-                        <img
-                            src={WomenImage}
-                            alt="Alexandria Novak"
-                            className="rounded-circle me-3"
-                            style={{ width: "16px", height: "16px", objectFit: "cover" }}
-                        />
-                        <div>
-                            <h6 className="mb-0" style={{ fontSize: "14px" }}>Benedict Cumberbatch · 1 week ago</h6>
-                        </div>
-                    </div>
-                </div>
-                <hr />
-
-                <div className="card mb-3 border-0" style={{ height: "127px" }}>
-                    <div className="d-flex justify-content-between align-items-center">
-                        <h4 className="fw-bold mb-2 mt-4" style={{ fontSize: "16px" }}>Good for Beginners</h4>
-                        <span style={{ color: "#3D5CFF" }}>★ <span style={{ color: "#1B2128" }}> 4 star</span></span>
-                    </div>
-                    <p className="mb-3" style={{ color: "#14202E9E", fontSize: "14px" }}>
-                        This course is perfect for beginners. The instructor explains concepts clearly.
-                    </p>
-                    <div className="d-flex align-items-center">
-                        <img
-                            src={WomenImage}
-                            alt="Alexandria Novak"
-                            className="rounded-circle me-3"
-                            style={{ width: "16px", height: "16px", objectFit: "cover" }}
-                        />
-                        <div>
-                            <h6 className="mb-0" style={{ fontSize: "14px" }}>Cassandra Clare · 3 weeks ago</h6>
-                        </div>
-                    </div>
-                </div>
+                {DATA.map((item) => <ReviewCard review={item} key={item.id} />)}
 
             </div>
-        </>
+        </main>
     );
 };
 
