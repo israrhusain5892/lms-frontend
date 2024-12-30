@@ -33,6 +33,12 @@
 }
 
 
+.strikedtext{
+  text-decoration: line-through;
+}
+.textalert{
+  color:#F95368;
+}
 
 .courseHeroTextMuted {
   color: var(--text-muted);
@@ -224,6 +230,6 @@
 
   .courseHeroBtnPrimary, 
   .courseHeroBtnOutline {
-    padding: 0.6rem 6rem;
+    padding: 0.3rem 4rem;
   }
 }
