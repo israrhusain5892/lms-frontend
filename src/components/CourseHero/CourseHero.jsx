@@ -10,7 +10,7 @@ const CourseHero = () => {
     <div className="courseHeroWrapper ">
       <div className="row align-items-center courseHeroCustomBg p-4">
         {/* Left Section */}
-        <div className="col-md-6 courseHeroContent">
+        <div className="col-md-6 courseHeroContent lh-sm">
           <div className="mb-2">
             <span
               className="courseHeroBadge "
@@ -21,32 +21,55 @@ const CourseHero = () => {
           <h2 className="courseHeroHeading fw-bold mb-3">
             Advanced Front-End Programming Techniques
           </h2>
-          <div className="d-flex flex-wrap mb-3 courseHeroTextMuted">
+          <div className="d-flex flex-wrap mb-3 gap-2 courseHeroTextMuted">
             <div className="me-3">
-              <i className="bi bi-clipboard-check-fill"></i> 39 Assignments
+              <i className="bi bi-clipboard-check-fill me-2"></i> 39 Assignments
             </div>
             <div className="me-3">
-              <i class="fa-solid fa-award"></i> Certificate of achievement
+              <i class="fa-solid fa-award me-2"></i> Certificate of achievement
             </div>
             <div>
-             <i class="fa-solid fa-infinity"></i> Lifetime access
+              <i class="fa-solid fa-infinity me-2"></i> Life time access
             </div>
           </div>
           <p className="courseHeroTextMuted">
             Dive in and learn React.js from scratch! Learn React.js, Hooks,
             Redux, React Routing, Animations, Next.js and way more!
           </p>
+
+          <div className="d-flex align-items-center mb-4 text-primary">
+            <span className="me-2 fs-4 fw-bold">
+              <i className="bi bi-currency-dollar "></i>599
+            </span>
+            <span className="text-muted fs-5 ms-2 strikedtext">
+             <i className="bi bi-currency-dollar"></i>1299
+            </span>
+            <span className="text-muted ms-3 fs-4 ">80% off</span>
+          </div>
+          <div className="d-flex align-items-center mb-4 textalert ">
+          <span className="me-2 fs-5 ">
+          <i class="bi bi-stopwatch mx-2 fs-4"></i>only 1 Day left
+            </span>
+            </div>
+
+
+
           <div className="d-flex align-items-center mb-4 text-muted">
             <span className="courseHeroRating me-2 fs-5">
-              <i className="bi bi-star-fill"></i> 
-            </span>4.5 (2k+) 
+              <i className="bi bi-star-fill"></i>
+            </span>
+            4.5 (2k+)
             <span className="courseHeroLastUpdated ms-4 ">
               <i className="bi bi-calendar3"></i> Last Updated on 23 May, 2023
             </span>
           </div>
           <div className="d-flex">
-            <button className="courseHeroBtnPrimary btn btn-primary me-3 ">Enroll Now</button>
-            <button className="courseHeroBtnOutline btn btn-outline-primary ">Contact Us</button>
+            <button className="courseHeroBtnPrimary btn btn-primary me-3 ">
+              Enroll Now
+            </button>
+            <button className="courseHeroBtnOutline btn btn-outline-primary d-flex align-items-center gap-2">
+            <i class="bi bi-whatsapp fs-3 text-success"></i>  Contact Us
+            </button>
           </div>
         </div>
 
@@ -59,22 +82,21 @@ const CourseHero = () => {
               className="card-img-top courseHeroCardImage"
             />
 
-           <div
-              className="badge  text-black position-absolute" >
-              2023
-            </div>
+            <div className="badge  text-black position-absolute">2023</div>
             <div className="card-body text-start ">
-              <h5 className="fw-bold">The Full Stack <br/> React Course</h5>
+              <h5 className="fw-bold">
+                The Full Stack <br /> React Course
+              </h5>
               <p className="mb-0 lh-lg">
                 Build & Deploy E-Learning App <br />
                 <span className="fw-bold ">From Zero to Hero</span>
               </p>
               <p className="small mt-2">
-                The Advanced Front-End Programming course <br/> sharpens students
-                critical thinking, creativity, <br/> and analytical skills.
+                The Advanced Front-End Programming course <br /> sharpens
+                students critical thinking, creativity, <br /> and analytical
+                skills.
               </p>
             </div>
-            
           </div>
         </div>
       </div>

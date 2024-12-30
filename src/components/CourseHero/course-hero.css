@@ -28,6 +28,10 @@
   width: 100%;
 }
 
+.textalert{
+  color:#F95368;
+}
+
 .courseHeroBadge {
   background-color: var(--primary-color);
   color: #2563EB;
@@ -35,6 +39,9 @@
   padding: 0.4rem 1rem;
 }
 
+.strikedtext{
+  text-decoration:line-through;
+}
 
 
 .courseHeroTextMuted {
@@ -227,6 +234,6 @@
 
   .courseHeroBtnPrimary, 
   .courseHeroBtnOutline {
-    padding: 0.6rem 6rem;
+    padding: 0.3rem 4rem;
   }
 }
