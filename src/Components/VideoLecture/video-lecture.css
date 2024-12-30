@@ -1,12 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+
+.aside::-webkit-scrollbar {
+
+    width: 4px !important;
+    height: 6px !important;
+
+}
+
+
+.aside::-webkit-scrollbar-thumb {
+    background-color:  #4B5768;
+    border-radius: 100px;
+   
+}
+
+
+::-webkit-scrollbar-button {
+    height: 265px; 
+   
+  }
+
+::-webkit-scrollbar-track{
+    width: 20px!important;
+}
+
+
+
 button {
     width: 36px;
     height: 36px;
     font-size: 16px;
 
     margin: 5px;
-    
+
     cursor: pointer;
     background-color: #000000;
     opacity: 0.9;
@@ -55,6 +83,20 @@ progress::-webkit-progress-bar {
 
 }
 
+.more-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #656565;
+    margin-top: 30px;
+
+
+}
+
 .progress {
 
     width: 100%;
@@ -73,11 +115,18 @@ progress::-webkit-progress-value {
     top: 2px;
 }
 
+.video {
+    width: 95%;
+    margin: auto;
+    padding: 0px 20px;
+}
+
 .videoContainer {
     position: relative;
     margin: auto;
     text-align: center;
-    width: 95% !important;
+    /* width:13 */
+    width: 100% !important;
 }
 
 .controlsButton {
@@ -87,8 +136,102 @@ progress::-webkit-progress-value {
     opacity: 0;
 
 
+
+
+
 }
 
+.menu {
+    color: #1E1E1E;
+    font-weight: 800;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+
+.close {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 28.8px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    cursor: pointer;
+
+}
+
+.courseHeading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 10px;
+
+}
+
+.checkbox {
+    color: rgb(5, 155, 17);
+    background: rgb(234, 236, 234);
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.playIcon {
+
+    font-size: 20px;
+    border-radius: 5px;
+    color: #191D23;
+}
+
+.time {
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #64748B;
+
+
+}
+
+.videoTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #191D23;
+    cursor: pointer;
+
+
+}
+
+
+
+
+.aside {
+    padding: 20px;
+    border: 1px solid #DADADA;
+    height: 35rem;
+    overflow-y: scroll;
+    
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 16px;
+}
 
 .videoContainer:hover .controlsButton {
     opacity: 1;
@@ -99,7 +242,7 @@ progress::-webkit-progress-value {
 }
 
 .videoContent {
-    width: 95%;
+    /* width: 95%; */
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -146,7 +289,7 @@ progress::-webkit-progress-value {
     text-align: right;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    color:  #1B2128;
+    color: #1B2128;
 
 
 }
