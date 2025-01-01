@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.loader,
+.loader:after {
+  border-radius: 50%;
+  width: 10em;
+  height: 10em;
+}
+.loader {
+  margin-bottom: 1em;
+  font-size: 10px;
+  position: relative;
+  border-top: 1.1em solid #d9e2ff;
+  border-right: 1.1em solid #d9e2ff;
+  border-bottom: 1.1em solid #3d5cff;
+  border-left: 1.1em solid #d9e2ff;
+  transform: translateZ(0);
+  animation: loader 1.1s infinite linear;
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
