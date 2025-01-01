@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "HTML Algorithms",
+    "description": "Responsive design adapts websites to automatically adjust their layout and content based on the device's screen size and orientation, ensuring a seamless user experience.",
+    "type": "Quiz",
+    "dateCreated": "Dec 22, 11.30AM +04",
+    "grade": "89%"
+  },
+  {
+    "id": 2,
+    "title": "HTML Algorithms",
+    "description": "Responsive design adapts websites to automatically adjust their layout and content based on the device's screen size and orientation, ensuring a seamless user experience.",
+    "type": "Quiz",
+    "dateCreated": "Dec 22, 11.30AM +04",
+    "grade": "89%"
+  }
+]

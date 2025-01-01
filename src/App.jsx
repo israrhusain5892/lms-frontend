@@ -1,8 +1,7 @@
 
-import CourseBody from './components/CourseBody/CourseBody';
-import CourseHero from './components/CourseHero/CourseHero';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
+import TestsSection from './components/TestsSection/TestsSection';
 
 
 function App() {
@@ -10,10 +9,10 @@ function App() {
     <>
         
            <Header/>
-           
-           <CourseHero/>
 
-           <CourseBody/>
+           <TestsSection/>
+           
+           
 
            <Footer/>
         
