@@ -17,7 +17,13 @@ const TestsSection = () => {
 
   return (
     <section className="px-6 py-8 lg:w-[850px]">
-    <h1 className="mb-4 text-[#1e1e1e]"> Home  &gt; Test  &gt; HTML & CSS BASICS </h1>
+<h1 className="mb-4 text-[#1e1e1e]">
+  <nav aria-label="breadcrumb">
+    <span>
+      <a href="/">Home</a> &gt; <a href="/test">Test</a> &gt; HTML & CSS BASICS
+    </span>
+  </nav>
+</h1>
       <h1 className="text-2xl font-bold text-gray-800 mb-4">Data Structure & Algorithms</h1>
       <div className="space-y-4 bg-gray-100 p-6">
         {tests.map(({ id, title, description, type, dateCreated, grade }) => (
