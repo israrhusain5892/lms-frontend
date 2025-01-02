@@ -1,7 +1,8 @@
 
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-import TestsSection from './components/TestsSection/TestsSection';
+import MidtermTest from './components/MidtermTest/MidtermTest';
+
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
         
            <Header/>
 
-           <TestsSection/>
+          <MidtermTest/>
            
            
 
