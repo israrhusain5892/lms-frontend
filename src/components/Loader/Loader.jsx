@@ -1,5 +1,5 @@
 import { useState } from "react";
-import './loader.css'; // Ensure this file contains the CSS you provided
+import './loader.css'; // CSS file for Loader
 
 const EvaluationPopup = () => {
   const [isEvaluating, setIsEvaluating] = useState(false);
@@ -7,11 +7,11 @@ const EvaluationPopup = () => {
   const handleButtonClick = () => {
     setIsEvaluating(true);
 
-    // Simulate a delay for evaluation
+    // delay for evaluation
     setTimeout(() => {
       setIsEvaluating(false);
-      alert("Evaluation complete!"); // Replace with your logic
-    }, 31111000); // Example duration
+      alert("Evaluation complete!"); 
+    },3000); //  duration
   };
 
   return (
