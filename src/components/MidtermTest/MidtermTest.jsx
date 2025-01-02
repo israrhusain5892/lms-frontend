@@ -68,7 +68,7 @@ const MidtermTest = () => {
               Due date 22/09/2024
             </h3>
           </div>
-          <div className="border border-black p-4 mb-6">
+          <div className="border-2 border-black p-4 mb-6">
             {/* Text Editor Toolbar */}
             <textarea
               placeholder="Add Description Here"
@@ -77,31 +77,31 @@ const MidtermTest = () => {
             <div className="flex flex-col items-start justify-start mt-4">
             <div className="flex items-center flex-wrap gap-2 mb-4">
 
-              <button className="px-4 py-1 border border-[#94A3B8]  rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8]  rounded-md">
                 <i className="fa-solid fa-undo"></i>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <i className="fa-solid fa-redo"></i>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <i className="fa-solid fa-link"></i>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <b>B</b>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 Aa
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <i className="fa-solid fa-underline"></i>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <i className="fa-solid fa-list-ul"></i>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <i className="fa-solid fa-list-ol"></i>
               </button>
-              <button className="px-4 py-1 border border-gray-300 rounded-md">
+              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                 <i className="fa-solid fa-image"></i>
               </button>
             </div>
