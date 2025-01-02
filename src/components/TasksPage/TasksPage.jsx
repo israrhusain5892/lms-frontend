@@ -1,6 +1,6 @@
 import React from 'react';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import "./TasksPage.css" // Ensure you have react-bootstrap installed
+import "./TasksPage.css"
 import Task from './Tasks';
 
 const TasksPage = () => {

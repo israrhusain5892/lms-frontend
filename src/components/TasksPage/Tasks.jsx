@@ -1,18 +1,14 @@
 import React from 'react';
-
 const Task = ({ task }) => {
     return (
         <div
             className="task-container"
             style={{
                 borderRadius: '12px',
-                padding: '20px',// Updated top margin
+                padding: '20px',
                 backgroundColor: '#EEF2FF',
             }}
         >
-
-
-            {/* Task Details with View Button */}
             <div
                 style={{
                     display: 'flex',
@@ -34,7 +30,6 @@ const Task = ({ task }) => {
                             width: "max-content", color: '#656565', fontSize: '12px'
                         }}
                     >
-
                         {`Due: ${task.dueDate}`}
 
                     </div>
@@ -59,14 +54,10 @@ const Task = ({ task }) => {
 
 
             </div>
-
-            {/* Additional Task Details */}
             <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
 
                 <div>
-
-
                     <div
                         style={{
                             fontSize: '16px',
@@ -76,8 +67,6 @@ const Task = ({ task }) => {
                         Created Date: {task.createdDate}
                     </div>
                 </div>
-
-                {/* Task Status with Dynamic Color Based on Status */}
                 <div
                     className="task-status"
                     style={{
