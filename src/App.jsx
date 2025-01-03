@@ -1,15 +1,17 @@
-import TasksPage from "./components/TasksPage/TasksPage";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import NotificationPage from './components/NotificationPage/NotificationPage.jsx';
 function App() {
 
   return (
     <>
       <div>
-        <TasksPage />
+        <NotificationPage />
       </div>
     </>
   )
 }
 
 export default App;
+
+
+
+
