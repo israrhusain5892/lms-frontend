@@ -44,8 +44,6 @@ const announcementsData = [
     },
 ];
 
-
-
 const AnnouncementPage = () => {
     return (
         <>
