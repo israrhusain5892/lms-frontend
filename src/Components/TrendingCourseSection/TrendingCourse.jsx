@@ -1,11 +1,11 @@
 import React from 'react';
 import CourseCard from '../CourseCard/CourseCard';
 import './TrendingCourse.css';
-import imga from  '../../assets/imagea.png';
-import imgb from  '../../assets/imageb.png';
-import imgc from  '../../assets/imagec.png';
-import imgd from  '../../assets/imaged.png';
-import imge from  '../../assets/imagee.png';
+import imga from  '../../assets/images/imagea.png';
+import imgb from  '../../assets/images/imageb.png';
+import imgc from  '../../assets/images/imagec.png';
+import imgd from  '../../assets/images/imaged.png';
+import imge from  '../../assets/images/imagee.png';
 import { IoIosArrowForward } from "react-icons/io";
 
 

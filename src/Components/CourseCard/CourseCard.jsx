@@ -2,7 +2,7 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import './CourseCard.css';
-import star from '../../assets/star-filled.png';
+import star from '../../assets/images/star-filled.png';
 
 function CourseCard({course}) {
     return (
