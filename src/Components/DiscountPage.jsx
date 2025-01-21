@@ -1,16 +1,12 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import OfferImage from "../assets/images/OFFER.svg";
-
 import { Carousel, Image } from "react-bootstrap";
-
 import "../components/discount-page.css"
 
 function DiscountPage() {
   return (
     <Carousel indicators={false} controls={false}>
-      {/* Remove default arrows */}
-      {/* Carousel Item */}
       <Carousel.Item className="d-flex justify-content-center align-items-center text-white mt-5">
         <div
           className="position-relative rounded-2 "
@@ -65,15 +61,14 @@ function DiscountPage() {
             transform: "translateX(-50%)",
           }}
         >
-          {/* Oval Indicators */}
           {Array.from({ length: 5 }, (_, index) => (
             <div
               key={index}
               style={{
-                width: index === 2 ? "40px" : "20px", // Third one is rectangular
+                width: index === 2 ? "40px" : "20px",
                 height: "20px",
-                borderRadius: index === 2 ? "5px" : "50%", // Oval or rectangle
-                backgroundColor: index === 2 ? "#FAC840" : "#1A6EFC", // Updated active color
+                borderRadius: index === 2 ? "5px" : "50%",
+                backgroundColor: index === 2 ? "#FAC840" : "#1A6EFC",
                 margin: "0 5px",
               }}
             ></div>
