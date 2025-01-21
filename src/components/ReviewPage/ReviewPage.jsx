@@ -70,7 +70,6 @@ function ReviewPage() {
 
                 <div style={{ display: 'flex', alignItems: 'center', gap: '10px', width: '100%', height: '62px' }}>
                     <div className="d-flex align-items-center p-2" style={{ width: "100%", height: "34px" }}>
-                        {/* Left Rounded Image */}
                         <div className="me-3">
                             <img
                                 src={WomenImage}
@@ -79,14 +78,10 @@ function ReviewPage() {
                                 style={{ width: '32px', height: '32px', objectFit: 'cover', marginLeft: "11px" }}
                             />
                         </div>
-                        {/* Add Review Section */}
-                        <input style={{ backgroundColor: '#F2F4F7', width: "100%", border: "none", padding: "8px", }} placeholder="Add review" />
 
+                        <input style={{ backgroundColor: '#F2F4F7', width: "100%", border: "none", padding: "8px", }} placeholder="Add review" />
                     </div>
                 </div>
-
-                {/* TODO: create separate component */}
-                {/* Reviews */}
                 {DATA.map((item) => <ReviewCard review={item} key={item.id} />)}
 
             </div>
