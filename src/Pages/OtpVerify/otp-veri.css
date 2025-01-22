@@ -10,6 +10,7 @@
     --color-btn-primary: #3d5cff; /* Primary button background */
     --color-btn-primary-hover: #2447f8; /* Hover state for primary button */
     --color-text-secondary: #666; /* Secondary text color */
+    --color-border-primary: #c3c3c3; /* 1st border color */
 }
 
 /* Base styling for the body */
@@ -32,10 +33,11 @@
     background: var(--color-white); /* White background */
     padding: 1.25rem; /* Internal spacing */
     border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Subtle shadow for card effect */
+    /* box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);  */
+    border: 1px solid var(--color-border-primary);
     text-align: center; /* Center content */
     max-width: 25rem; /* Maximum width for responsiveness */
-    width: 90%; /* Flex width for smaller screens */
+     width: 90%;
 }
 
 /* Heading inside the OTP box */

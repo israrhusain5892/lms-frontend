@@ -1,5 +1,5 @@
 import { useState } from "react"; // Importing useState hook for state management
-import "./otp.css"; // Linking to the CSS file for styling
+import "./otp-veri.css"; // Linking to the CSS file for styling
 
 const OtpVerify = () => {
   const [otp, setOtp] = useState(new Array(6).fill("")); // State to store 6-digit OTP input
