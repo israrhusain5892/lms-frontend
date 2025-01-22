@@ -1,0 +1,190 @@
+/* Styling done based on specifications given in the Figma design */
+
+/* FONTS: Poppins and Inter */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* RESETS */
+/* NOTE: Universal selector is used. Merge accordingly. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* The following is needed to remove the arrow counter for input type of number */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+/* VARIABLES */
+.OTPVerificationMain {
+    /* COLORS */
+
+    /* Backgrounds */
+    --color-background-page: #ffffff; /* Page background color */
+  
+    /* Borders */
+    --color-border-primary: #c3c3c3; /* 1st border color */
+    --color-border-secondary: #d9d9d9; /* 2nd border color */
+    --color-border-tertiary: #dde2ed; /* 3rd border color */
+  
+    /* Text */
+    --color-text-heading: #000000; /* Heading text color */
+    --color-text-main: #858597; /* Main text color */
+    --color-text-error: #FF0000;
+  
+    /* Links and Buttons */
+    --color-action-primary: #3d5cff; /* Links and button backgrounds */
+    
+
+    /* FONTS */
+    --font-poppins: "Poppins", system-ui, sans-serif; /* Poppins font */
+    --font-inter: "Inter", system-ui, sans-serif; /* Inter font */
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+}
+  
+/* NOTE:
+The following styles on "#root" is required to center the page content.
+When merging, handle it accordingly.
+*/
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.OTPVerificationMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-page);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 0.525rem;
+    padding: 4rem 2rem;
+    max-width: 28.875rem;
+    width: 100%;
+    height: auto;
+}
+
+.OTPVerificationSection {
+    max-width: 24.1875rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.OTPVerificationContentContainer {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}
+
+.OTPVerificationHeader {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+
+.OTPVerificationTitle {
+    font-size: 2rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1.3;
+    letter-spacing: -0.01em;
+    color: var(--color-text-heading);
+    font-family: var(--font-poppins);
+    text-align: left; 
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.OTPVerificationDescription {
+    color: var(--color-text-main);
+    font-weight: var(--font-weight-normal);
+    font-size: 1rem;
+    line-height: 1.3;
+    font-family: var(--font-poppins);
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.OTPVerificationDescription span {
+    font-weight: var(--font-weight-medium);
+}
+
+.OTPVerificationFormFieldset {
+    border: 0;
+    padding: 0;
+}
+
+.OTPVerificationInputContainer {
+    display: flex;
+    gap: 0.625rem;
+}
+
+.userOTPInput {
+    min-width: 3.5rem;
+    width: 100%;
+    min-height: 3.8125rem;
+    height: auto;
+    border-radius: 0.625rem;
+    border: 1px solid var(--color-text-heading);
+    padding: 0.625rem;
+    text-align: center;
+    /* TODO:
+    Set a font size, and other typography styles.
+    Not Specified in Figma design.
+    */
+}
+
+/* ERRORS: Use the following in JSX when implementing it!  */
+
+/* Border color will change */
+.userOTPInput.invalidOTP {
+    border: 1px solid var(--color-text-error);
+}
+
+/* Error text  */
+.userOTPErrorText {
+    text-align: left;
+    color: var(--color-text-error);
+}
+
+/* FOOTER */
+
+.OTPVerificationFooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.OTPVerificationFooterText,
+.OTPVerificationFooterTimer {
+    font-family: var(--font-poppins);
+    font-weight: var(--font-weight-normal);
+    font-size: 1rem;
+    line-height: 1.25rem;
+    color: var(--color-text-main);
+}
+
+
+
