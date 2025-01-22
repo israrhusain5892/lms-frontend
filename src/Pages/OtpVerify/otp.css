@@ -5,18 +5,25 @@
     --color-background: #f9f9f9;
     --color-white: #fff;
     --color-text: #868e88;
-    --color-border: #ff0000; /* Border color for input fields */
-    --color-focus: blue; /* Focus color for input fields */
-    --color-btn-primary: #3d5cff; /* Primary button background */
-    --color-btn-primary-hover: #2447f8; /* Hover state for primary button */
-    --color-text-secondary: #666; /* Secondary text color */
+    --color-border: #ff0000;
+    /* Border color for input fields */
+    --color-focus: blue;
+    /* Focus color for input fields */
+    --color-btn-primary: #3d5cff;
+    /* Primary button background */
+    --color-btn-primary-hover: #2447f8;
+    /* Hover state for primary button */
+    --color-text-secondary: #666;
+    /* Secondary text color */
 }
 
 /* Base styling for the body */
 #root {
     margin: 0;
-    font-family: 'poppins', system-ui, sans-serif; /* Apply Poppins font */
-    background-color: var(--color-background); /* Light gray background */
+    font-family: 'Poppins', system-ui, sans-serif;
+    /* Apply Poppins font */
+    background-color: var(--color-background);
+    /* Light gray background */
 }
 
 /* Center the OTP container vertically and horizontally */
@@ -24,130 +31,198 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Full viewport height */
+    min-height: 100vh;
+    /* Full viewport height */
 }
 
 /* Styling for the OTP input box */
 .otp-box {
-    background: var(--color-white); /* White background */
-    padding: 1.25rem; /* Internal spacing */
-    border-radius: 0.5rem; /* Rounded corners */
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2); /* Subtle shadow for card effect */
-    text-align: center; /* Center content */
-    max-width: 25rem; /* Maximum width for responsiveness */
-    width: 90%; /* Flex width for smaller screens */
+    background: var(--color-white);
+    /* White background */
+    padding: 3.5rem 2.3rem;
+    /* Internal spacing */
+    border-radius: 0.5rem;
+    /* Rounded corners */
+    border: 1px solid #C3C3C3;
+    /* Subtle shadow for card effect */
+    text-align: center;
+    /* Center content */
+    max-width: 25rem;
+    /* Maximum width for responsiveness */
+    width: 90%;
+    /* Flex width for smaller screens */
+    /* margin: auto; */
 }
 
 /* Heading inside the OTP box */
 .otp-box h2 {
-    font-size: 2rem; /* Large font size for title */
-    margin-bottom: 0.625rem; /* Space below heading */
-    text-align: start; /* Align text to the left */
+    font-size: 2rem;
+    /* Large font size for title */
+    margin-bottom: 0.625rem;
+    /* Space below heading */
+    text-align: start;
+    /* Align text to the left */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    line-height: 41.6px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#000000;
+
+
 }
 
 /* Descriptive text below the heading */
 .otp-box p {
-    text-align: start; /* Left alignment for better UX */
-    font-size: 0.875rem; /* Slightly smaller font */
-    color: var(--color-text); /* Use secondary text color */
-    margin-bottom: 1.25rem; /* Space below text */
+    text-align: start;
+    /* Left alignment for better UX */
+    font-size: 0.875rem;
+    /* Slightly smaller font */
+    color: var(--color-text);
+    /* Use secondary text color */
+    margin-bottom: 1.25rem;
+    /* Space below text */
 }
 
 /* Highlight text within the paragraph */
 .otp-box span {
-    font-weight: bold; /* Make span text bold */
+    font-weight: bold;
+    /* Make span text bold */
 }
 
 /* Input container for OTP fields */
 .otp-inputs {
     display: flex;
-    justify-content: start; /* Align inputs to the start */
-    gap: 0.625rem; /* Space between inputs */
-    margin-bottom: 1.25rem; /* Space below inputs */
+    justify-content: start;
+    /* Align inputs to the start */
+    gap: 0.625rem;
+    /* Space between inputs */
+    margin-bottom: 1.25rem;
+    /* Space below inputs */
 }
 
 /* Individual OTP input fields */
 .otp-input {
-    width: 3rem; /* Fixed width for input */
-    height: 3.5rem; /* Fixed height for input */
-    font-size: 1.125rem; /* Large font for readability */
-    text-align: center; /* Center-align text */
-    border: 0.0625rem solid var(--color-border); /* Red border */
-    border-radius: 0.6rem; /* Slightly rounded corners */
-    outline: none; /* Remove default outline */
+    width: 3rem;
+    /* Fixed width for input */
+    height: 3.5rem;
+    /* Fixed height for input */
+    font-size: 1.125rem;
+    /* Large font for readability */
+    text-align: center;
+    /* Center-align text */
+    border: 0.0625rem solid var(--color-border);
+    /* Red border */
+    border-radius: 0.6rem;
+    /* Slightly rounded corners */
+    outline: none;
+    /* Remove default outline */
 }
 
 /* Focus effect for OTP input fields */
 .otp-input:focus {
-    border-color: var(--color-focus); /* Blue border on focus */
-    box-shadow: 0 0 0.25rem var(--color-focus); /* Glow effect on focus */
+    border-color: var(--color-focus);
+    /* Blue border on focus */
+    box-shadow: 0 0 0.25rem var(--color-focus);
+    /* Glow effect on focus */
 }
 
 /* Action buttons and links section */
 .otp-actions {
     display: flex;
-    justify-content: space-between; /* Align actions apart */
-    font-size: 0.875rem; /* Small text */
-    margin-bottom: 0.625rem; /* Space below actions */
+    justify-content: space-between;
+    /* Align actions apart */
+    font-size: 0.875rem;
+    /* Small text */
+    margin-bottom: 0.625rem;
+    /* Space below actions */
 }
 
 /* Resend button for OTP */
 .resend-btn {
-    color: var(--color-btn-primary); /* Blue text */
-    background: none; /* Transparent background */
-    border: none; /* Remove button border */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Pointer cursor on hover */
+    color: var(--color-btn-primary);
+    /* Blue text */
+    background: none;
+    /* Transparent background */
+    border: none;
+    /* Remove button border */
+    font-weight: bold;
+    /* Bold text */
+    cursor: pointer;
+    /* Pointer cursor on hover */
 }
 
 /* Hover effect for resend button */
 .resend-btn:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline;
+    /* Add underline on hover */
 }
 
 /* Timer styling for OTP */
 .otp-timer {
     display: flex;
-    justify-content: space-between; /* Space timer apart */
-    font-size: 0.875rem; /* Small font */
-    color: var(--color-text-secondary); /* Gray text color */
-    margin-bottom: 1.25rem; /* Space below timer */
+    justify-content: space-between;
+    /* Space timer apart */
+    font-size: 0.875rem;
+    /* Small font */
+    color: var(--color-text-secondary);
+    /* Gray text color */
+    margin-bottom: 1.25rem;
+    /* Space below timer */
 }
 
 /* Verify button */
 .verify-btn {
-    width: 100%; /* Full width */
-    background: var(--color-btn-primary); /* Primary blue background */
-    color: var(--color-white); /* White text */
-    border: none; /* Remove border */
-    padding: 0.625rem; /* Button padding */
-    font-size: 1rem; /* Font size for button text */
-    border-radius: 0.25rem; /* Slightly rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%;
+    /* Full width */
+    background: var(--color-btn-primary);
+    /* Primary blue background */
+    color: var(--color-white);
+    /* White text */
+    border: none;
+    /* Remove border */
+    padding: 0.625rem;
+    /* Button padding */
+    font-size: 1rem;
+    /* Font size for button text */
+    border-radius: 0.25rem;
+    /* Slightly rounded corners */
+    cursor: pointer;
+    /* Pointer cursor on hover */
 }
 
 /* Hover effect for the verify button */
 .verify-btn:hover {
-    background: var(--color-btn-primary-hover); /* Darker blue on hover */
+    background: var(--color-btn-primary-hover);
+    /* Darker blue on hover */
 }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 30em) {
+
     /* Adjust padding for smaller screens */
     .otp-box {
-        padding: 1rem; /* Reduced padding */
+        padding: 1rem;
+        /* Reduced padding */
     }
 
     /* Smaller input fields */
     .otp-input {
-        width: 2.1875rem; /* Adjusted width */
-        height: 2.1875rem; /* Adjusted height */
-        font-size: 1rem; /* Adjusted font size */
+        width: 2.1875rem;
+        /* Adjusted width */
+        height: 2.1875rem;
+        /* Adjusted height */
+        font-size: 1rem;
+        /* Adjusted font size */
     }
 
     /* Smaller verify button */
     .verify-btn {
-        padding: 0.5rem; /* Reduced padding */
-        font-size: 0.875rem; /* Smaller text size */
+        padding: 0.5rem;
+        /* Reduced padding */
+        font-size: 0.875rem;
+        /* Smaller text size */
     }
 }
