@@ -5,8 +5,11 @@ import Header from './components/Header/Header';
 import TestsSection from './components/TestsSection/TestsSection';
 import QuizPage from './pages/QuizPage/QuizPage';  // Import your QuizPage component
 
+// import QuizResultPage from './pages/QuizResultPage/QuizResultPage';
+
 function App() {
   return (
+
     <Router>
       <Header />
       <Routes>
@@ -18,6 +21,7 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+
   );
 }
 
