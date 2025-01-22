@@ -3,13 +3,18 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/jsx-key */
 
-import './quiz-result-page.css';
+import './quiz-result-page.css'
 import { GoArrowLeft } from "react-icons/go";
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import Popup from '../../components/PopUps/PopUps';
+
+
 const QuizResultPage = () => {
 
+    const navigate = useNavigate();
 
     const questions = [
 
@@ -61,6 +66,15 @@ const QuizResultPage = () => {
     ]
 
 
+    const [backpopup, setbackpopup] = useState(false);
+
+    const backHandle = () => {
+      setbackpopup(false);
+      navigate('/');
+    };
+    const backCancel = () => {
+      setbackpopup(false);
+    }
 
 
 
@@ -71,7 +85,15 @@ const QuizResultPage = () => {
             {/* header page */}
             <div className='headerContainer d-flex justify-content-between'>
                 <div className='leftPart d-flex align-items-center gap-3'>
-                 <Link to="/"> <button className='backBtn'><GoArrowLeft className='backIcon' /> Back</button>  </Link>
+                  <button className='backBtn' onClick={()=>setbackpopup(true)}><GoArrowLeft className='backIcon' /> Back</button> 
+                 {backpopup && (
+                              <Popup
+      title="Are You Sure You Want To Leave?"
+      description="You haven't completed this assignment yet. Are you sure you want to leave without submitting it?"
+      onContinue={backHandle}
+      onCancel={backCancel}
+    />
+      )}
                     <div>
                         <p className='quiz'>Quiz 1:Data Structure & Algorithms</p>
                         <p className='quizAssign'>Assignment 1 . 30 min</p>
@@ -87,7 +109,7 @@ const QuizResultPage = () => {
                     <p>Your Grade: <span>35.89%</span></p>
                     <h6>You need at least 74% to pass. We keep your highest score.</h6>
                 </div>
-                <button>Back</button>
+                <button onClick={()=>setbackpopup(true)}>Back</button>
             </div>
             <form className='quizContainer' >
 
