@@ -1,7 +1,13 @@
+Link/* eslint-disable react/no-unescaped-entities */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/jsx-key */
 
 import './quiz-result-page.css';
 import { GoArrowLeft } from "react-icons/go";
 import { useState, useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Link } from 'react-router-dom';
 const QuizResultPage = () => {
 
 
@@ -65,7 +71,7 @@ const QuizResultPage = () => {
             {/* header page */}
             <div className='headerContainer d-flex justify-content-between'>
                 <div className='leftPart d-flex align-items-center gap-3'>
-                    <button className='backBtn'><GoArrowLeft className='backIcon' /> Back</button>
+                 <Link to="/"> <button className='backBtn'><GoArrowLeft className='backIcon' /> Back</button>  </Link>
                     <div>
                         <p className='quiz'>Quiz 1:Data Structure & Algorithms</p>
                         <p className='quizAssign'>Assignment 1 . 30 min</p>
@@ -93,7 +99,7 @@ const QuizResultPage = () => {
                             return <div className='questionContainer d-flex align-items-start justify-content-between '>
                                 <div className='question'>
                                     <p>{question.id}. {question.question}</p>
-                                    <div class="mt-4">
+                                    <div className="mt-4">
                                         {
                                             question.options?.map((option, index) => {
                                                 return <><label key={index}>
@@ -147,7 +153,7 @@ const QuizResultPage = () => {
 
 
 
-                <button type="submit" className='submitBtn'>Retry</button>
+                <Link to="/quiz"><button type="submit" className='submitBtn'>Retry</button></Link>
             </form>
         </div>
     )

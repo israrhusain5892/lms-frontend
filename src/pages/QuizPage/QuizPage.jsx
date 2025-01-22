@@ -3,7 +3,9 @@
 
 import './quiz-page.css';
 import { GoArrowLeft } from "react-icons/go";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 const QuizPage = () => {
 
 
@@ -139,7 +141,7 @@ const QuizPage = () => {
                   {/* header page */}
                   <div className='headerContainer d-flex justify-content-between'>
                         <div className='leftPart d-flex align-items-center gap-3'>
-                              <button className='backBtn'><GoArrowLeft className='backIcon' /> Back</button>
+                        <Link to="/"> <button className='backBtn'><GoArrowLeft className='backIcon' /> Back</button>  </Link>
                               <div>
                                     <p className='quiz'>Quiz 1:Data Structure & Algorithms</p>
                                     <p className='quizAssign'>Assignment 1 . 30 min</p>
@@ -208,7 +210,7 @@ const QuizPage = () => {
                         </label>
                         {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
                         <p className='last'>You must select the checkbox in order to submit the assignment</p>
-                        <button type="submit" className='submitBtn'>Submit</button>
+                       <Link to="/QuizResultPage" ><button type="submit" className='submitBtn'>Submit</button>  </Link>
                   </form>
             </div>
       )

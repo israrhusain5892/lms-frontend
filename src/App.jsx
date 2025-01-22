@@ -5,7 +5,7 @@ import Header from './components/Header/Header';
 import TestsSection from './components/TestsSection/TestsSection';
 import QuizPage from './pages/QuizPage/QuizPage';  // Import your QuizPage component
 
-// import QuizResultPage from './pages/QuizResultPage/QuizResultPage';
+import QuizResultPage from './pages/QuizResultPage/QuizResultPage';
 
 function App() {
   return (
@@ -18,6 +18,8 @@ function App() {
 
         {/* Route for QuizPage */}
         <Route path="/quiz" element={<QuizPage />} />
+
+        <Route path="/QuizResultPage" element={<QuizResultPage />} />
       </Routes>
       <Footer />
     </Router>
