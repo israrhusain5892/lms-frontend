@@ -1,14 +1,20 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./popups.css";
 
 const Popup = ({ title, description, status, onContinue }) => {
   const [isOpen, setIsOpen] = useState(false);
 
+  
+  useEffect(() => {
+    setIsOpen(true)
+  },[])
+  
   const handleClose = () => {
     setIsOpen(false);
+  
   };
-
+  
   const handleContinue = () => {
     if (onContinue) onContinue();
     setIsOpen(false);
@@ -17,13 +23,7 @@ const Popup = ({ title, description, status, onContinue }) => {
   return (
     <div>
       {/* Button to Open the Popup */}
-      <button
-        className="SubmitWithoutFinishingbutton m-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700"
-        onClick={() => setIsOpen(true)}
-      >
-        Submit Quiz
-      </button>
-
+      
       {/* Popup Modal */}
       {isOpen && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">

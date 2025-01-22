@@ -6,7 +6,8 @@ import TestsSection from './components/TestsSection/TestsSection';
 import QuizPage from './pages/QuizPage/QuizPage';  
 import QuizResultPage from './pages/QuizResultPage/QuizResultPage';
 import Popup from './components/PopUps/PopUps';
-import Loader from './components/Loader/Loader';
+// import Loader from './components/Loader/Loader';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -22,13 +23,13 @@ function App() {
         <Route path="/quiz" element={<QuizPage />} />
 
         <Route path="/QuizResultPage" element={<QuizResultPage />} />
+
+        <Route path="/submitpopup" element={<Popup />} />
       </Routes>
       <Footer />
     </Router>
-        
-           <Header/>
 
-           <Popup
+           {/* <Popup
       title="Are You Sure You Want To Leave?"
       description="You haven't completed this assignment yet. Are you sure you want to leave without submitting it?"
       onContinue={() => alert("You chose to continue!")}
@@ -44,10 +45,8 @@ function App() {
   description="We detected some incomplete or invalid answers. Do you still want to submit this assessment?"
   status="wrong"
   onContinue={() => console.log("Continuing...")}
-/>
+/> */}
 
-                  
-            <Loader/>
     </>
   );
 }

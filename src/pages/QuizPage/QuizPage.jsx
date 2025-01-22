@@ -6,6 +6,8 @@ import { GoArrowLeft } from "react-icons/go";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Popup from '../../components/PopUps/PopUps'; // Import your Popup component
+
 const QuizPage = () => {
 
 
@@ -83,6 +85,8 @@ const QuizPage = () => {
       const [isChecked, setIsChecked] = useState(false); // Track checkbox state
       const [error, setError] = useState(""); // Track validation error message
 
+      const [showPopup, setShowPopup] = useState(false); // State to control popup visibility
+
       const handleCheckboxChange = (e) => {
             setIsChecked(e.target.checked); // Update checkbox state
             setError(""); // Clear error when checkbox is toggled
@@ -123,15 +127,23 @@ const QuizPage = () => {
                   return;
             }
             else {
-                  const data = Object.keys(selectedOptions).map(questionId => ({
-                        question_id: parseInt(questionId),
-                        selected_option: selectedOptions[questionId],
-                  }))
+                  setShowPopup(true);
 
-                  console.log(data)
 
             }
+
       }
+
+      
+  const handleContinue = () => {
+      setShowPopup(false);
+      alert("Quiz submitted!");
+    };
+  
+   
+    const handleCancel = () => {
+      setShowPopup(false);
+    };
 
 
 
@@ -210,8 +222,17 @@ const QuizPage = () => {
                         </label>
                         {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
                         <p className='last'>You must select the checkbox in order to submit the assignment</p>
-                       <Link to="/QuizResultPage" ><button type="submit" className='submitBtn'>Submit</button>  </Link>
+                        <button type="submit" className='submitBtn'>Submit</button>
                   </form>
+
+                  {showPopup && (
+        <Popup
+          title="Ready to Submit?"
+          description="Are you sure you want to submit the test? Please double-check your answers before proceeding."
+          onContinue={handleContinue}
+          onCancel={handleCancel}
+        />
+      )}
             </div>
       )
 }
