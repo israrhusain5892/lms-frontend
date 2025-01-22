@@ -1,5 +1,6 @@
 // USE THIS TO VIEW YOUR COMPONENT RENDER
 // Step 1: import your component here
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import QuizPage from "./pages/QuizPage/QuizPage";
 
