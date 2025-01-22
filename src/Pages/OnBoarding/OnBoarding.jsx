@@ -1,10 +1,10 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
-import './loginpage.css';
+import './OnBoarding.css';
 import { useNavigate } from 'react-router-dom';
-import loginImage from '../assets/login.png';
-import accessImage from '../assets/access.png';
-import accessImage2 from '../assets/access2.png';
+import loginImage from '../../assets/images/login.png';
+import accessImage from '../../assets/images/access.png';
+import accessImage2 from '../../assets/images/access2.png';
 
 const AssignmentCarousel = () => {
   const navigate = useNavigate();
