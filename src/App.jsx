@@ -1,10 +1,10 @@
 
-import OtpVerification from './components/OtpVerification/OtpVerification';
+import OtpVerify from './Pages/OtpVerify/OtpVerify';
 const App = () => {
   return (
     <>
 
-    <OtpVerification/>
+    <OtpVerify/>
       
     </>
   )
