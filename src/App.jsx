@@ -1,5 +1,5 @@
 import './App.css';
-import OTPVerification from './Pages/OTPVerification';
+import OTPVerification from './Pages/OtpVerifyPage/OTPVerification';
 
 function App() {
   

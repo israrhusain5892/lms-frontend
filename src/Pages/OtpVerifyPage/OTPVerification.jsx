@@ -1,3 +1,5 @@
+import './otp-verify.css';
+
 function OTPVerification() {
     return (
         <main className="OTPVerificationMain">
