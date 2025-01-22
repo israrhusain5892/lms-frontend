@@ -3,6 +3,10 @@ import tests from "../../utils/TestsSection/test.json"; // Import JSON data
 import "./testsection.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
+import { Link } from "react-router-dom";
+
+
+
 const TestsSection = () => {
   const [openIds, setOpenIds] = useState([1]); // Track open dropdowns first one already opened 
 
@@ -50,7 +54,11 @@ const TestsSection = () => {
                 <p className="text-[#475569] mt-2">{description}</p>
                 <div className="flex items-center justify-between mt-4">
                   <span className="text-base font-semibold text-black">Type Of Test</span>
-                  <span className="text-sm font-medium p-2 rounded-lg bg-blue-600 text-white">{type}</span>
+                  {/* <span className="text-sm font-medium p-2 rounded-lg bg-blue-600 text-white">{type}</span> */}
+                  <Link to={`/${type}`} className="text-sm font-medium p-2 rounded-lg bg-blue-600 text-white">
+  {type}
+</Link>
+
                 </div>
                 <div className="flex items-center justify-between mt-2">
                   <div>
