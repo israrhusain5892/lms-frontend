@@ -78,6 +78,8 @@ When merging, handle it accordingly.
     max-width: 28.875rem;
     width: 100%;
     height: auto;
+    animation: moveRightToLeft .5s linear;
+    transition: 1s;
 }
 
 .OTPVerificationSection {
@@ -88,6 +90,7 @@ When merging, handle it accordingly.
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    
 }
 
 .OTPVerificationContentContainer {
@@ -185,6 +188,15 @@ When merging, handle it accordingly.
     line-height: 1.25rem;
     color: var(--color-text-main);
 }
+
+@keyframes moveRightToLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-10%);
+    }
+  }
 
 
 

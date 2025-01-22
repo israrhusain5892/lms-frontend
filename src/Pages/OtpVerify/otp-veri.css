@@ -39,6 +39,8 @@
 /* Styling for the OTP input box */
 .otp-box {
     background: var(--color-white);
+    animation: moveRightToLeft .5s linear;
+    transition: 1s;
     /* White background */
     padding: 3.5rem 2.12rem;
     /* Internal spacing */
@@ -200,6 +202,15 @@
     background: var(--color-btn-primary-hover);
     /* Darker blue on hover */
 }
+
+@keyframes moveRightToLeft {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(-10%);
+    }
+  }
 
 /* Responsive styles for smaller screens */
 @media (max-width: 30em) {
