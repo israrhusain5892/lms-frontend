@@ -1,7 +1,7 @@
-
+import './App.css';
 import AssignmentCarousel from './Pages/OnBoarding/OnBoarding';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
-// import 'bootstrap/dist/css/bootstrap.min.css'
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 function App() {
   return (
@@ -17,6 +17,13 @@ function App() {
   );
 }
 
-
+// const NextPage = () => {
+//   return (
+//     <div style={{ textAlign: 'center', marginTop: '100px' }}>
+//       <h1>Welcome to the next page!</h1>
+//       <p>This is where you land after clicking the "Skip" button.</p>
+//     </div>
+//   );
+// };
 
 export default App;
