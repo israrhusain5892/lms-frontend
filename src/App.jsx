@@ -1,7 +1,8 @@
-import './App.css';
+// import './App.css';
 import AssignmentCarousel from './Pages/OnBoarding/OnBoarding';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import SignUpPage from './Pages/SignupPage/SignUpPage';
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<AssignmentCarousel />} />
-        {/* <Route path="/next-page" element={<NextPage />} /> */}
+        <Route path="/signup" element={<SignUpPage />} />
       </Routes>
     </Router>
     </>

@@ -1,7 +1,7 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import './OnBoarding.css';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import loginImage from '../../assets/images/login.png';
 import accessImage from '../../assets/images/access.png';
 import accessImage2 from '../../assets/images/access2.png';
@@ -66,9 +66,10 @@ const AssignmentCarousel = () => {
         </Carousel>
       </div>
       <div className="loginRight">
-        <a href="#" className="" onClick={() => navigate('/next-page')}>
-          Skip
-        </a>
+        <Link className="skip" to={"/signup"}>Skip</Link>
+        {/* <a href="#" className="" onClick={() => navigate('/signup')}> */}
+          {/* Skip */}
+        {/* </a> */}
       </div>
     </div>
   );
