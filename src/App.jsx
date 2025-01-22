@@ -5,6 +5,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import SignUpPage from './Pages/SignupPage/SignUpPage';
 import './App.css';
 import OTPVerification from './Pages/OtpVerifyPage/OTPVerification';
+import OtpVerify from './Pages/OtpVerify/OtpVerify';
 
 function App() {
   return (
@@ -15,20 +16,15 @@ function App() {
         <Route path="/" element={<AssignmentCarousel />} />
         <Route path="/signup" element={<SignUpPage />} />
         <Route path="/otp" element={<OTPVerification />} />
+        <Route path="/otp-verify" element={<OtpVerify/>} />
       </Routes>
-    </Router>
       
+    
+    </Router>
     </>
-  );
+
+  )
 }
 
-// const NextPage = () => {
-//   return (
-//     <div style={{ textAlign: 'center', marginTop: '100px' }}>
-//       <h1>Welcome to the next page!</h1>
-//       <p>This is where you land after clicking the "Skip" button.</p>
-//     </div>
-//   );
-// };
-
 export default App;
+
