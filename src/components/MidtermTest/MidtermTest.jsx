@@ -1,7 +1,41 @@
+import { useState } from "react";
 import "./midterm.css";
 import pdf from '../../assets/images/pdf.png';
 
 const MidtermTest = () => {
+
+
+  const [text, setText] = useState("");
+  const [undoStack, setUndoStack] = useState([]);
+  const [redoStack, setRedoStack] = useState([]);
+
+  const handleTextChange = (e) => {
+    const newValue = e.target.value;
+    setUndoStack((prev) => [...prev, text]); // Save the current state to undo stack
+    setRedoStack([]); // Clear the redo stack whenever a new change is made
+    setText(newValue);
+  };
+
+  const handleUndo = () => {
+    if (undoStack.length > 0) {
+      const lastValue = undoStack.pop(); // Get the last value
+      setRedoStack((prev) => [...prev, text]); // Save the current state to redo stack
+      setText(lastValue); // Update the text with the previous value
+      setUndoStack([...undoStack]); // Update the undo stack
+    }
+  };
+
+  const handleRedo = () => {
+    if (redoStack.length > 0) {
+      const nextValue = redoStack.pop(); // Get the next value
+      setUndoStack((prev) => [...prev, text]); // Save the current state to undo stack
+      setText(nextValue); // Update the text with the next value
+      setRedoStack([...redoStack]); // Update the redo stack
+    }
+  };
+
+
+  
   return (
     <div className="p-6 min-h-screen flex flex-col">
       {/* Breadcrumb Section */}
@@ -61,56 +95,72 @@ const MidtermTest = () => {
           </div>
         </div>
         {/* Attachments Section */}
+        
         <div>
-          <div className="flex justify-between items-center">
-            <h3 className="text-lg font-semibold text-black mb-2">Attachments (1)</h3>
-            <h3 className="text-lg font-semibold text-[#fc0909] mb-2 mr-2">
-              Due date 22/09/2024
-            </h3>
+      <div className="flex justify-between items-center">
+        <h3 className="text-lg font-semibold text-black mb-2">Attachments (1)</h3>
+        <h3 className="text-lg font-semibold text-[#fc0909] mb-2 mr-2">
+          Due date 22/09/2024
+        </h3>
+      </div>
+      <div className="border-2 border-black p-4 mb-6">
+        {/* Text Editor */}
+        <textarea
+          placeholder="Add Description Here"
+          className="w-full h-80 border border-gray-300 rounded-md p-2 text-sm text-gray-700 focus:outline-none focus:ring focus:ring-blue-300 resize-none"
+          value={text}
+          onChange={handleTextChange}
+        ></textarea>
+        <div className="flex flex-col items-start justify-start mt-4">
+          <div className="flex items-center flex-wrap gap-2 mb-4">
+            {/* Undo Button */}
+            <button
+              onClick={handleUndo}
+              className={`px-4 py-1 border-2 border-[#94A3B8] rounded-md ${
+                undoStack.length === 0 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              disabled={undoStack.length === 0}
+            >
+              <i className="fa-solid fa-undo"></i>
+            </button>
+            {/* Redo Button */}
+            <button
+              onClick={handleRedo}
+              className={`px-4 py-1 border-2 border-[#94A3B8] rounded-md ${
+                redoStack.length === 0 ? "opacity-50 cursor-not-allowed" : ""
+              }`}
+              disabled={redoStack.length === 0}
+            >
+              <i className="fa-solid fa-redo"></i>
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              <i className="fa-solid fa-link"></i>
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              <b>B</b>
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              Aa
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              <i className="fa-solid fa-underline"></i>
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              <i className="fa-solid fa-list-ul"></i>
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              <i className="fa-solid fa-list-ol"></i>
+            </button>
+            <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
+              <i className="fa-solid fa-image"></i>
+            </button>
           </div>
-          <div className="border-2 border-black p-4 mb-6">
-            {/* Text Editor Toolbar */}
-            <textarea
-              placeholder="Add Description Here"
-              className="w-full h-80 border border-gray-300 rounded-md p-2 text-sm text-gray-700 focus:outline-none focus:ring focus:ring-blue-300 resize-none"
-            ></textarea>
-            <div className="flex flex-col items-start justify-start mt-4">
-            <div className="flex items-center flex-wrap gap-2 mb-4">
-
-              <button className="px-4 py-1 border-2 border-[#94A3B8]  rounded-md">
-                <i className="fa-solid fa-undo"></i>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <i className="fa-solid fa-redo"></i>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <i className="fa-solid fa-link"></i>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <b>B</b>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                Aa
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <i className="fa-solid fa-underline"></i>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <i className="fa-solid fa-list-ul"></i>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <i className="fa-solid fa-list-ol"></i>
-              </button>
-              <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                <i className="fa-solid fa-image"></i>
-              </button>
-            </div>
-              <button className="px-10 py-3 bg-[#3D5CFF] text-white text-sm rounded-md hover:bg-blue-700">
-                Add
-              </button>
-            </div>
-          </div>
+          <button className="px-10 py-3 bg-[#3D5CFF] text-white text-sm rounded-md hover:bg-blue-700">
+            Add
+          </button>
         </div>
+      </div>
+    </div>
         {/* Submit Button */}
         <div className="text-right">
           <button className="px-12 py-3 bg-[#3D5CFF] text-white text-sm rounded-md hover:bg-blue-700">
