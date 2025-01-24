@@ -42,6 +42,9 @@
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 600;
+    display: block;
+    margin: auto;
+    width: 100%;
 }
   
 /* NOTE:
@@ -262,9 +265,10 @@ When merging, handle it accordingly.
 
 
 /* NOTE: Kept the following uncommented for now. Will tackle this later. */
- /* @media (max-width: 768px) {
+  @media (max-width: 768px) {
     .signUpMain{
-        width: 90%!important;
+        width: 98%!important;
+        padding: 2rem 2rem;
     }
     .signUpSection {
         width: 100%!important;
@@ -281,13 +285,13 @@ When merging, handle it accordingly.
      
     .signUpFormUserMobileNumberInput {
        
-        width: 80%!important;
+        width: 100%!important;
     }
 
     .signUpFormGetCodeButton{
         width: 100%;
     }
-}  */
+}  
 
  
 

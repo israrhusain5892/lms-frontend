@@ -6,11 +6,12 @@ import SignUpPage from './Pages/SignupPage/SignUpPage';
 // import './App.css';
 import OTPVerification from './Pages/OtpVerifyPage/OTPVerification';
 import OtpVerify from './Pages/OtpVerify/OtpVerify';
-
+// import ProgressBar from './components/ProgressBar/ProgressBar';
 function App() {
   return (
-    <>
-   
+    <div style={{width:'100%'}}>
+      {/* <LinearProgress /> */}
+      
     <Router>
       <Routes>
         <Route path="/" element={<AssignmentCarousel />} />
@@ -21,7 +22,7 @@ function App() {
       
     
     </Router>
-    </>
+    </div>
 
   )
 }

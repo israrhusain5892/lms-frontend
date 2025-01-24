@@ -1,6 +1,8 @@
 import { useState } from "react";
 import googleLogo from "../../assets/images/google-logo.png";
 import './sign-up.css';
+import ProgressBar from '../../components/ProgressBar/ProgressBar';
+import LinearProgress from '@mui/material/LinearProgress';
 
 function SignUpPage() {
     const [userMobileNumber, setUserMobileNumber] = useState(""); // To store an manage user's mobile number
@@ -36,7 +38,16 @@ function SignUpPage() {
 
 
     return (
-        <main className="signUpMain">
+        <div style={{paddingTop:0, marginTop:0, width:'100%'}}>
+       
+      
+
+        
+       
+       <ProgressBar/>
+      
+        <div className="signUpMain">
+           
             <section className="signUpSection">
                 <div className="signUpContentContainer">
                     <div className="signUpContent">
@@ -97,8 +108,12 @@ function SignUpPage() {
                     </button>
                 </footer>
             </section>
-        </main>
+        </div>
+      
+        </div>
+
     )
+    
 }
 
 export default SignUpPage;
