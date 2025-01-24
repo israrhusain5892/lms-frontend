@@ -9,11 +9,12 @@ const MidtermTest = () => {
   const [showLinkInput, setShowLinkInput] = useState(false); // State for showing input fields
   const [url, setUrl] = useState(""); // URL input
   const [urlName, setUrlName] = useState(""); // URL name input
-  const [links, setLinks] = useState([]); // Store added links
+  const [links, setLinks] = useState([]); // Storedd links
   const [images, setImages] = useState([]);
   const [showUploadModal, setShowUploadModal] = useState(false);
-
-
+  const [isCapitalized, setIsCapitalized] = useState(false);
+  
+  
   const handleTextChange = (e) => {
     const newValue = e.target.value;
     setUndoStack((prev) => [...prev, text]);
@@ -54,16 +55,27 @@ const MidtermTest = () => {
     }
   };
 
-  const handleCapitalize = () => {
-    const capitalizedText = text
-      .split(" ")
-      .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-      .join(" ");
-    setText(capitalizedText);
-    setUndoStack((prev) => [...prev, text]);
-    setRedoStack([]);
-  };
+    
+  const handleToggle = () => {
+    setUndoStack((prev) => [...prev, text]); // Save the current state to undo stack
+    setRedoStack([]); // Clear the redo stack
 
+    if (isCapitalized) {
+      // If capitalized, revert to the original state (lowercase or uppercase)
+      setText(text.toLowerCase());
+    } else {
+      // Capitalize the first letter of each word (Title Case)
+      setText(
+        text
+          .toLowerCase()
+          .split(" ")
+          .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+          .join(" ")
+      );
+    }
+    setIsCapitalized(!isCapitalized);
+  };
+  
 
   const handleAddImage = (file) => {
     const imageUrl = URL.createObjectURL(file);
@@ -78,6 +90,72 @@ const MidtermTest = () => {
       handleAddImage(file);
     }
   };
+
+
+
+
+  // Format text as an ordered list
+const handleOrderedList = () => {
+  setText((prevText) => {
+    const listItems = prevText
+      .split('\n')
+      .map((item, index) => {
+        // Add proper numbering for each item
+        return `${index + 1}. ${item}`;
+      })
+      .join('\n');
+    return listItems;
+  });
+};
+
+// Format text as an unordered list
+const handleUnorderedList = () => {
+  setText((prevText) => {
+    const listItems = prevText
+      .split('\n')
+      .map((item) => {
+        // Add bullet points (▪️) for each item
+        return `▪️ ${item}`;
+      })
+      .join('\n');
+    return listItems;
+  });
+};
+
+// Handle nested ordered list
+const handleNestedOrderedList = () => {
+  setText((prevText) => {
+    const listItems = prevText
+      .split('\n')
+      .map((item, index) => {
+        // Indent nested ordered list items
+        if (item.startsWith(' ')) {
+          return `    ${index + 1}. ${item.trim()}`; // 4 spaces for nested items
+        }
+        return `${index + 1}. ${item}`;
+      })
+      .join('\n');
+    return listItems;
+  });
+};
+
+// Handle nested unordered list
+const handleNestedUnorderedList = () => {
+  setText((prevText) => {
+    const listItems = prevText
+      .split('\n')
+      .map((item) => {
+        // Indent nested unordered list items
+        if (item.startsWith(' ')) {
+          return `    ▪️ ${item.trim()}`; // 4 spaces for nested items
+        }
+        return `▪️ ${item}`;
+      })
+      .join('\n');
+    return listItems;
+  });
+};
+
   
   return (
     <div className="p-6 min-h-screen flex flex-col">
@@ -195,21 +273,43 @@ const MidtermTest = () => {
                 </button>
                 {/* Capitalize  Button */}
                 <button
-                  onClick={handleCapitalize}
+                  onClick={handleToggle}
                   className="px-4 py-1 border-2 border-[#94A3B8] rounded-md"
                 >
-                  Aa
+                  {isCapitalized ? "Aa" : "Aa"}
                 </button>
                 {/* Underline  Button */}
                 <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
                   <i className="fa-solid fa-underline"></i>
                 </button>
-                <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                  <i className="fa-solid fa-list-ul"></i>
-                </button>
-                <button className="px-4 py-1 border-2 border-[#94A3B8] rounded-md">
-                  <i className="fa-solid fa-list-ol"></i>
-                </button>
+                <button
+  onClick={handleOrderedList}
+  className="px-4 py-1 border-2 border-[#94A3B8] rounded-md"
+>
+  <i className="fa-solid fa-list-ol"></i> {/* Ordered List Icon */}
+</button>
+
+<button
+  onClick={handleUnorderedList}
+  className="px-4 py-1 border-2 border-[#94A3B8] rounded-md"
+>
+  <i className="fa-solid fa-list-ul"></i> {/* Unordered List Icon */}
+</button>
+
+<button
+  onClick={handleNestedOrderedList}
+  className="px-4 py-1 border-2 border-[#94A3B8] rounded-md"
+>
+  <i className="fa-solid fa-list-ol"></i> {/* Nested Ordered List Icon */}
+</button>
+
+<button
+  onClick={handleNestedUnorderedList}
+  className="px-4 py-1 border-2 border-[#94A3B8] rounded-md"
+>
+  <i className="fa-solid fa-list-ul"></i> {/* Nested Unordered List Icon */}
+</button>
+
                 {/* <button ">
                 </button> */}
 
