@@ -7,8 +7,8 @@
 .loader,
 .loader:after {
   border-radius: 50%;
-  width: 10em;
-  height: 10em;
+  width:6.6em;
+  height: 6.6em;
 }
 .loader {
   margin-bottom: 1em;

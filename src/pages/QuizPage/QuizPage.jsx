@@ -130,10 +130,10 @@ const QuizPage = () => {
   return (
     <div className='mt-4 main'>
       {isEvaluating && <Loader />}
-      <div className='headerContainer d-flex justify-content-between'>
+      <div className='headContainer d-flex justify-content-between'>
         <div className='leftPart d-flex align-items-center gap-3'>
           <button className='backBtn' onClick={() => setbackpopup(true)}>
-            <GoArrowLeft className='backIcon' /> Back
+            <GoArrowLeft className='backIcon' /> <span>Back</span>
           </button>
           {backpopup && (
             <Popup
@@ -155,6 +155,7 @@ const QuizPage = () => {
       </div>
       <form className='quizContainer' onSubmit={handleSubmit}>
         <p className='timer'>{formattedTime}</p>
+        <br></br>
         <div className='questionStore'>
           {questions.map((question) => (
             <div key={question.id} className='questionContainer d-flex align-items-start justify-content-between'>
@@ -183,7 +184,7 @@ const QuizPage = () => {
         <label className='checkbox mt-4'>
           <input
             type="checkbox"
-            name="exampleCheckbox"
+            name="Checkbox"
             value="checkbox"
             className="mt--4"
             checked={isChecked}
@@ -195,7 +196,7 @@ const QuizPage = () => {
         </label>
         {error && <div style={{ color: 'red', marginTop: '10px' }}>{error}</div>}
         <p className='last'>You must select the checkbox in order to submit the assignment</p>
-        <button type="submit" className='submitBtn'>Submit</button>
+        <button  type="submit" className='submitBtn'>Submit</button>
       </form>
       {showPopup && (
         <Popup

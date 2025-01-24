@@ -26,8 +26,8 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fff;
-    border-bottom: 1px solid var(--borderColor);
-    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+    /* border-bottom: 1px solid var(--borderColor); */
+    /* box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1); */
     position: relative;
 }
 
@@ -258,25 +258,31 @@
     .headerNavList {
         padding: 0.8rem;
         gap: 2.3rem; /* Slightly increase gap between navigation items */
+      
+    }
+
+    .headerSearchBar{
+        /* margin-left: 20px; */
+        width:17rem;
     }
     
     .headerSearchBar {
         
-        display:none;
+        /* display:none; */
     }
     
     
     .headerButtons {
-        display:none;
+        /* display:none; */
        
     }
 
     .headerDownloadBtn,
     .headerLogOutBtn {
-        padding: 0.75em 1.5em; /* Larger buttons for better clickability */
-        font-size: 1.1rem; /* Adjust font size */
+        /* padding: 0.75em 1.5em; */
+        /*font-size: 1.1rem;  Adjust font size */
     }
     .profile{
-        display: none;
+        /* display: none; */
     }
 }

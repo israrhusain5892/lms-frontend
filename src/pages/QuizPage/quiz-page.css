@@ -5,9 +5,9 @@
     margin: auto;
 }
 
-.headerContainer {
+.headContainer {
     border-bottom: 1px solid #DADADA;
-    padding-bottom: 10px;
+    padding-bottom: 18px!important;
 }
 
 .backBtn {
@@ -21,6 +21,8 @@
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #3D5CFF;
+    display: flex;
+    gap:4px;
 
 }
 
@@ -109,7 +111,7 @@
 
 .questionStore{
 
-    margin-top: 50px;
+    margin-top: 150px;
 
 }
 
