@@ -1,12 +1,19 @@
+import { useNavigate } from 'react-router-dom';
 import './otp-verify.css';
-import { useRef ,useState} from 'react';
+import { useRef ,useState,useEffect} from 'react';
 
 function OTPVerification() {
 
     const inputRefs = [useRef(null), useRef(null), useRef(null),useRef(null),useRef(null),useRef(null),];
     const [values, setValues] = useState(["", "", "","","",""]);
     const otp=values.join("")
+    const navigate=useNavigate();
     console.log(otp)
+    useEffect(()=>{
+          if(otp.length===6){
+             navigate("/otp-verify",{state:{otp:otp}})
+          }
+    },[otp])
   const handleInput = (e, index) => {
     const newValue = e.target.value;
     if (newValue.length <= 1) {

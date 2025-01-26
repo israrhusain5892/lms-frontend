@@ -1,13 +1,18 @@
 import { useState } from "react"; // Importing useState hook for state management
 import "./otp-veri.css"; // Linking to the CSS file for styling
+import { useLocation } from 'react-router-dom';
+import ProgresssBar from "../../components/ProgressBar/ProgressBar";
 
 const OtpVerify = () => {
-  const [otp, setOtp] = useState(new Array(6).fill("")); // State to store 6-digit OTP input
-
+  const location = useLocation();
+  const { state } = location;
+  const [otp, setOtp] = useState(new Array(6).fill()); // State to store 6-digit OTP input
+  const[showProgress,setShowProgress]=useState(false)
+    
   // Handles changes in the OTP input fields
   const handleChange = (element, index) => {
     if (isNaN(element.value)) return; // Prevent non-numeric input
-
+    
     let newOtp = [...otp]; // Create a copy of the OTP array
     newOtp[index] = element.value; // Update the specific index with the new value
     setOtp(newOtp); // Update the state
@@ -18,8 +23,21 @@ const OtpVerify = () => {
     }
   };
 
+  const verifyOtp=(e)=>{
+    e.preventDefault();
+    setShowProgress(true);
+    setTimeout(()=>{
+       setShowProgress(true)
+       Navigate("/successPage")
+    },5000)
+  }
+
   return (
     <div className="otp-container"> {/* Main container for the OTP form */}
+    {
+        showProgress && <ProgresssBar/>
+    }
+       
       <div className="otp-box"> {/* Box containing all OTP elements */}
         <h2>Verify your phone <br /> number</h2>
         <p>
@@ -42,7 +60,7 @@ const OtpVerify = () => {
         {/* Actions and Resend Button */}
         <div className="otp-actions">
           <p>I didn’t receive a code</p>
-          <button className="resend-btn">Resend</button>
+          <button onClick={verifyOtp} className="resend-btn">Resend</button>
         </div>
         {/* Static Timer */}
         <div className="otp-timer">

@@ -32,6 +32,7 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    animation: moveRightToLeft 1s linear;
     /* Full viewport height */
    
 }
@@ -39,7 +40,7 @@
 /* Styling for the OTP input box */
 .otp-box {
     background: var(--color-white);
-    animation: moveRightToLeft .5s linear;
+   
     transition: 1s;
     /* White background */
     padding: 3.5rem 2.12rem;

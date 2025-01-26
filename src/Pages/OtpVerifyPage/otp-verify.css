@@ -54,6 +54,7 @@ input[type="number"] {
     --font-weight-normal: 400;
     --font-weight-medium: 500;
     --font-weight-bold: 600;
+    margin: auto;
 }
   
 /* NOTE:

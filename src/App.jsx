@@ -9,19 +9,16 @@ import OtpVerify from './Pages/OtpVerify/OtpVerify';
 // import ProgressBar from './components/ProgressBar/ProgressBar';
 function App() {
   return (
-    <div style={{width:'100%'}}>
-      {/* <LinearProgress /> */}
-      
-    <Router>
-      <Routes>
-        <Route path="/" element={<AssignmentCarousel />} />
-        <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/otp" element={<OTPVerification />} />
-        <Route path="/otp-verify" element={<OtpVerify/>} />
-      </Routes>
-      
-    
-    </Router>
+    <div style={{ width: '100%' }}>
+
+      <Router>
+        <Routes>
+          <Route path="/" element={<AssignmentCarousel />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/otp" element={<OTPVerification />} />
+          <Route path="/otp-verify" element={<OtpVerify />} />
+        </Routes>
+      </Router>
     </div>
 
   )
