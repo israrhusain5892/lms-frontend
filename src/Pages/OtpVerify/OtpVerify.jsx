@@ -1,6 +1,6 @@
 import { useState } from "react"; // Importing useState hook for state management
 import "./otp-veri.css"; // Linking to the CSS file for styling
-import { useLocation } from 'react-router-dom';
+import { useLocation,useNavigate } from 'react-router-dom';
 import ProgresssBar from "../../components/ProgressBar/ProgressBar";
 
 const OtpVerify = () => {
@@ -8,7 +8,7 @@ const OtpVerify = () => {
   const { state } = location;
   const [otp, setOtp] = useState(new Array(6).fill()); // State to store 6-digit OTP input
   const[showProgress,setShowProgress]=useState(false)
-    
+    const navigate=useNavigate()
   // Handles changes in the OTP input fields
   const handleChange = (element, index) => {
     if (isNaN(element.value)) return; // Prevent non-numeric input
@@ -27,8 +27,8 @@ const OtpVerify = () => {
     e.preventDefault();
     setShowProgress(true);
     setTimeout(()=>{
-       setShowProgress(true)
-       Navigate("/successPage")
+       setShowProgress(false)
+       navigate("/successPage")
     },5000)
   }
 
@@ -60,7 +60,7 @@ const OtpVerify = () => {
         {/* Actions and Resend Button */}
         <div className="otp-actions">
           <p>I didn’t receive a code</p>
-          <button onClick={verifyOtp} className="resend-btn">Resend</button>
+          <button  className="resend-btn">Resend</button>
         </div>
         {/* Static Timer */}
         <div className="otp-timer">
@@ -70,7 +70,7 @@ const OtpVerify = () => {
         {/* Verify Button */}
         <button
           className="verify-btn"
-          onClick={() => alert(`Entered OTP is ${otp.join("")}`)} // Alert concatenated OTP
+          onClick={verifyOtp} // Alert concatenated OTP
         >
           Verify
         </button>
