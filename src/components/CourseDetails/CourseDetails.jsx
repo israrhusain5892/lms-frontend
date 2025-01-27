@@ -61,7 +61,7 @@ const CourseDetails = () => {
                 ) : (
                   <div className="p-4 bg-gray-50 border border-gray-200">
                     <p className="text-gray-600 text-sm">
-                      Content for {material.title} will be displayed here.
+                     Soon Content for {material.title} will be displayed here.
                     </p>
                   </div>
                 ))}
