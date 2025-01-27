@@ -1,0 +1,294 @@
+/* Styling done based on specifications given in the Figma design */
+
+/* FONTS: Poppins and Inter */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* RESETS */
+/* NOTE: Universal selector is used. Merge accordingly. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* VARIABLES */
+.signUpMain {
+    /* COLORS */
+
+    /* Backgrounds */
+    --color-background-page: #ffffff; /* Page background color */
+  
+    /* Borders */
+    --color-border-primary: #c3c3c3; /* 1st border color */
+    --color-border-secondary: #d9d9d9; /* 2nd border color */
+    --color-border-tertiary: #dde2ed; /* 3rd border color */
+  
+    /* Text */
+    --color-text-heading: #000000; /* Heading text color */
+    --color-text-main: #858597; /* Main text color */
+  
+    /* Links and Buttons */
+    --color-action-primary: #3d5cff; /* Links and button backgrounds */
+    
+
+    /* FONTS */
+    --font-poppins: "Poppins", system-ui, sans-serif; /* Poppins font */
+    --font-inter: "Inter", system-ui, sans-serif; /* Inter font */
+
+    /* FONT WEIGHTS */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
+}
+  
+/* NOTE:
+The following styles on "#root" is required to center the page content.
+When merging, handle it accordingly.
+*/
+#root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.signUpMain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-background-page);
+    border: 1px solid var(--color-border-primary);
+    border-radius: 0.525rem;
+    padding: 2rem 4rem;
+    max-width: 28.875rem;
+    width: 100%;
+    height: auto;
+}
+
+.signUpSection {
+    max-width: 20.5rem;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signUpContentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signUpContent {
+    display: flex;
+    flex-direction: column;
+    gap: 3.25rem;
+}
+
+.signUpHeader {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.signUpTitle {
+    font-size: 1.875rem;
+    font-weight: var(--font-weight-bold);
+    line-height: 1;
+    letter-spacing: 0.33px;
+    color: var(--color-text-heading);
+    font-family: var(--font-poppins);
+}
+
+.signUpDescription {
+    color: var(--color-text-main);
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 21px;
+    letter-spacing: 0.33px;
+    font-family: var(--font-poppins);
+}
+
+.signUpDescription strong {
+    font-weight: var(--font-weight-bold);
+}
+
+.signUpFormContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.signUpForm {
+    /* Remove later */
+}
+
+.signUpFormFieldset {
+    border: 0;
+    padding: 0;
+}
+
+.signUpFormLabel {
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 18.15px;
+    color: var(--color-text-main);
+}
+
+.signUpFormInputContainer {
+    display: flex;
+    gap: 0.625rem;
+    width: 100%;
+}
+
+.signUpFormCountryCodeSelect {
+    width: 4.6875rem;
+    border-radius: 7px;
+    border: 1px solid var(--color-border-secondary);
+    padding: 0.75rem 0.625rem;
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+}
+
+.signUpFormCountryCodeOption {
+    /* Remove later */
+}
+
+.signUpFormUserMobileNumberInput {
+    flex: 1;
+    border-radius: 7px;
+    border: 1px solid var(--color-border-secondary);
+    padding: 0.75rem 0.625rem;
+    font-family: var(--font-inter);
+    font-size: 0.875rem;
+}
+
+.signUpFormContainer p {
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: var(--color-text-main);
+}
+
+.signUpFormContainer p a {
+    font-family: var(--font-inter);
+    font-weight: var(--font-weight-medium);
+    font-size: 0.875rem;
+    line-height: 1rem;
+    color: var(--color-action-primary);
+    text-decoration: none;
+}
+
+/* Hover effect on link. Not specified in Figma.  */
+.signUpForm p a:hover {
+    filter: brightness(1.5);
+}
+
+.signUpFormGetCodeButton {
+    background-color: var(--color-action-primary);
+    color: var(--color-background-page);
+    border: none;
+    padding: 0.625rem;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    max-width: 19.75rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    line-height: 0.84;
+    letter-spacing: 2%;
+    text-align: center;
+    font-weight: var(--font-weight-medium);
+    font-family: var(--font-inter);
+}
+
+/* Hover effect on button. Not specified in Figma. */
+.signUpFormGetCodeButton:hover {
+    filter: brightness(1.2);
+}
+
+.signUpFormGetCodeButton:disabled {
+    cursor: not-allowed;
+}
+
+.signUpFormErrorText {
+    text-align: center;
+    /* Add color later */
+}
+
+.signUpFooter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 6.625rem;
+    margin: 0 auto;
+}
+
+.signUpFooterText {
+    font-family: 'Inter', sans-serif;
+    font-weight: var(--font-weight-normal);
+    font-size: 0.875rem;
+    line-height: 17.5px;
+    color: var(--color-text-main);
+}
+
+.signUpFooterGoogleLogoButton {
+    background: none;
+    color: inherit;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    padding: 1.125rem 2.875rem;
+    max-width: 6.125rem;
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    border: 1px solid var(--color-border-tertiary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* NOTE: Kept the following uncommented for now. Will tackle this later. */
+ /* @media (max-width: 768px) {
+    .signUpMain{
+        width: 90%!important;
+    }
+    .signUpSection {
+        width: 100%!important;
+    }
+
+    .signUpTitle {
+        font-size: 1.5rem;
+    }
+
+    .signUpDescription {
+        font-size: 0.9rem;
+    }
+
+     
+    .signUpFormUserMobileNumberInput {
+       
+        width: 80%!important;
+    }
+
+    .signUpFormGetCodeButton{
+        width: 100%;
+    }
+}  */
+
+ 
+
+

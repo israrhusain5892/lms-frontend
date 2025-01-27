@@ -1,10 +1,14 @@
-// USE THIS TO VIEW YOUR COMPONENT RENDER
-// Step 1: import your component here
+import SignUpPage from "./components/SignUpPage/SignUpPage"
+import SignInPage from "./components/SignUpPage/SignInPage"
 
 function App() {
+
+
   return (
     <>
-      {/* Step 2: Use it here */}
+      <SignUpPage />
+      <SignInPage />
+
     </>
   );
 }
