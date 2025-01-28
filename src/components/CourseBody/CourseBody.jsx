@@ -18,7 +18,7 @@ const CourseBody = () => {
     <div className="w-full courseBody mx-auto space-y-12  ">
       {/* What You'll Learn Section */}
       <section>
-        <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4">
+        <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4 ">
           What you'll learn
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

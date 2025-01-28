@@ -8,7 +8,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Importing FontAwesome
 const CourseHero = () => {
   return (
     <div className="courseHeroWrapper ">
-      <div className="row align-items-center courseHeroCustomBg p-4">
+      <div className="row align-items-center courseHeroCustomBg ">
         {/* Left Section */}
         <div className="col-md-6 courseHeroContent lh-sm">
           <div className="mb-2">
