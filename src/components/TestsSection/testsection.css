@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+nav a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  nav span {
+    font-size: 1.25rem;
+    color: #333;
+  }
+  
+  nav span a {
+    color: #007bff;
+  }
+  
+  nav span a:hover {
+    color: #0056b3;
+  }
+  

@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+   .courseBody{
+     padding: 20px 60px;
+   }
+
+   .greyText{
+    color:#64748B;
+   }
+
+   .leftImage{
+    width:40px;
+    height: 40px;
+    /* float:left; */
+    border-radius: 50%;
+   }

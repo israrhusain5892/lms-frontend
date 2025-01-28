@@ -8,6 +8,15 @@ import OTPVerification from './Pages/OtpVerifyPage/OTPVerification';
 import OtpVerify from './Pages/OtpVerify/OtpVerify';
 import SuccsessPage from './Pages/SuccessPage';
 // import ProgressBar from './components/ProgressBar/ProgressBar';
+import CourseDetails from './components/CourseDetails/CourseDetails';
+import Footer from './components/Footer/Footer';
+// import Header from './components/Header/Header';
+// import TestsSection from './components/TestsSection/TestsSection';
+// import Courses from "./components/CourseDetails/Courses"
+ import CourseBody from './components/CourseBody/CourseBody';
+ import 'bootstrap/dist/css/bootstrap.min.css';
+import CourseHero from './components/CourseHero/CourseHero';
+import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 function App() {
   return (
     <div style={{ width: '100%' }}>
@@ -19,6 +28,7 @@ function App() {
           <Route path="/otp" element={<OTPVerification />} />
           <Route path="/otp-verify" element={<OtpVerify />} />
           <Route path="/successPage" element={<SuccsessPage/>} />
+          <Route path="/course-detail" element={<CourseDetailPage/>} />
           
         </Routes>
       </Router>
