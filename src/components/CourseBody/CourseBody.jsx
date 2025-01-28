@@ -15,7 +15,7 @@ const CourseBody = () => {
   };
 
   return (
-    <div className="w-full courseBody mx-auto p-4 space-y-12">
+    <div className="w-full courseBody mx-auto space-y-12  ">
       {/* What You'll Learn Section */}
       <section>
         <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4">
@@ -138,8 +138,8 @@ const CourseBody = () => {
       <section>
         <h2 className="text-2xl font-bold mb-6 text-[#3D3D3D]">About Author</h2>
         <div className="flex items-center space-x-6 mb-6 shadow-sm pb-8">
-          <div className="w-24 h-24 bg-yellow-500 rounded-full flex items-center justify-center text-white text-3xl font-bold">
-            {data.author.name[0]}
+          <div className="w-10 h-10 bg-yellow-500 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+            {/* { data.author} */}
           </div>
           <div>
             <h3 className="text-2xl font-semibold text-[#0F172A]">

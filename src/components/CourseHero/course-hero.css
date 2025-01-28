@@ -11,7 +11,10 @@
 }
 
 .courseHeroWrapper{
-  max-width: 100%;
+  width: 100%;
+  margin: auto;
+  background-color: #EFF4FF;
+  padding: 1px 10px;
 }
 /* General Styling */
 .courseHeroHeading {
@@ -19,9 +22,9 @@
   font-size: 2.5rem;
 }
 
-.courseHeroContent {
+/* .courseHeroContent {
   padding: 40px;
-}
+} */
 
 .courseHeroCustomBg {
   background-color: #EFF4FF;
@@ -143,7 +146,7 @@
   }
 
   .courseHeroHeading {
-    font-size: 2.2rem;
+    /* font-size: 2.2rem; */
   }
 
   .courseHeroBadge {
@@ -198,7 +201,7 @@
   }
 
   .courseHeroHeading {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
   }
 
   .courseHeroBadge {
@@ -229,7 +232,7 @@
   }
 
   .courseHeroHeading {
-    font-size: 2.9rem;
+    /* font-size: 2.9rem; */
   }
 
   .courseHeroBtnPrimary, 
