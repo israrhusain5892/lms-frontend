@@ -11,7 +11,7 @@ const AssignmentCarousel = () => {
   // erer
 
   return (
-    <div className="loginpageContainer">
+    <div className="loginpageContainer ">
       <div className="loginLeft">
         <Carousel
           showThumbs={false}
