@@ -17,6 +17,8 @@ import Footer from './components/Footer/Footer';
  import 'bootstrap/dist/css/bootstrap.min.css';
 import CourseHero from './components/CourseHero/CourseHero';
 import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
+import HeroSection from './components/HeroSection/HeroSection'
+import HomePage from './Pages/MainPage/HomePage';
 function App() {
   return (
     <div style={{ width: '100%' }}>
@@ -29,6 +31,7 @@ function App() {
           <Route path="/otp-verify" element={<OtpVerify />} />
           <Route path="/successPage" element={<SuccsessPage/>} />
           <Route path="/course-detail" element={<CourseDetailPage/>} />
+          <Route path="/home" element={<HomePage/>} />
           
         </Routes>
       </Router>
