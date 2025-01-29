@@ -252,8 +252,8 @@ When merging, handle it accordingly.
     border: none;
     font: inherit;
     cursor: pointer;
-    padding: 1.125rem 2.875rem;
-    max-width: 6.125rem;
+    padding: 1.125rem 2.5rem;
+    /* width: 6.125rem; */
     width: 100%;
     height: auto;
     border-radius: 0.625rem;
@@ -262,7 +262,10 @@ When merging, handle it accordingly.
     justify-content: center;
     align-items: center;
 }
-
+.signUpFooterGoogleLogo{
+    width:1rem;
+   
+}
 
 /* NOTE: Kept the following uncommented for now. Will tackle this later. */
   @media (max-width: 768px) {
