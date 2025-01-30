@@ -8,7 +8,7 @@ const App = () => {
 
     <div className="flex">
 
-<DSACourses/>
+{/* <DSACourses/> */}
 <DSACourses/>
 
       

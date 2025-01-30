@@ -1,5 +1,6 @@
 import "../../index.css";
 import courseimg from "../../assets/images/course.png";
+
 export default function CourseList() {
   const courses = [
     {
@@ -7,14 +8,14 @@ export default function CourseList() {
       title: "Data Structure and Algorithms",
       category: "Web Development",
       instructor: "Esther Howard ",
-      duration: "5hr",
+      duration: "   5hr",
       progress: 60,
     },
     {
       id: 2,
       title: "Data Structure and Algorithms",
       category: "Web Development",
-      instructor: "Esther Howard ",
+      instructor: "Esther Howard",
       duration: "5hr",
       progress: 40,
     },
@@ -22,7 +23,7 @@ export default function CourseList() {
       id: 3,
       title: "Data Structure and Algorithms",
       category: "Web Development",
-      instructor: "Esther Howard ",
+      instructor: "Esther Howard",
       duration: "5hr",
       progress: 80,
     },
@@ -49,41 +50,43 @@ export default function CourseList() {
       <nav className="text-gray-500 text-sm mb-4">Home &gt; Video &gt; Folder 2</nav>
 
       {/* Course List */}
-      <div className="space-y-4">
+      <div className="space-y-6">
         {courses.map((course) => (
           <div
             key={course.id}
-            className="bg-[#EEF2FF] p-4 rounded-lg shadow-md flex flex-col sm:flex-row items-center sm:items-start"
+            className="bg-[#EEF2FF] p-4 rounded-lg shadow-md flex flex-col sm:flex-row items-center sm:items-start relative overflow-hidden"
           >
-            {/* Avatar */}
-            <img
-              src={courseimg}
-              alt="picture of course"
-              className="lg:w-40 h-16 md:h-20"
-            />
+            {/* Course Content */}
+            <div className="w-full mb-6 flex flex-col sm:flex-row items-center sm:items-start">
+              {/* Course Image */}
+              <img src={courseimg} alt="Course" className="lg:w-40 h-16 md:h-20" />
 
-            {/* Course Info */}
-            <div className="sm:ml-4 flex-1 text-center sm:text-left mt-3 sm:mt-0">
-              <span className="bg-blue-100 text-xs px-2 py-1 rounded-md">{course.category}</span>
-              <h2 className="text-lg font-semibold mt-1">{course.title}</h2>
-              <p className="text-gray-600 text-sm">{course.instructor}   {course.duration}</p>
-
-              {/* Progress Bar */}
-              <div className="mt-2 flex justify-between items-center">
-                <div className="h-2 bg-gray-300 rounded-full w-full mr-10">
-                  <div
-                    className="h-2 bg-green-500 rounded-full transition-all duration-500"
-                    style={{ width: `${course.progress}%` }}
-                  ></div>
-                </div>
-                <p className="text-sm text-gray-600 mt-1 ">{course.progress}% Finished</p>
+              {/* Course Info */}
+              <div className="sm:ml-4 flex-1 text-center sm:text-left mt-3 sm:mt-0 w-full">
+                <span className="bg-blue-100 text-xs px-2 py-1 rounded-md">{course.category}</span>
+                <h2 className="text-lg font-semibold mt-1">{course.title}</h2>
+                <p className="text-gray-600 text-sm">
+                  {course.instructor}  {course.duration}
+                </p>
               </div>
+
+              {/* Start Learning Button */}
+              <button className="bg-blue-600 text-white px-4 py-2 rounded-3xl mt-3 sm:mt-0 sm:ml-4 w-full sm:w-auto">
+                Start Learning
+              </button>
             </div>
 
-            {/* Start Learning Button */}
-            <button className="bg-blue-600 text-white px-4 py-2 rounded-3xl mt-3 sm:mt-0 sm:ml-4 w-full sm:w-auto">
-              Start Learning
-            </button>
+            {/* Progress Bar - Now Positioned at Bottom */}
+            
+            <div className="absolute bottom-3 left-4  sm:w-[400px] md:w-[550px] w-[200px] bg-gray-300 h-2 ">
+              <div
+                className="h-2 bg-green-500 transition-all duration-500 rounded-full"
+                style={{ width: `${course.progress}%` }}
+              ></div>
+              
+            </div>
+            <p className="text-sm text-gray-600 mt-1 absolute bottom-2 right-5  text-right">{course.progress}% Finished</p>
+
           </div>
         ))}
       </div>
