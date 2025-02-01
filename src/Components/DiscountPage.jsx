@@ -6,8 +6,8 @@ import "../components/discount-page.css"
 
 function DiscountPage() {
   return (
-    <Carousel indicators={false} controls={false}>
-      <Carousel.Item className="d-flex justify-content-center align-items-center text-white mt-5">
+    <Carousel indicators={false} controls={false}  className="carousal">
+      <Carousel.Item className="d-flex justify-content-center align-items-center text-white mt-5 item">
         <div
           className="position-relative rounded-2 "
           style={{ maxWidth: "100%" }}
@@ -51,12 +51,17 @@ function DiscountPage() {
           </div>
         </div>
 
-        {/* Indicators */}
-        <div
+       
+       
+      </Carousel.Item>
+
+      
+       {/* Indicators */}
+       <div
           className="d-flex justify-content-center align-items-center"
           style={{
             position: "absolute",
-            bottom: "30px",
+            bottom: "70px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -74,7 +79,6 @@ function DiscountPage() {
             ></div>
           ))}
         </div>
-      </Carousel.Item>
     </Carousel>
   );
 }

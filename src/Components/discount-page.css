@@ -1,6 +1,12 @@
 .ml-20 {
   margin-left: 20px;
 }
+.item{
+  /* height: 510px; */
+}
+
+
+
 
 @media (min-width: 992px) {
   .ml-lg-86 {
