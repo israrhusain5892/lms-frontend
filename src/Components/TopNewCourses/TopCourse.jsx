@@ -7,9 +7,10 @@ import imgc from  '../../assets/images/imagec.png';
 import imgd from  '../../assets/images/imaged.png';
 import imge from  '../../assets/images/imagee.png';
 import { IoIosArrowForward } from "react-icons/io";
+import './top.css';
 
 
-function TrendingCourse(props) {
+function TopCourse(props) {
 
     const courses=[
         {
@@ -60,9 +61,9 @@ function TrendingCourse(props) {
 
     ]
     return (
-        <div className='mx-auto courseMain mt-4 '>
+        <div className='mx-auto courseMain mt-5 mb-5 '>
             <div className='trendingHeading d-flex justify-content-between mb-4 '>
-                 <h4 className=''>Trending Courses</h4>
+                 <h4 className='top-new'>Top New Courses</h4>
                  <h6 className='d-flex justify-content-center align-items-center gap-1'>All Courses <IoIosArrowForward /> </h6>
                  
             </div>
@@ -86,4 +87,4 @@ function TrendingCourse(props) {
     );
 }
 
-export default TrendingCourse;
+export default TopCourse;

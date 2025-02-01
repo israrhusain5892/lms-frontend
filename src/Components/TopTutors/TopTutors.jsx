@@ -9,7 +9,7 @@ import weekly_top_tutor5 from "../../assets/images/Michael-Roberts.svg";
 
 function TopTutors() {
   return (
-    <div className="container my-5 ">
+    <div className="container my-4 mt-5 ">
       {/* Section Title */}
       <h1 className="text-left mb-5 top-heading">Weekly Top Live Tutors</h1>
       <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">

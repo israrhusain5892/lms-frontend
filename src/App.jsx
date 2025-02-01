@@ -20,7 +20,7 @@ import CourseHero from './components/CourseHero/CourseHero';
 import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
-import TrendingCourse from './components/TrendingCourseSection/TrendingCourse';
+import TrendingCourse from './Components/TopNewCourses/TopCourse';
 import CourseCard from './components/CourseCard/CourseCard';
 function App() {
   return (
