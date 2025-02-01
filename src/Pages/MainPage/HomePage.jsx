@@ -1,8 +1,9 @@
-import HeroSection from "../../components/HeroSection/HeroSection";
-import Header from "../../components/Header/Header";
-import TrendingCourse from '../../components/TrendingCourseSection/TrendingCourse';
-// import CourseCard from '../../components/CourseCard/CourseCard';
-
+import HeroSection from "../../Components/HeroSection/HeroSection";
+import Header from "../../Components/Header/Header";
+import TrendingCourse from '../../Components/TrendingCourseSection/TrendingCourse';
+// import "bootstrap/dist/css/bootstrap.min.css";
+import TopTutors from  "../../Components/TopTutors/TopTutors";
+// ../../Components/TopTutors/TopTutors
 const HomePage=()=>{
 
 
@@ -12,6 +13,7 @@ const HomePage=()=>{
             <Header/>
             <HeroSection/>
             <TrendingCourse/>
+            <TopTutors/>
           
         </div>
     )

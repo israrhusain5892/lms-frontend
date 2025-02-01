@@ -36,7 +36,7 @@ function CourseCard({course}) {
               </div>
       
               {/* Badge Section */}
-              <span className="badge text-white px-2 py-1 rounded" 
+              <span className="badge  px-2 py-1 rounded" 
                 style={{ background: `${course.category[0].bg}` }}>
                 {course.category[0].name}
               </span>
