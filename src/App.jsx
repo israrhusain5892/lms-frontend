@@ -21,7 +21,7 @@ import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
 import TrendingCourse from './Components/TopNewCourses/TopCourse';
-import CourseCard from './components/CourseCard/CourseCard';
+// import CourseCard from './components/CourseCard/CourseCard';
 function App() {
   return (
     <div style={{width:'100%'}} >

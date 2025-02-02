@@ -18,7 +18,7 @@ const CourseBody = () => {
     <div className="w-full courseBody mx-auto space-y-12  ">
       {/* What You'll Learn Section */}
       <section>
-        <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4 ">
+        <h2 className="mb-4 font-bold font-sans text-[24px] text-[#3D3D3D] learn ">
           What you'll learn
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -26,7 +26,7 @@ const CourseBody = () => {
             <div key={index} className="flex items-start space-x-4">
               <i className="fa-solid fa-calendar-check text-blue-500 text-2xl"></i>
               <div>
-                <p className="text-[#333d46] w-[500px] tracking-wider	">
+                <p className="text-[#333d46] w-[500px] font-san tracking-wider	">
                   {" "}
                   <span className="text-[#18181B] font-semibold">
                     {point.title} :{" "}
@@ -41,13 +41,13 @@ const CourseBody = () => {
 
       {/* This Course Includes Section */}
       <section>
-        <h2 className="text-2xl  font-bold text-[#3D3D3D] mb-4">
+        <h2 className="text-[24px] font-sans  font-bold text-[#3D3D3D] mb-4">
           This Course Includes
         </h2>
         <div className="flex flex-wrap justify-between m-10 gap-8">
           {data.courseIncludes.map((item, index) => (
-            <div key={index} className="flex items-start space-x-4 ">
-              <i className={`${item.icon} text-[#1b2128] text-2xl`}></i>
+            <div key={index} className="d-flex items-start align-items-center space-x-4 ">
+              <i className={`${item.icon} text-[#1B2128]  text-2xl`}></i>
               <div className="">
                 <p className="w-96 text-[#1B2128]">{item.title} <span className="text-[#3D5CFF] underline"> {item.description}</span></p>
                
@@ -60,7 +60,7 @@ const CourseBody = () => {
       {/* Description Section */}
       <section>
         <h2 className="text-2xl font-bold text-[#3D3D3D] mb-4">Description</h2>
-        <p className="greyText text-lg">{data.about}</p>
+        <p className="greyTextdesc text-lg">{data.about}</p>
       </section>
 
       {/* Course Materials Section */}
@@ -77,7 +77,7 @@ const CourseBody = () => {
               >
                 <div className="flex items-center space-x-4">
                   <i className={`${material.icon} greyText text-2xl`}></i>
-                  <span className="text-black text-base">{material.names}</span>
+                  <span className="text-black text-base font-sans text-[16px]">{material.names}</span>
                 </div>
                 <i
                   className={`fa-solid ${
@@ -93,10 +93,10 @@ const CourseBody = () => {
                   <h3 className="text-lg text-[#3D5CFF] font-bold">
                     {material.details.header}
                   </h3>
-                  <h4 className="text-lg font-semibold mb-2">
+                  <h4 className="text-lg font-semibold mb-3 mt-3">
                     {material.details.subheader}
                   </h4>
-                  <p className="text-sm text-[#656565]">
+                  <p className="text-[16px] font-sans font-normal leading-[25.6px] text-[#656565]">
                     {material.details.content}
                   </p>
                 </div>
