@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import CourseCard from '../CourseCard/CourseCard';
 import '../TrendingCourseSection/TrendingCourse.css';
 import imga from  '../../assets/images/imagea.png';
@@ -7,6 +7,7 @@ import imgc from  '../../assets/images/imagec.png';
 import imgd from  '../../assets/images/imaged.png';
 import imge from  '../../assets/images/imagee.png';
 import { IoIosArrowForward } from "react-icons/io";
+import { useNavigate } from 'react-router-dom';
 
 
 function TrendingCourse(props) {
@@ -59,6 +60,12 @@ function TrendingCourse(props) {
         }
 
     ]
+
+    const navigate=useNavigate();
+
+    const goToDetail=()=>{
+        navigate("/course-detail")
+    }
     return (
         <div className='mx-auto courseMain mt-4 '>
             <div className='trendingHeading d-flex justify-content-between mb-4 '>
@@ -70,8 +77,8 @@ function TrendingCourse(props) {
 
                 {
                     courses?.map((course,index)=>{
-                       return <div className='' key={index}>
-                           <CourseCard course={course}/>
+                       return <div className='' key={index} onClick={goToDetail}>
+                           <CourseCard course={course} />
                         </div>
                        
                     })
