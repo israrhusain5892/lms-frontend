@@ -1,7 +1,7 @@
 // USE THIS TO VIEW YOUR COMPONENT RENDER
 // Step 1: import your component here
 
-import SideBar from "./componenets/SideBar/SideBar";
+import SideBar from './Components/SideBar/SideBar'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
