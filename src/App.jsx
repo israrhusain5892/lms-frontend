@@ -25,23 +25,23 @@ import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
 // import CourseCard from './components/CourseCard/CourseCard';
 function App() {
   return (
-    <div style={{width:'100%'}} >
+    <div style={{ width: '100%' }} >
 
-    <Router>
-      <Routes>
-        <Route path="/" element={<AssignmentCarousel />} />
-        <Route path="/signup" element={<SignUpPage />} />
-        <Route path="/otp" element={<OTPVerification />} />
-        <Route path="/otp-verify" element={<OtpVerify />} />
-        <Route path="/successPage" element={<SuccsessPage/>} />
-        <Route path="/course-detail" element={<CourseDetailPage/>} />
-        <Route path="/home" element={<HomePage/>} />
-       <Route path="/dashboard" element={<StudentDashboard/>} />
-       
-      </Routes>
-    </Router>
-     
-  </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<AssignmentCarousel />} />
+          <Route path="/signup" element={<SignUpPage />} />
+          <Route path="/otp" element={<OTPVerification />} />
+          <Route path="/otp-verify" element={<OtpVerify />} />
+          <Route path="/successPage" element={<SuccsessPage />} />
+          <Route path="/course-detail" element={<CourseDetailPage />} />
+          <Route path="/home" element={<HomePage />} />
+          <Route path="/dashboard" element={<StudentDashboard />} />
+
+        </Routes>
+      </Router>
+
+    </div>
   )
 }
 
