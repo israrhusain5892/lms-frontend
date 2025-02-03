@@ -5,7 +5,7 @@ import { IoLogoFacebook } from "react-icons/io";
 import './footer.css';
 const Footer = () => {
   return (
-    <footer className="bg-[ #FBFCFE] px-6 py-8 md:px-12 lg:px-20">
+    <footer className="bg-[#FBFCFE] px-6 py-8 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         {/* Left Section - Logo and Social Icons */}
         <div className="lg:mb-20 mb-12 sm:block hidden ">
