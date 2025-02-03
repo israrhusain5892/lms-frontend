@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+.font-change {
+  font-style: 'Atkinson Hyperlegible';
+  text-align: left;
+  line-height: 16px;
+}
+
+/* General styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 5rem;
+  height: 373px;
+  width: 94%;
+}
+
+
+
+.text-container {
+  text-align: left;
+  line-height: 25px;
+
+}
+
+.text-container p {
+  line-height: 20px;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  /* Default for small screens */
+  position: relative;
+  /* Needed to position the pseudo-element */
+  line-height: 16px;
+}
+
+/* Adding the vector image (SVG) after the heading */
+.text-container h1::after {
+  content: '';
+  position: absolute;
+  width: 6.875rem;
+  height: 1.25rem;
+  left: 16.75rem;
+  top: 2.813rem;
+  background-image: url('../assets/images/Vector 1.png');
+  /* Replace with the path to your vector image */
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.text-container p {
+  font-size: 1.875rem;
+  /* Default for small screens */
+}
+
+/* Image container styles */
+.image-container {
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+}
+
+/* Button styles */
+.redeem {
+  /* background-color: #0F172A; */
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  margin-left: 0px;
+  background: linear-gradient(0deg, #0F172A, #0F172A), linear-gradient(180deg, rgba(255, 255, 255, 0.32) -41.07%, rgba(255, 255, 255, 0) 100%);
+  box-shadow: 0px 2px 4px 0px #00000029;
+
+
+  border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.36) -62.5%, rgba(255, 255, 255, 0) 71.32%);
+
+
+
+}
+
+.redeem:hover {
+  background-color: #000;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 4rem 2rem;
+    /* Adjust padding for small screens */
+    height: auto;
+    /* Adjust height for small screens */
+  }
+
+  .text-container h1 {
+    font-size: 3rem;
+    /* Smaller text size on small screens */
+  }
+
+  .text-container p {
+    font-size: 1.875rem;
+    /* Smaller paragraph text size */
+  }
+
+  .image-container {
+    position: static;
+    /* Change image positioning for small screens */
+    margin-top: 1rem;
+    /* Adjust margin for the image */
+    text-align: center;
+    /* Center align image */
+  }
+
+  .image-container img {
+    max-width: 100%;
+    /* Ensure image is responsive on small screens */
+  }
+}

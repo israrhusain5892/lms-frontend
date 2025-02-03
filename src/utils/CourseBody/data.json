@@ -1,0 +1,76 @@
+{
+  "about": "The Advanced Front-End Programming course sharpens students' critical thinking, creativity, and analytical skills, empowering them to effectively tackle complex challenges in web development.The Advanced Front-End Programming course sharpens students' critical thinking, creativity, and analytical skills, empowering them to effectively tackle complex challenges in web development.",
+  
+    "learningPoints": [
+      { "title": "Basic HTML Structure", "description": "Learn how to structure an HTML document using essential tags like <html>, <head>, and <body>." },
+      { "title": "Text Formatting and Structure", "description": "Discover how to use tags for formatting text (headings, paragraphs, lists, bold, italics)." },
+      { "title": "Hyperlinks and Navigation", "description": "Learn how to create links using the <a> (anchor) tag." },
+      { "title": "Working with Images and Media", "description": "Add images to web pages using the <img> tag and control their attributes (size, alt text)." },
+      { "title": "Creating Forms and Input Elements", "description": "Understand how forms are used to collect user data and how to use basic attributes for form validation." },
+      { "title": "Accessibility and Web Standards", "description": "Learn the basics of creating accessible web pages by using correct HTML elements and attributes." }
+    ],
+    "courseIncludes": [
+      { "icon": "fa-solid fa-award", "title": "Certificate of Achievement", "description": "" },
+      { "icon": "fa-solid fa-video", "title": "Meeting ID", "description": "8739 8973 9873" },
+      { "icon": "fa-solid fa-calendar", "title": "Batch Start Date: 18-12-24", "description": "" },
+      { "icon": "fa-solid fa-clipboard", "title": "Quiz: Data structure & Algorithms", "description": "" },
+      { "icon": "fa-solid fa-code", "title": "Batch Code ah483n8c", "description": "" },
+      { "icon": "fa-solid fa-book", "title": "Mini Project", "description": "" }
+    ]
+  ,
+  
+  
+  
+  "materials": [
+  { 
+    "icon": "fa-regular fa-file-lines", 
+    "names": "HTML and CSS Basics",
+    "details": {
+      "header": "Web Developing",
+      "subheader": "Course Details",
+      "content": "Hypertext Markup Language (HTML) is the foundation of website and web application development. It allows you to ensure that your content is understood by both segments of your audience: the people who watch, read, or listen to your content, and the computers that display it. In this course, learn how to craft excellent HTML with the pieces that HTML itself has to offer. Instructor Jen Simmons highlights all of the fundamental concepts you need to use HTML thoughtfully. She focuses on semantic markup: tagging content as what it is, and not just for formatting, convention, or convenience."
+    }
+  },
+  { "icon": "fa-regular fa-file-lines", "names": "JavaScript & DOM", "details": null },
+  { "icon": "fa-regular fa-file-lines", "names": "Responsive Design", "details": null },
+  { "icon": "fa-regular fa-file-lines", "names": "Advanced JavaScript", "details": null },
+  { "icon": "fa-regular fa-file-lines", "names": "Assignments", "details": null },
+  { "icon": "fa-regular fa-file-lines", "names": "React UI Building", "details": null }
+]
+
+,
+  "reviews": [
+    {
+      "name": "Sarbajit",
+      "date": "16 Feb 2024",
+      "rating": 5,
+      "comment": "Insightful course with practical examples and clear explanations. Perfect for developers!"
+    },
+    {
+      "name": "Sarbajit Acharjee",
+      "date": "20 Feb 2024",
+      "rating": 4,
+      "comment": "I wish Muhammad Shahin was my class teacher. His teaching technique is awesome."
+    }
+  ],
+  "author": {
+    "name": "Julia Anatole",
+    "qualification": "Harvard Business School",
+    "rating": "4.5 (39)",
+    "description": "I'm Julia, a developer passionate about teaching. As the lead instructor, I've helped many students and taught at top companies worldwide.",
+    "experience": [
+      {
+        "role": "Engineering",
+        "institution": "University of Oxford",
+        "years": "2020-2024",
+        "color":"purple"
+      },
+      {
+        "role": "SSC",
+        "institution": "Habibton High School",
+        "years": "2019",
+        "color":"blue"
+      }
+    ]
+  }
+}

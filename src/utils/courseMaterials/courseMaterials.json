@@ -1,0 +1,8 @@
+[
+  { "id": 1, "title": "HTML and CSS Basics", "icon": "fas fa-file-alt" },
+  { "id": 2, "title": "JavaScript & DOM", "icon": "fa-regular fa-circle-play" },
+  { "id": 3, "title": "Responsive Design", "icon": "fa-brands fa-youtube" },
+  { "id": 4, "title": "Advanced JavaScript", "icon": "fas fa-link" },
+  { "id": 5, "title": "Assignments", "icon": "fas fa-file-alt" },
+  { "id": 6, "title": "React UI Building", "icon": "fas fa-file-alt" }
+]
