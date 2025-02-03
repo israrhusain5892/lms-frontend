@@ -9,18 +9,19 @@ import OTPVerification from './Pages/OtpVerifyPage/OTPVerification';
 import OtpVerify from './Pages/OtpVerify/OtpVerify';
 import SuccsessPage from './Pages/SuccessPage';
 // import ProgressBar from './components/ProgressBar/ProgressBar';
-import CourseDetails from './components/CourseDetails/CourseDetails';
-import Footer from './components/Footer/Footer';
+// import CourseDetails from './components/CourseDetails/CourseDetails';
+// import Footer from './components/Footer/Footer';
 // import Header from './components/Header/Header';
 // import TestsSection from './components/TestsSection/TestsSection';
 // import Courses from "./components/CourseDetails/Courses"
- import CourseBody from './components/CourseBody/CourseBody';
+//  import CourseBody from './components/CourseBody/CourseBody';
 
-import CourseHero from './components/CourseHero/CourseHero';
+// import CourseHero from './components/CourseHero/CourseHero';
 import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
 import TrendingCourse from './Components/TopNewCourses/TopCourse';
+import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
 // import CourseCard from './components/CourseCard/CourseCard';
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/successPage" element={<SuccsessPage/>} />
         <Route path="/course-detail" element={<CourseDetailPage/>} />
         <Route path="/home" element={<HomePage/>} />
+       <Route path="/dashboard" element={<StudentDashboard/>} />
        
       </Routes>
     </Router>
