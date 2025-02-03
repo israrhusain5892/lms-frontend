@@ -3,8 +3,7 @@ import { useState } from "react";
 import "./header.css";
 import logo from "../../assets/images/logomark.png"; 
 import profile from "../../assets/images/profile.png";
-
-import '@fortawesome/fontawesome-free/css/all.min.css'; // Importing FontAwesome icons for use in the navigation
+import { FiSearch, FiMoreVertical } from "react-icons/fi";import '@fortawesome/fontawesome-free/css/all.min.css'; // Importing FontAwesome icons for use in the navigation
 
 // Defining the Header component
 const Header = () => {
@@ -12,13 +11,25 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="headerContainer"> {/* Main header container */}
+    <header className="headerContainer relative"> {/* Main header container */}
       
+      {/* Mobile Menu Toggle Button */}
+      <div
+        className="headerMenuToggle"
+        onClick={() => setMenuOpen(!menuOpen)} // Toggles the menuOpen state on click
+      >
+        <i className="fa-solid fa-bars text-[#00000095]"></i> {/* FontAwesome hamburger icon */}
+      </div>
       {/* Logo Section */}
       <div className="headerLogo">
         <img src={logo} className="headerLogoImg" alt="logo" /> {/* Logo image */}
         LearnPro {/* Brand name */}
       </div>
+      {/* Icons */}
+      <div className="flex items-center space-x-8  text-[#00000095] absolute right-5 md:hidden">
+            <FiSearch className="text-2xl cursor-pointer" />
+            <FiMoreVertical className="text-2xl cursor-pointer" />
+          </div>
 
       {/* Navigation Links Section */}
       <nav className={`headerNav ${menuOpen ? "open" : ""}`}> {/* Adds "open" class if the menu is toggled */}
@@ -61,13 +72,6 @@ const Header = () => {
         <img src={profile} className="headerProfile" alt="profile" /> {/* Profile picture */}
       </a>
 
-      {/* Mobile Menu Toggle Button */}
-      <div
-        className="headerMenuToggle"
-        onClick={() => setMenuOpen(!menuOpen)} // Toggles the menuOpen state on click
-      >
-        <i className="fa-solid fa-bars"></i> {/* FontAwesome hamburger icon */}
-      </div>
     </header>
   );
 };
