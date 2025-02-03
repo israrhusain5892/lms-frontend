@@ -1,7 +1,7 @@
  
 import { useState } from "react"; 
 import "./header.css";
-import logo from "../../assets/images/logomark.png";
+import logo from "../../assets/images/logomark.png"; 
 import profile from "../../assets/images/profile.png";
 
 import '@fortawesome/fontawesome-free/css/all.min.css'; // Importing FontAwesome icons for use in the navigation
