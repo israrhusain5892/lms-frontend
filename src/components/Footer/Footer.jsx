@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className="lg:mb-20 mb-12 sm:hidden ">
+      <div className=" sm:hidden ">
           
           <div className="flex space-x-3 mt-2 justify-center items-center">
             <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-gray-800 text-xl">
