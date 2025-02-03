@@ -1,16 +1,13 @@
-import SignUpPage from "./components/SignUpPage/SignUpPage"
-import SignInPage from "./components/SignUpPage/SignInPage"
-
+import FolderPage from "./Pages/FolderPage"
 function App() {
-
-
   return (
     <>
-      <SignUpPage />
-      <SignInPage />
-
+      <FolderPage />
     </>
   )
 }
 
 export default App
+
+
+
