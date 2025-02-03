@@ -6,7 +6,7 @@ const StudentDashboardLayout=({children})=>{
       return(
           <div>
                 <Header/>
-                <div className="d-flex  gap-5">
+                <div className="d-flex  ">
 
                 <SideBar/>
                 
