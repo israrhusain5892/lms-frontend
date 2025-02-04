@@ -12,8 +12,10 @@ function TopTutors() {
     <div className="container my-4 mt-5 ">
       {/* Section Title */}
       <h1 className="text-left mb-5 top-heading">Weekly Top Live Tutors</h1>
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 g-3 justify-content-center">
-        {/* Card 1 */}
+
+      {/* Card 1 */}
+      <div className="row row-cols-2.5 row-cols-sm-1 row-cols-md-3 row-cols-lg-5 g-3 flex-nowrap overflow-auto">
+
         <div className="col">
           <div className="card text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
             <img
