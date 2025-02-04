@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React from "react";
 import SuccessImage from "../assets/images/success.svg";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Link } from "react-router-dom";
 function SuccessPage() {
   return (
     <div className="container d-flex justify-content-center align-items-center vh-100">
@@ -38,7 +39,7 @@ function SuccessPage() {
             width:'80%'
           }}
         >
-          Go to Home
+         <Link to="/home"> Go to Home</Link>
         </button>
       </div>
     </div>
