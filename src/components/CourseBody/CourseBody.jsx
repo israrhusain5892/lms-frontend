@@ -64,7 +64,7 @@ const CourseBody = () => {
       </h2>
       <div className="flex flex-wrap justify-between m-10 gap-8">
         {data.courseIncludes.map((item, index) => (
-          <div key={index} className="flex items-start space-x-4 lg:!px-20 lg:py-4">
+          <div key={index} className="flex items-start space-x-4 lg:!px-10 lg:py-4">
             {iconMapping[item.icon] || <GrCertificate className="text-[#212121] text-2xl" />}
             <div>
               <p className="w-96 font-poppins text-[13px] md:text-[18px] text-[#1B2128]">
