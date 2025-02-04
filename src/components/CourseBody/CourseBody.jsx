@@ -5,8 +5,25 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./course-body.css";
 import { useState } from "react";
 
+import { GrCertificate } from "react-icons/gr";
+import { CiCalendar } from "react-icons/ci";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { MdOutlineQuiz } from "react-icons/md";
+import { PiStack } from "react-icons/pi";
+import { BiCodeBlock } from "react-icons/bi";
+import { GoChecklist } from "react-icons/go";
+
 
 const CourseBody = () => {
+
+  const iconMapping = {
+    "fa-solid fa-awad": <GrCertificate className="text-[#212121] text-2xl" />,
+    "fa-solid fa-video": <FaExternalLinkAlt className="text-[#212121] text-2xl" />,
+    "fa-solid fa-calendar": <CiCalendar className="text-[#212121] text-3xl" />,
+    "fa-solid fa-clipboard": <MdOutlineQuiz className="text-[#212121] text-2xl" />,
+    "fa-solid fa-code": <BiCodeBlock  className="text-[#212121] text-2xl" />,
+    "fa-solid fa-book": <PiStack    className="text-[#212121] text-2xl" />,
+  };
 
   const [activeIndex, setActiveIndex] = useState(null);
 
@@ -15,18 +32,18 @@ const CourseBody = () => {
   };
 
   return (
-    <div className="w-full courseBody mx-auto space-y-12  ">
+    <div className="w-full courseBody lg:px-20 mx-auto space-y-12  ">
       {/* What You'll Learn Section */}
       <section>
-        <h2 className="mb-4 font-bold font-poppins text-[24px] text-[#3D3D3D] learn ">
+        <h2 className="mb-4 p-4  font-bold font-poppins text-[24px] text-[#3D3D3D] learn ">
           What you'll learn
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 ">
           {data.learningPoints.map((point, index) => (
             <div key={index} className="flex items-start space-x-4">
-              <i className="fa-solid fa-calendar-check text-blue-500 text-2xl"></i>
+              <GoChecklist className="text-blue-500 text-3xl"/>
               <div>
-                <p className=" w-[400px] font-poppins text-[18px] tracking-wider	">
+                <p className="w-[270px] sm:w-[358px] lg:w-[400px] font-poppins text-[15px] tracking-wider	">
                   {" "}
                   <span className="text-[#18181B] font-bold">
                     {point.title} :{" "}
@@ -42,38 +59,39 @@ const CourseBody = () => {
 
       {/* This Course Includes Section */}
       <section>
-        <h2 className="text-[24px] font-sans  font-bold text-[#3D3D3D] mb-4">
-          This Course Includes
-        </h2>
-        <div className="flex flex-wrap justify-between m-10 gap-8">
-          {data.courseIncludes.map((item, index) => (
-            <div key={index} className="d-flex items-start align-items-center space-x-4 ">
-              <i className={`${item.icon} text-[#212121]  text-2xl`}></i>
-              <div className="">
-                <p className="w-96 font-poppins text-[18px] text-[#1B2128]">{item.title} <span className="text-[#1B2128] underline"> {item.description}</span></p>
-
-              </div>
+      <h2 className="text-[24px] font-sans px-4  font-bold text-[#3D3D3D] mb-4">
+        This Course Includes
+      </h2>
+      <div className="flex flex-wrap justify-between m-10 gap-8">
+        {data.courseIncludes.map((item, index) => (
+          <div key={index} className="flex items-start space-x-4 lg:!px-20 lg:py-4">
+            {iconMapping[item.icon] || <GrCertificate className="text-[#212121] text-2xl" />}
+            <div>
+              <p className="w-96 font-poppins text-[13px] md:text-[18px] text-[#1B2128]">
+                {item.title} <span className="text-[#3D5CFF] underline">{item.description}</span>
+              </p>
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
+        ))}
+      </div>
+    </section>
 
       {/* Description Section */}
       <section>
-        <h2 className="text-[24px] font-poppins font-bold text-[#3D3D3D] mb-4">Description</h2>
-        <p className="text-[16px] font-poppins text-[#656565]">{data.about}</p>
+        <h2 className="text-[24px] font-poppins px-4  font-bold text-[#3D3D3D] mb-4">Description</h2>
+        <p className="text-[16px] font-poppins px-4  text-[#656565]">{data.about}</p>
       </section>
 
       {/* Course Materials Section */}
       <section>
-        <h2 className="text-[24px]  font-bold text-[#3D3D3D] mb-4">
+        <h2 className="text-[24px] px-4 font-bold text-[#3D3D3D] mb-4">
           Course Materials
         </h2>
         <ul className="space-y-4 bg-[#FBFCFE]">
           {data.materials.map((material, index) => (
             <li key={index} className="border-b-2 border-[#cbd5e169]">
               <div
-                className="flex items-center justify-between p-4 cursor-pointer"
+                className="flex items-center justify-between p-4  cursor-pointer"
                 onClick={() => toggleAccordion(index)}
               >
                 <div className="flex items-center space-x-4">
@@ -89,7 +107,7 @@ const CourseBody = () => {
               </div>
               {/* Dynamic subsection details */}
               {activeIndex === index && material.details && (
-                <div className="p-4 bg-gray-50">
+                <div className="p-4  bg-gray-50">
                   <h3 className="text-[16px] text-[#3D5CFF] font-bold">
                     {material.details.header}
                   </h3>
@@ -108,10 +126,10 @@ const CourseBody = () => {
 
       {/* Reviews Section */}
       <section>
-        <h2 className="text-[24px] font-bold mb-4 text-[#3D3D3D]">Reviews</h2>
+        <h2 className="text-[24px] px-4  font-bold mb-4 text-[#3D3D3D]">Reviews</h2>
         <div className="space-y-6">
           {data.reviews.map((review, index) => (
-            <div key={index} className="p-4 shadow-sm">
+            <div key={index} className="p-4  shadow-sm">
               <div className="flex justify-start gap-2 items-center mb-2">
                 <img
                   src={demoprofile}
@@ -136,9 +154,9 @@ const CourseBody = () => {
 
       {/* About Author Section */}
       <section>
-        <h2 className="text-[24px]font-bold mb-6 text-[#3D3D3D]">About Author</h2>
-        <div className="flex items-center space-x-6 mb-6 shadow-sm pb-8">
-          <div className="w-10 h-10 bg-[#FFE5BB] rounded-full flex items-center justify-center text-white text-3xl font-bold">
+        <h2 className="text-[24px] font-bold mb-6 px-4 text-[#3D3D3D]">About Author</h2>
+        <div className="flex items-center space-x-6 mb-6 px-4 shadow-sm pb-8">
+          <div className="w-12 h-12 bg-[#FFE5BB] rounded-full flex items-center justify-center text-white text-3xl font-bold">
             {/* { data.author} */}
           </div>
           <div>
@@ -155,8 +173,8 @@ const CourseBody = () => {
           </div>
         </div>
         <div className="wrapper pb-2 shadow-sm mb-4">
-          <div className="mb-6 lg:w-[650px]">
-            <p className="text-[16px] text-[#475569]">{data.author.description}</p>
+          <div className="mb-6 lg:!px-2 w-[400px] lg:w-[750px]">
+            <p className="text-[16px] px-8 text-[#475569]">{data.author.description}</p>
           </div>
         </div>
         <div>
@@ -164,7 +182,7 @@ const CourseBody = () => {
             {data.author.experience.map((exp, index) => (
               <li
                 key={index}
-                className="flex items-center justify-between py-6 shadow-sm pr-4"
+                className="flex items-center justify-between py-6 px-3 shadow-sm pr-4"
               >
                 <div className="flex justify-center items-center gap-2">
                   <i
