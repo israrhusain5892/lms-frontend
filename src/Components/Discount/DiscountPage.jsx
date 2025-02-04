@@ -6,7 +6,7 @@ import "./discount-page.css";
 
 function DiscountPage() {
   return (
-    <Carousel indicators={false} controls={false}  className="carousal">
+    <Carousel indicators={false} controls={false} className="carousal">
       <Carousel.Item className="d-flex justify-content-center align-items-center text-white mt-4 item">
         <div
           className="position-relative rounded-2 "
@@ -51,34 +51,34 @@ function DiscountPage() {
           </div>
         </div>
 
-       
-       
+
+
       </Carousel.Item>
 
-      
-       {/* Indicators */}
-       <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            position: "absolute",
-            bottom: "70px",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          {Array.from({ length: 5 }, (_, index) => (
-            <div
-              key={index}
-              style={{
-                width: index === 2 ? "40px" : "20px",
-                height: "20px",
-                borderRadius: index === 2 ? "5px" : "50%",
-                backgroundColor: index === 2 ? "#FAC840" : "#1A6EFC",
-                margin: "0 5px",
-              }}
-            ></div>
-          ))}
-        </div>
+
+      {/* Indicators */}
+      <div
+        className="d-flex justify-content-center align-items-center"
+        style={{
+          position: "absolute",
+          bottom: "70px",
+          left: "50%",
+          transform: "translateX(-50%)",
+        }}
+      >
+        {Array.from({ length: 5 }, (_, index) => (
+          <div
+            key={index}
+            style={{
+              width: index === 2 ? "40px" : "20px",
+              height: "20px",
+              borderRadius: index === 2 ? "5px" : "50%",
+              backgroundColor: index === 2 ? "#FAC840" : "#1A6EFC",
+              margin: "0 5px",
+            }}
+          ></div>
+        ))}
+      </div>
     </Carousel>
   );
 }
