@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* :root {
   --primary-color: #DBE6FE;
@@ -181,8 +184,8 @@
 
 .card-body {
   position: absolute;
-  top: 3.3rem;
-  left: 1rem;
+  top: 4.3rem;
+  left: 1.9rem;
   color: #ffffff;
 }
 
@@ -261,7 +264,7 @@
   }
 
   .courseHeroCustomBg{
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
   }
 
 
@@ -275,7 +278,7 @@
 
   }
   .courseHeroCustomBg{
-    flex-wrap: wrap-reverse;
+    /* flex-wrap: wrap-reverse; */
   }
 
   .courseHeroHeading {

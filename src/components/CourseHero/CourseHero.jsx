@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unknown-property */
 // import "bootstrap/dist/css/bootstrap.min.css";
 // import "bootstrap-icons/font/bootstrap-icons.css";
 import heroimage from "../../assets/images/courseimage.png";
@@ -35,7 +34,7 @@ const CourseHero = () => {
       </div>
 
       {/* desktop */}
-      <div className="flex  align-items-center gap-4 courseHeroCustomBg  ">
+      <div className="flex flex-wrap-reverse lg:!flex-nowrap align-items-center gap-4 courseHeroCustomBg  ">
         {/* Left Section */}
         <div className="courseHeroContent  lh-sm ">
           <div className="mb-2">
@@ -98,25 +97,25 @@ const CourseHero = () => {
 
         {/* Right Section */}
         <div className=" justify-content-center cardPart">
-          <div className="card  border-0 courseHeroCard">
+          <div className=" relative border-0 courseHeroCard">
             <img
               src={heroimage} /* Replace with the actual image path */
               alt="React Course"
-              className="card-img-top courseHeroCardImage"
+              className="courseHeroCardImage"
             />
 
             <div className="webbadge hidden md:block text-black position-absolute">
               2023
             </div>
-            <div className="card-body text-start hidden md:block ">
-              <h5 className="fw-bold">
+            <div className="card-body text-start  hidden md:block ">
+              <h5 className="fw-bold xl:!text-[36px] lg:!text-[25px]">
                 The Full Stack <br /> React Course
               </h5>
-              <p className="mb-0 lh-lg">
+              <p className="mb-0 lh-lg text-[16px] lg:text-[13px] xl:text-[14px]">
                 Build & Deploy E-Learning App <br />
-                <span className="fw-bold ">From Zero to Hero</span>
+                <span className="fw-bold text-[16px] lg:text-[12px] xl:text-[14px]">From Zero to Hero</span>
               </p>
-              <p className="small mt-2">
+              <p className="mt-2 text-[16px] lg:text-[12px] xl:text-[14px]">
                 The Advanced Front-End Programming course <br /> sharpens
                 students critical thinking, creativity, <br /> and analytical
                 skills.
