@@ -23,6 +23,7 @@ import HomePage from './Pages/MainPage/HomePage';
 import TrendingCourse from './Components/TopNewCourses/TopCourse';
 import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
 // import CourseCard from './components/CourseCard/CourseCard';
+import FolderPage from './Pages/FolderReading/FolderPage';
 function App() {
   return (
     <div style={{width:'100%'}} >
@@ -37,6 +38,7 @@ function App() {
         <Route path="/course-detail" element={<CourseDetailPage/>} />
         <Route path="/home" element={<HomePage/>} />
        <Route path="/dashboard" element={<StudentDashboard/>} />
+       <Route path="/folder" element={<FolderPage/>} />
        
       </Routes>
     </Router>

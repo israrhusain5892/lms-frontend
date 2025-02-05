@@ -4,9 +4,9 @@ import SideBar from "../Components/SideBar/SideBar";
 
 const StudentDashboardLayout=({children})=>{
       return(
-          <div>
+          <div className="bg-white">
                 <Header/>
-                <div className="d-flex  ">
+                <div className="d-flex ">
 
                 <SideBar/>
                 

@@ -1,4 +1,4 @@
-import "../../index.css";
+import "./dsa.css";
 import courseimg from "../../assets/images/course.png";
 
 export default function DSACourse() {
@@ -33,7 +33,7 @@ export default function DSACourse() {
     <div className="p-4 md:p-6 max-w-6xl mx-auto">
       {/* Page Title & Search Bar */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-4">
-        <h1 className="text-xl md:text-2xl font-semibold mr-10">Data Structure & Algorithms</h1>
+        <h1 className="text-xl md:text-2xl font-semibold mr-10 font-sans">Data Structure & Algorithms</h1>
         <div className="flex items-center space-x-2 mt-3 md:mt-0 w-full md:w-auto">
           <input
             type="text"
@@ -47,7 +47,7 @@ export default function DSACourse() {
       </div>
 
       {/* Breadcrumb */}
-      <nav className="text-gray-500 text-sm mb-4">Home &gt; Video &gt; Folder 2</nav>
+      <nav className="path mb-4">Home &gt; Video &gt; Folder 2</nav>
 
       {/* Course List */}
       <div className="space-y-6">

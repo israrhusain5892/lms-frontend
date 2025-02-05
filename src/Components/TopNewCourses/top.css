@@ -15,3 +15,9 @@
 
 
 }
+
+@media(max-width:768px){
+   .trendingHeading .top-new{
+        font-size: 16px;
+    }
+}

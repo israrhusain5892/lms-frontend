@@ -6,13 +6,13 @@ import "./discount-page.css";
 
 function DiscountPage() {
   return (
-    <Carousel indicators={false} controls={false}  className="carousal">
+    <Carousel indicators={false} controls={false}  className="carousa">
       <Carousel.Item className="d-flex justify-content-center align-items-center text-white mt-4 item">
         <div
-          className="position-relative rounded-2 "
-          style={{ maxWidth: "100%" }}
+          className="position-relative rounded-2 carousalPart"
+          style={{ Width: "100%" }}
         >
-          <Image src={OfferImage} alt="Offer" />
+          <Image className="image1" src={OfferImage} alt="Offer" />
 
           <div
             className="position-absolute top-50 ml-20 ml-lg-86"
@@ -52,16 +52,14 @@ function DiscountPage() {
         </div>
 
        
-       
       </Carousel.Item>
 
       
-       {/* Indicators */}
-       <div
+      <div
           className="d-flex justify-content-center align-items-center"
           style={{
             position: "absolute",
-            bottom: "70px",
+            bottom: "80px",
             left: "50%",
             transform: "translateX(-50%)",
           }}
@@ -79,6 +77,10 @@ function DiscountPage() {
             ></div>
           ))}
         </div>
+
+      
+       {/* Indicators */}
+      
     </Carousel>
   );
 }
