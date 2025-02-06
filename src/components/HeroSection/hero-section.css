@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 
 
-*{
-    font-family: 'Poppins', 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  font-family: 'Poppins', 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -102,19 +102,68 @@
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
   .hero-section {
-    padding: 4rem 2rem;
-    /* Adjust padding for small screens */
-    height: auto;
+  
+    height: 150px !important;
+    margin-top: 40px !important;
+    margin-bottom: 30px !important;
+    width: 100%;
+    padding: 0px!important;
+    padding-left: 10px!important;
     /* Adjust height for small screens */
+  }
+  .container-hero{
+     padding: 0px 10px;
+  }
+
+  
+  .redeem {
+    
+    font-family: 'Poppins',serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FEF1FA;
+   
+
+
   }
 
   .text-container h1 {
-    font-size: 2rem;
+    font-size: 1rem;
     /* Smaller text size on small screens */
+    font-family: 'Inter Tight', serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+
+  .deal-cont {
+    gap: 6px !important;
+    align-items: center;
+    margin-bottom: 0px !important;
+  }
+
+  .deal {
+    margin-top: 4px;
   }
 
   .text-container p {
     font-size: 1.375rem;
+    font-family: 'Poppins', serif;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
     /* Smaller paragraph text size */
   }
 
@@ -129,12 +178,13 @@
 
   .image-container img {
     width: 200px;
-   
-    
-    
+
+
+
     /* Ensure image is responsive on small screens */
   }
 }
+
 @media (max-width: 480px) {
   .hero-section {
     padding: 2rem 1rem;
@@ -152,11 +202,13 @@
     font-size: .585rem;
     /* Smaller paragraph text size */
   }
-  .text-container .deal{
+
+  .text-container .deal {
     font-size: .799rem;
     /* Smaller text size on small screens */
   }
-  .cursor{
+
+  .cursor {
     width: 50px;
     height: 3px;
   }
@@ -169,13 +221,11 @@
     text-align: center;
     /* Center align image */
   }
- 
+
 
   .image-container img {
     width: 170px;
-   
+
     /* Ensure image is responsive on small screens */
   }
 }
-
-

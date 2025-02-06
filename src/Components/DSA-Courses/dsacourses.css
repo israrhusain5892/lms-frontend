@@ -1,9 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 *{
     font-family: 'Poppins', 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+
+
+/* Ensures a clean and responsive design */
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Smooth hover effects */
+button:hover {
+  opacity: 0.9;
+}
+
+@media(max-width:768px){
+   .dsaContainer{
+     padding: 0px 10px!important;
+     margin-top: 20px!important;
+   }
+   .pathdsa{
+      /* margin-bottom: 10px!important; */
+      margin-top: 10px!important;
+   }
+   .dsa{
+    margin-bottom: 10px!important;
+   }
 }

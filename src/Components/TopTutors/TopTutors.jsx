@@ -9,22 +9,22 @@ import weekly_top_tutor5 from "../../assets/images/Michael-Roberts.svg";
 
 function TopTutors() {
   return (
-    <div className="container my-4 mt-5 ">
+    <div className="containe topTutor my-4 mt-5 ">
       {/* Section Title */}
       <h1 className="text-left mb-5 top-heading">Weekly Top Live Tutors</h1>
 
       {/* Card 1 */}
-      <div className="row row-cols-2.5 row-cols-sm-1 row-cols-md-3 row-cols-lg-5 g-3 flex-nowrap overflow-auto">
+      <div className="row row-cols-2.5 row-cols-sm-1 row-cols-md-3 row-cols-lg-5 g-3 flex-nowrap  card-wraper ">
 
         <div className="col">
-          <div className="card text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
+          <div className="card-top text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
             <img
               src={weekly_top_tutor1}
               className="card-img-top rounded-circle mx-auto mt-4"
               alt="Tutor 1"
               style={{ width: "86px", height: "86px" }}
             />
-            <div className="card-bod pt-4 ">
+            <div className="card-bod pt-4  ">
               <h5 className="card-title">Albert Flores</h5>
               <p className="card-text text-primary mb-0">Math 116</p>
             </div>
@@ -33,7 +33,7 @@ function TopTutors() {
 
         {/* Card 2 */}
         <div className="col">
-          <div className="card text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
+          <div className="card-top text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
             <img
               src={weekly_top_tutor2}
               className="card-img-top rounded-circle mx-auto mt-4"
@@ -65,7 +65,7 @@ function TopTutors() {
 
         {/* Card 4 */}
         <div className="col">
-          <div className="card text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
+          <div className="card-top text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
             <img
               src={weekly_top_tutor4}
               className="card-img-top rounded-circle mx-auto mt-4"
@@ -81,7 +81,7 @@ function TopTutors() {
 
         {/* Card 5 */}
         <div className="col">
-          <div className="card text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
+          <div className="card-top text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
             <img
               src={weekly_top_tutor5}
               className="card-img-top rounded-circle mx-auto mt-4"

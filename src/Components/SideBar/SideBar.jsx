@@ -33,8 +33,8 @@ const links=[
                   <div className='linksContainer'>
                     {
                          links?.map((link,index)=>{
-                           return <div onClick={()=>setActiveLink(link.name)}   className={` ${activeLink===link.name ? 'active':''} links`}>
-                            <p className='link'>{link.name}</p>
+                           return <div onClick={()=>setActiveLink(link.name)}   className={`links ${activeLink===link.name ? 'activeLinks':''} `}>
+                            <p className={`link ${activeLink===link.name ? 'activeLinks':''} `}>{link.name}</p>
                             <IoIosArrowForward className='icon' />
                       </div>
                          })

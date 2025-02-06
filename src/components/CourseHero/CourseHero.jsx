@@ -15,33 +15,43 @@ import "bootstrap/dist/js/bootstrap.bundle.min.js"; // If you need Bootstrap JS
 
 const CourseHero = () => {
   return (
-    <div className="courseHeroWrapper  ">
+    <div className="courseHeroWrapper ">
+
+     
     {/* Mobile */}
       <div className="mobilebadge block md:hidden text-black ">2023</div>
 
-      <div className="card-upperbody text-start block md:hidden ">
+      <div className="card-upperbody text-start block md:hidden  ">
         <h5 className="fw-bold text-2xl">
           The Full Stack <br /> React Course
         </h5>
-        <p className="mb-0 lh-lg text-[#9e9e9e]">
+        <p className="mb-0  font-normal lh-lg text-[#9e9e9e]">
           Build & Deploy E-Learning App <br />
           <span className="fw-bold ">From Zero to Hero</span>
         </p>
-        <p className="small text-[#9e9e9e] mb-4">
+        <p className="small block md:hidden text-[#9e9e9e] mb-4 font-normal">
           The Advanced Front-End Programming course <br /> sharpens students
           critical thinking, creativity, <br /> and analytical skills.
         </p>
-      </div>
+      </div> 
 
       {/* desktop */}
+<<<<<<< HEAD
       <div className="flex flex-wrap-reverse lg:!flex-nowrap align-items-center gap-4 courseHeroCustomBg  ">
+=======
+      <div className="d-flex w-100 align-items-center justify-content-between px-5 courseHeroCustomBg mt-4 h-auto py-4 ">
+>>>>>>> d038c858476f6fe3d6499031031fdb6e4e3e3b56
         {/* Left Section */}
         <div className="courseHeroContent  lh-sm ">
           <div className="mb-2">
             <span className="courseHeroBadge ">Web development</span>
           </div>
-          <h2 className="courseHeroHeading mb-3">
-            Advanced Front-End <br></br>Programming Techniques
+          <h2  className="courseHeroHeading mb-3">
+            Advanced Front-End<br></br> Programming Techniques
+          </h2>
+
+          <h2  className="mobile-courseHeroHeading mb-3">
+            Advanced Front-End Programming Techniques
           </h2>
           <div className="d-flex flex-wrap align-items-center mt-4 mb-3 gap-2 courseHeroTextMuted">
             <div className="me-3 d-flex gap-2 align-items-center courseHeroTextMuted">
@@ -96,12 +106,21 @@ const CourseHero = () => {
         </div>
 
         {/* Right Section */}
+<<<<<<< HEAD
         <div className=" justify-content-center cardPart">
           <div className=" relative border-0 courseHeroCard">
             <img
               src={heroimage} /* Replace with the actual image path */
               alt="React Course"
               className="courseHeroCardImage"
+=======
+        <div className=" justify-content-center cardPart position-relative">
+          <div className=" border-0 courseHeroCard">
+            <img
+              src={heroimage} /* Replace with the actual image path */
+              alt="React Course"
+              className=" courseHeroCardImage"
+>>>>>>> d038c858476f6fe3d6499031031fdb6e4e3e3b56
             />
 
             <div className="webbadge hidden md:block text-black position-absolute">
