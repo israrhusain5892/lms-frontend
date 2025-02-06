@@ -6,7 +6,7 @@
 }
 
 .course-container {
-      display: flex;
+    display: flex;
     justify-content: center;
     gap: 10px;
     width: 100%;
@@ -51,34 +51,47 @@
 @media(max-width:768px) {
 
     .courseMain {
-        width: 100% !important;
-
+        margin-top: 0px !important;
     }
 
     .course-container {
         /* display:inline-block !important; */
-
-        width: 100% !important;
-        /* width: 100vw !important; */
+        margin: auto;
+        /* width: 90% !important; */
+        width: 100vw !important;
         /* Prevents overflow */
-        overflow: auto !important;
+        margin-top: 0px!important;
         overflow-y: hidden !important;
-        -ms-overflow-style: none;
+        /* display: block; */
         /* IE and Edge */
+        overflow: auto !important;
         scrollbar-width: none;
-       
         /* white-space: nowrap !important; */
-     
-       
-    }
-    .card-a{
-        /* position: absolute; */
-         left: 0px;
-         /* width:217px; */
-      
+
+
     }
 
- 
+    .card1 {
+        /* position: absolute; */
+        margin-left: 0px;
+
+        width: 217px !important;
+        /* width:100%; */
+        
+
+
+
+    }
+    .trendingHeading{
+        margin-bottom: 10px!important;
+    }
+
+    .card0 {
+        margin-left: -8.75rem!important;
+        /* display: none; */
+    }
+
+
 
     .trendingHeading h4 {
         font-size: 16px;

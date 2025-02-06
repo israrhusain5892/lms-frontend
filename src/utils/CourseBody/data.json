@@ -11,8 +11,8 @@
     ],
     "courseIncludes": [
       { "icon": "fa-solid fa-award", "title": "Certificate of Achievement", "description": "" },
-      { "icon": "fa-solid fa-video", "title": "Meeting ID", "description": "8739 8973 9873" },
-      { "icon": "fa-solid fa-calendar", "title": "Batch Start Date: 18-12-24", "description": "" },
+      { "icon": "fa-solid fa-video", "title": "Meeting ID : ", "description": "8739 8973 9873" },
+      { "icon": "fa-solid fa-calendar", "title": "Batch Start Date : 18-12-24", "description": "" },
       { "icon": "fa-solid fa-clipboard", "title": "Quiz: Data structure & Algorithms", "description": "" },
       { "icon": "fa-solid fa-code", "title": "Batch Code ah483n8c", "description": "" },
       { "icon": "fa-solid fa-book", "title": "Mini Project", "description": "" }
@@ -63,7 +63,7 @@
         "role": "Engineering",
         "institution": "University of Oxford",
         "years": "2020-2024",
-        "color":"purple"
+        "color":"blue"
       },
       {
         "role": "SSC",

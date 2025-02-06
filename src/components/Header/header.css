@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap');
 /* Define Root Variables for Colors */
+
 :root {
     --primaryColor: #3D5CFF;
     --secondaryColor: #0961f5;
@@ -26,9 +30,10 @@
     align-items: center;
     padding: 1rem 2rem;
     background-color: #fff;
-    /* border-bottom: 1px solid var(--borderColor); */
-    /* box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1); */
+    border-bottom: 1px solid var(--borderColor);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
     position: relative;
+    
 }
 
 .headerLogo {
@@ -38,6 +43,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Sen", serif;
 }
 
 /* Navigation Links */
@@ -45,6 +51,8 @@
     flex: 1;
     display: flex;
     justify-content: center;
+   
+   
 }
 
 .headerNavList {
@@ -74,6 +82,7 @@
     margin-right: 4.1rem;
     box-shadow: 0 4px 9px rgba(0, 0, 0, 0.1); /* Increased shadow */
     border-radius: 0.5em;
+    /* margin-left: 2rem; */
 }
 
 .headerSearchBarInput {
@@ -133,7 +142,7 @@
 
 .headerDownloadBtn {
     background-color: var(--primaryColor);
-    color: #000;
+    color: #fff;
 }
 
 .headerLogOutBtn {
@@ -145,8 +154,9 @@
 /* Menu Toggle for Mobile */
 .headerMenuToggle {
     display: none;
-    font-size: 1.5rem;
+    font-size: 4.5rem;
     cursor: pointer;
+    
 }
 
 .headerProfile{
@@ -157,29 +167,69 @@
     
 }
 
+
+
+@media (max-width:1400px) {
+
+     .headerSearchBar {
+        margin-right: 1.5rem; /* Reduced space for search bar */
+        width:20rem;
+    }
+
+}
+
 /* Updated CSS for Mobile and Small Devices */
 @media (max-width: 768px) {
     .headerMenuToggle {
         display: block;
     }
 
+    .headerMenuToggle i{
+        font-size: 1.5rem;
+    }
     .headerNav {
         position: absolute;
-        top: 100%;
+        top: 101%;
         left: 0;
         background-color: #fff;
-        width: 100%;
+        width: 85%;
         display: none;
         flex-direction: column;
-        padding: 1rem 0;
+        padding: 1rem 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        border-top: 2px solid var(--primaryColor); /* Highlight border */
+        border-top: 1px solid var(--primaryColor); /* Highlight border */
         border-radius: 0 0 10px 10px; /* Rounded corners */
+        transition:1s;
     }
-
+    .headerLogo {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Sen", serif;
+}
+.headerContainer {
+    display: flex;
+    justify-content:start;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #fff;
+    border-bottom: 1px solid var(--borderColor);
+    box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.1);
+    position: relative;
+    
+}
+.headerMenuToggle{
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 1.5rem;
+}
     .headerNav.open {
         display: flex;
+        transition: 1s;
     }
 
     .headerNavList {
@@ -228,6 +278,9 @@
     .headerLogo {
         font-size: 1.2rem;
     }
+    .headerMenuToggle i{
+        font-size: 1.2rem;
+    }
 
     .headerLogoImg {
         width: 20px;
@@ -258,12 +311,6 @@
     .headerNavList {
         padding: 0.8rem;
         gap: 2.3rem; /* Slightly increase gap between navigation items */
-      
-    }
-
-    .headerSearchBar{
-        /* margin-left: 20px; */
-        width:17rem;
     }
     
     .headerSearchBar {
@@ -279,8 +326,8 @@
 
     .headerDownloadBtn,
     .headerLogOutBtn {
-        /* padding: 0.75em 1.5em; */
-        /*font-size: 1.1rem;  Adjust font size */
+        padding: 0.75em .8em; /* Larger buttons for better clickability */
+        font-size: 0.9rem; /* Adjust font size */
     }
     .profile{
         /* display: none; */

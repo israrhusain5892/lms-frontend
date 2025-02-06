@@ -77,7 +77,7 @@ function TrendingCourse(props) {
 
                 {
                     courses?.map((course, index) => {
-                        return <div className='card-a' key={index} onClick={goToDetail}>
+                        return <div className={`card-a card${index}`} key={index} onClick={goToDetail}>
                             <CourseCard course={course} />
                         </div>
 

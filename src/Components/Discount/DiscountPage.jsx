@@ -3,84 +3,79 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import OfferImage from "../../assets/images/OFFER.svg";
 import { Carousel, Image } from "react-bootstrap";
 import "./discount-page.css";
+import { useEffect, useState } from "react";
 
 function DiscountPage() {
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
-    <Carousel indicators={false} controls={false}  className="carousa">
+    <Carousel indicators={false} controls={false} className="carousal">
       <Carousel.Item className="d-flex justify-content-center align-items-center text-white mt-4 item">
         <div
-          className="position-relative rounded-2 carousalPart"
+          className="position-relative rounded-2 carouselPart ]"
           style={{ Width: "100%" }}
         >
-          <Image className="image1" src={OfferImage} alt="Offer" />
+          {/* <Image className="image1" src={OfferImage} alt="Offer" /> */}
 
           <div
-            className="position-absolute top-50 ml-20 ml-lg-86"
-            style={{ transform: "translateY(-50%)" }}
+            className="position   ml-lg-86"
+          // style={{ transform: "translateY(-50%)" }}
           >
             <p
-              style={{
-                fontFamily: "Mulish",
-                fontSize: "60px",
-                fontWeight: "bold",
-              }}
+
+              className="percentage"
             >
               25% OFF*
             </p>
             <p
-              style={{
-                fontFamily: "Mulish",
-                fontSize: "40px",
-                fontWeight: "bold",
-                textAlign: "left",
-              }}
+              className="today"
             >
               Today's Special
             </p>
 
             <p
-              style={{
-                fontFamily: "Mulish",
-                fontSize: "30px",
-                fontWeight: "bold",
-                textAlign: "left",
-              }}
+              className="para-discount"
             >
               Get a Discount for Every Course Order Only Valid for Today.!
             </p>
           </div>
         </div>
 
-       
+
+
       </Carousel.Item>
 
-      
-      <div
-          className="d-flex justify-content-center align-items-center"
-          style={{
-            position: "absolute",
-            bottom: "80px",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          {Array.from({ length: 5 }, (_, index) => (
-            <div
-              key={index}
-              style={{
-                width: index === 2 ? "40px" : "20px",
-                height: "20px",
-                borderRadius: index === 2 ? "5px" : "50%",
-                backgroundColor: index === 2 ? "#FAC840" : "#1A6EFC",
-                margin: "0 5px",
-              }}
-            ></div>
-          ))}
-        </div>
 
-      
-       {/* Indicators */}
-      
+      {/* Indicators */}
+      <div
+        className="d-flex justify-content-center align-items-center indicator"
+
+      >
+        {Array.from({ length: 5 }, (_, index) => (
+          <div
+            className="point"
+            key={index}
+            style={{
+              width: index === 2 ? (isMobile ? "1.5rem" : "2.5rem") : isMobile ? "0.4rem" : "1.2rem",
+              height: isMobile ? "0.4rem" : "1.2rem",
+              borderRadius: index === 2 ? "5px" : "50%",
+              backgroundColor: index === 2 ? (isMobile ? "#FAC840" : "#FAC840") : isMobile ? "rgb(8, 82, 211)" : "#1A6EFC",
+              margin: "0 5px",
+
+            }}
+          ></div>
+        ))}
+      </div>
     </Carousel>
   );
 }

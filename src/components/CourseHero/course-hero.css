@@ -10,9 +10,20 @@
   --border-radius: 1rem;
 } */
 
-.courseHeroWrapper {
-  /* font-family: 'Poppins', sans-serif; */
+
+
+*{
+    font-family: 'Poppins', 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+
+.card-upperbody{
+  /* display: none!important; */
+}
+
 
 .courseHeroWrapper {
   width: 100%;
@@ -27,7 +38,7 @@
   font-size: 2.5rem;
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  line-height: 36px;
+  line-height: 46px;
   text-align: left;
   margin-top: 20px;
 
@@ -38,9 +49,10 @@
 
 
 
-/* .courseHeroContent {
-  padding: 40px;
-} */
+.courseHeroContent {
+  text-align: start;
+  
+}
 
 .courseHeroCustomBg {
   background-color: #EFF4FF;
@@ -110,6 +122,14 @@
   text-decoration-skip-ink: none;
   color: #1E1E1E80;
 
+}
+.offer {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 27px;
+  text-align: left;
+  color: #1E1E1E80;
 
 }
 
@@ -177,21 +197,37 @@
   font-family: Arial, sans-serif;
 }
 
-.badge {
+
+
+.webbadge {
   background-color: #62DAFC;
   top: 1.5rem;
   left: 1.8rem;
   border-radius: 0.4rem;
-  padding: 0.6rem 1.9rem;
+  padding: 0.5rem 1.9rem;
   font-weight: 700;
+}
+
+.mobile-courseHeroHeading{
+  display:none;
+}
+
+.mobilebadge{
+  background-color: #bacdf5;
+ width: 60px;
+ border-radius: 3px;
+ padding: 2px 11px;
+ margin: 10px 2px;
+ 
+
 }
 
 /* Responsive Design */
 
 /* For smaller devices (phones) */
-@media (max-width: 576px) {
+@media (max-width : 480px) {
   .courseHeroContent {
-    padding: 20px;
+    /* padding: 20px; */
     text-align: start;
   }
 
@@ -218,7 +254,7 @@
     height: auto;
   }
 
-  .card-body h5 {
+  .card-bo h5 {
     font-size: 1.5rem;
   }
 
@@ -227,111 +263,88 @@
     padding: 0.4rem 1.2rem;
   }
 
+  .courseHeroBtnPrime{
+  width: 100%;
+
+  }
+  .courseHeroBtnOut{
+  width: 100%;
+
+  }
+
+  .courseHeroCustomBg{
+    flex-wrap: wrap-reverse;
+  }
+
 
 }
 
 /* For tablets */
 @media (max-width: 768px) {
+
+  .mobile-courseHeroHeading{
+    display:block;
+    color: #2563EB;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  margin-top: 20px;
+  }
+
+  .courseHeroHeading{
+    display:none;
+  }
+
+  .courseHeroWrapper{
+    width:100%;
+  }
+
+  .courseHeroCardImage{
+    width:100%;
+  }
   .courseHeroContent {
-    padding: 30px;
+    padding: 6px;
+    text-align: start;
+
+  }
+  .courseHeroCustomBg{
+    flex-wrap: wrap-reverse;
+    padding:0px 0px!important
   }
 
-  .courseHeroHeading {
-    /* font-size: 2.2rem; */
-  }
-
-  .courseHeroBadge {
-    font-size: 1rem;
-  }
-
-  .courseHeroBtnPrimary,
-  .courseHeroBtnOutline {
-    padding: 10px 40px;
-  }
-
-  .courseHeroTextMuted {
-    font-size: 1rem;
-  }
-}
-
-/* For laptops */
-@media (max-width: 992px) {
-  .courseHeroContent {
-    padding: 40px;
-  }
-
-  .courseHeroHeading {
-    font-size: 2.5rem;
-  }
-
-  .courseHeroBadge {
-    font-size: 1rem;
-  }
-
-  .courseHeroBtnPrimary,
-  .courseHeroBtnOutline {
-    padding: 0.6rem 3.6rem;
-  }
-
-  .courseHeroTextMuted {
-    font-size: 1.1rem;
-  }
-
-  .card-body h5 {
-    font-size: 1.6rem;
-  }
-
-  .card-body {
-    font-size: 0.9rem;
-  }
-
-}
-
-
-@media (max-width: 1199px) {
-  .courseHeroContent {
-    padding: 40px;
-  }
-
-  .courseHeroHeading {
-    /* font-size: 2.5rem; */
-  }
-
-  .courseHeroBadge {
-    font-size: 1rem;
-  }
-
-  .courseHeroBtnPrimary,
-  .courseHeroBtnOutline {
-    padding: 0.6rem 3.6rem;
-  }
-
-
-  .courseHeroTextMuted {
-    font-size: 1.1rem;
-  }
-
-  .card-body h5 {
-    font-size: 1.6rem;
-  }
-
-  .card-body {
-    font-size: 0.9rem;
-  }
-}
-
-/* For desktops */
-@media (min-width: 1200px) {
-  .courseHeroContent {
-    padding: 60px;
-  }
-
-  .courseHeroHeading {
+  /* .courseHeroHeading {
     font-size: 2.4rem;
-  }
+  } */
 
   .courseHeroBtnPrimary,
   .courseHeroBtnOutline {
     padding: 0.3rem 4rem;
   }
+
+  .text-time{
+    font-size:12px;
+  }
 }
+
+
+
+/* For desktops */
+/* @media (min-width: 1024px) {
+  .courseHeroContent {
+    padding: 60px;
+    text-align: start;
+
+  } */
+
+  /* .courseHeroHeading {
+    font-size: 2.4rem;
+  
+  } */
+
+  /* .courseHeroBtnPrimary,
+  .courseHeroBtnOutline {
+    padding: 0.3rem 4rem;
+  }
+} */

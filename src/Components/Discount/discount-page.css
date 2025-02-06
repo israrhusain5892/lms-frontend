@@ -1,16 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .ml-20 {
   margin-left: 20px;
 }
-.item{
-  /* height: 510px; */
+
+.carouselPart {
+  width: 93%;
+  margin: auto;
+  text-align: center;
+  background-image: url("../../assets/images/OFFER.svg");
+  /* Set background image */
+  background-size: cover;
+  /* Cover entire div */
+  background-position: center;
+  /* Center the image */
+  background-repeat: no-repeat;
+  /* No repeat */
+  min-height: 510px;
+  border-radius: 10px;
+  /* Rounded corners */
 }
 
+.indicator {
+  position: absolute;
+  bottom: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.percentage {
+  font-family: "Mulish", serif;
+  font-size: 60px;
+  font-weight: 800;
+  line-height: 75.3px;
+  text-align: left;
+  color: #FFFFFF;
 
 
+}
+
+.today {
+  font-family: "Mulish", serif;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 75.3px;
+  text-align: left;
+  color: #FFFFFF;
+
+}
+
+.para-discount {
+  font-family: 'Mulish', serif;
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 37.65px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+
+}
+
+.position {
+  margin-top: 120px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carouselPart {
+    width: 93%!important;
+    min-height: 164px!important;
+    /* Reduce height on smaller screens */
+    margin: auto;
+  }
+
+  .percentage {
+    font-size: 15px;
+    line-height: 18.83px;
+  }
+
+  .today {
+    font-size: 22px!important;
+    line-height: 27.61px!important;
+    font-weight: 800px!important;;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+  }
+
+  .para-discount {
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 18.32px;
+    text-align: left;
+    margin-top: 10px;
+
+
+  }
+
+ 
+
+  .position {
+    margin-top: 40px;
+    padding: 0px 27px;
+  }
+  .indicator{
+    bottom: 20px;
+  }
+  .point{
+     /* width:12px!important; */
+     /* height: 12px!important; */
+     /* background: #1A6EFC!important; */
+     
+  }
+}
 
 @media (min-width: 992px) {
   .ml-lg-86 {
     margin-left: 86px;
   }
- 
+
+}
+
+@media(max-width:768px) {
+  .carouselPart {
+    width: 90%;
+    height: 200px;
+  }
+
+  image {
+    height: 300px;
+  }
 }

@@ -21,12 +21,14 @@ import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
 import TrendingCourse from './Components/TopNewCourses/TopCourse';
-import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
+import StudentDashboard from './Pages/VideoPage/VideoPage';
 // import CourseCard from './components/CourseCard/CourseCard';
 import FolderPage from './Pages/FolderReading/FolderPage';
+import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
+import VideoPage from './Pages/VideoPage/VideoPage';
 function App() {
   return (
-    <div style={{width:'100%'}} >
+    <div style={{ width: '100%' }} >
 
     <Router>
       <Routes>
@@ -37,8 +39,9 @@ function App() {
         <Route path="/successPage" element={<SuccsessPage/>} />
         <Route path="/course-detail" element={<CourseDetailPage/>} />
         <Route path="/home" element={<HomePage/>} />
-       <Route path="/dashboard" element={<StudentDashboard/>} />
+       <Route path="/clips" element={<VideoPage/>} />
        <Route path="/folder" element={<FolderPage/>} />
+       <Route path="/announcements" element={<AnnouncementPage/>} />
        
       </Routes>
     </Router>

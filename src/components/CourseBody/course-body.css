@@ -12,13 +12,22 @@
   /* font-family: 'Poppins',sans-serif!important; */
 }
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
 .courseBody {
-  padding: 20px 60px;
+  /* padding: 20px 60px; */
+ 
   font-family: 'Poppins', sans-serif;
 }
 
+.course-include{
+  padding: 2px 1px;
+}
 .greyText {
   color: #656565;
 
@@ -43,8 +52,8 @@ h4 {
 }
 
 .leftImage {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   /* float:left; */
   border-radius: 50%;
 }
