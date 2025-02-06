@@ -22,7 +22,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
 import TrendingCourse from './Components/TopNewCourses/TopCourse';
 import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
-import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
+// import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
 // import CourseCard from './components/CourseCard/CourseCard';
 function App() {
   return (
@@ -38,7 +38,7 @@ function App() {
           <Route path="/course-detail" element={<CourseDetailPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/dashboard" element={<StudentDashboard />} />
-          <Route path="/announcement" element={< AnnouncementPage />} />
+          {/* <Route path="/announcement" element={< AnnouncementPage />} /> */}
 
         </Routes>
       </Router>
