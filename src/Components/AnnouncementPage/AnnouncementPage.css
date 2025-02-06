@@ -1,0 +1,15 @@
+.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+    color: #1E1E1E80;
+    font-size: 16px;
+}
+
+
+.custom-breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    color: #1E1E1E80;
+}
+
+.custom-breadcrumb .breadcrumb-item.active {
+    color: #1E1E1E80;
+}
