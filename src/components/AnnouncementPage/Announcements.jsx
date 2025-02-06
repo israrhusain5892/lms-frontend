@@ -58,6 +58,8 @@
 // };
 
 // export default Announcements;
+
+
 import React from 'react';
 import { IoMdStar, IoMdStarOutline, IoMdStarHalf } from 'react-icons/io';
 import { IoCheckmarkOutline } from 'react-icons/io5';
@@ -107,3 +109,4 @@ const Announcements = ({ announcement }) => {
 };
 
 export default Announcements;
+

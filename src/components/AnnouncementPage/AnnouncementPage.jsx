@@ -6,7 +6,6 @@ import JohnImage from '../../assets/images/John.svg';
 import PatriciaImage from '../../assets/images/Patricia.svg'
 import SamanthaImage from '../../assets/images/Samantha.svg'
 
-
 const announcementsData = [
 
     {
@@ -16,7 +15,7 @@ const announcementsData = [
         date: "Posted on Oct 05 20:00",
         message: `Hello Students,
         The data structures and algorithms lectures for today have been cancelled. We will catch up next week. Until then, I request you to read the material I have posted.
-         Have a good week!`,
+        Have a good week!`,
         image: SamanthaImage,
         rating: 4.5,
     },
