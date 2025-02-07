@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sen:wght@400..800&display=swap');
+
 /* Define Root Variables for Colors */
 
 :root {
@@ -43,7 +43,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Sen", serif;
 }
 
 /* Navigation Links */
@@ -189,27 +188,26 @@
     }
     .headerNav {
         position: absolute;
-        top: 101%;
+        top: 100%;
         left: 0;
         background-color: #fff;
-        width: 85%;
+        width: 100%;
         display: none;
         flex-direction: column;
         padding: 1rem 1rem;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         z-index: 1000;
-        border-top: 1px solid var(--primaryColor); /* Highlight border */
+        border-top: 2px solid var(--primaryColor); /* Highlight border */
         border-radius: 0 0 10px 10px; /* Rounded corners */
-        transition:1s;
+        
     }
     .headerLogo {
-    font-size: 1.25rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: bold;
     color: var(--primaryColor);
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Sen", serif;
 }
 .headerContainer {
     display: flex;
@@ -229,7 +227,6 @@
 }
     .headerNav.open {
         display: flex;
-        transition: 1s;
     }
 
     .headerNavList {
@@ -315,21 +312,21 @@
     
     .headerSearchBar {
         
-        /* display:none; */
+        display:none;
     }
     
     
     .headerButtons {
-        /* display:none; */
+        display:none;
        
     }
 
     .headerDownloadBtn,
     .headerLogOutBtn {
-        padding: 0.75em .8em; /* Larger buttons for better clickability */
-        font-size: 0.9rem; /* Adjust font size */
+        padding: 0.75em 1.5em; /* Larger buttons for better clickability */
+        font-size: 1.1rem; /* Adjust font size */
     }
     .profile{
-        /* display: none; */
+        display: none;
     }
 }
