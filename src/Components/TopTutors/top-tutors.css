@@ -32,42 +32,6 @@
 
  /* Mobile Styles */
  @media (max-width: 576px) {
-<<<<<<< HEAD
-     .top-heading {
-         font-size: 16px;
-         text-align: center;
-         margin-bottom: 10px;
-     }
-
-     .row {
-         display: flex;
-         flex-wrap: nowrap;
-         overflow-x: auto;
-         justify-content: flex-start;
-         gap: 3px;
-
-
-     }
-
-     .card {
-         width: 140px !important;
-         height: 136px !important;
-         padding: 4px;
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         margin-top: px;
-         margin-bottom: 10px;
-         border-radius: 10px;
-     }
-
-     .card-img-top {
-         width: 50px !important;
-         height: 50px !important;
-         margin-top: 0;
-     }
-=======
 
     .topTutor{
         margin: 10px!important;
@@ -99,7 +63,6 @@
          width: 50px!important;
          height: 50px!important;
          margin-top: 0px!important;
->>>>>>> d038c858476f6fe3d6499031031fdb6e4e3e3b56
 
      .card-bod {
          padding-top: 4px;
@@ -117,4 +80,4 @@
          font-size: 12px;
          margin-bottom: 16px;
      }
- }
+ }}

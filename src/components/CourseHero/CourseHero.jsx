@@ -36,11 +36,7 @@ const CourseHero = () => {
       </div> 
 
       {/* desktop */}
-<<<<<<< HEAD
       <div className="flex flex-wrap-reverse lg:!flex-nowrap align-items-center gap-4 courseHeroCustomBg  ">
-=======
-      <div className="d-flex w-100 align-items-center justify-content-between px-5 courseHeroCustomBg mt-4 h-auto py-4 ">
->>>>>>> d038c858476f6fe3d6499031031fdb6e4e3e3b56
         {/* Left Section */}
         <div className="courseHeroContent  lh-sm ">
           <div className="mb-2">
@@ -106,21 +102,12 @@ const CourseHero = () => {
         </div>
 
         {/* Right Section */}
-<<<<<<< HEAD
         <div className=" justify-content-center cardPart">
           <div className=" relative border-0 courseHeroCard">
             <img
               src={heroimage} /* Replace with the actual image path */
               alt="React Course"
               className="courseHeroCardImage"
-=======
-        <div className=" justify-content-center cardPart position-relative">
-          <div className=" border-0 courseHeroCard">
-            <img
-              src={heroimage} /* Replace with the actual image path */
-              alt="React Course"
-              className=" courseHeroCardImage"
->>>>>>> d038c858476f6fe3d6499031031fdb6e4e3e3b56
             />
 
             <div className="webbadge hidden md:block text-black position-absolute">

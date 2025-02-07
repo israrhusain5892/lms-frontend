@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 // import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import AssignmentCarousel from './Pages/OnBoarding/OnBoarding';
@@ -8,21 +9,15 @@ import './App.css';
 import OTPVerification from './Pages/OtpVerifyPage/OTPVerification';
 import OtpVerify from './Pages/OtpVerify/OtpVerify';
 import SuccsessPage from './Pages/SuccessPage';
-// import ProgressBar from './components/ProgressBar/ProgressBar';
-// import CourseDetails from './components/CourseDetails/CourseDetails';
-// import Footer from './components/Footer/Footer';
-// import Header from './components/Header/Header';
-// import TestsSection from './components/TestsSection/TestsSection';
-// import Courses from "./components/CourseDetails/Courses"
-//  import CourseBody from './components/CourseBody/CourseBody';
+
 
 // import CourseHero from './components/CourseHero/CourseHero';
 import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
-import HeroSection from './components/HeroSection/HeroSection'
+// import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
-import TrendingCourse from './Components/TopNewCourses/TopCourse';
+// import TrendingCourse from './Components/TopNewCourses/TopCourse';
 
-import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
+// import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
 // import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
 
 import StudentDashboard from './Pages/VideoPage/VideoPage';
@@ -43,6 +38,7 @@ function App() {
         <Route path="/otp-verify" element={<OtpVerify />} />
         <Route path="/successPage" element={<SuccsessPage/>} />
         <Route path="/course-detail" element={<CourseDetailPage/>} />
+        <Route path="/dashboard" element={<StudentDashboard/>} />
         <Route path="/home" element={<HomePage/>} />
        <Route path="/clips" element={<VideoPage/>} />
        <Route path="/folder" element={<FolderPage/>} />

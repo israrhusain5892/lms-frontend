@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import SideBar from "../Components/SideBar/SideBar";
