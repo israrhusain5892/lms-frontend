@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import './side-bar.css';
 import { IoIosArrowForward } from "react-icons/io";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
+import {  IoMdClose } from "react-icons/io";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 function SideBar() {
     const [activeLink, setActiveLink] = useState('Clips');
@@ -19,7 +20,7 @@ function SideBar() {
         <>
             {/* Menu Button (only visible on mobile & tablet) */}
             <button className="menu-btn !flex lg:!hidden justify-center items-center text-blue-600" onClick={() => setIsOpen(true)}>
-            <p className=''>Menu</p><IoMdMenu size={20} />
+            <p className=''>Menu</p><HiOutlineMenuAlt1 size={20} />
             </button>
 
             {/* Overlay effect when sidebar is open (only on mobile & tablet) */}

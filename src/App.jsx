@@ -22,7 +22,7 @@ import StudentDashboard from './layouts/StudentDashboardLayout';
 
 // import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
 
-
+import DSACourse from './Components/DSA-Courses/DSACourses';
 // import CourseCard from './components/CourseCard/CourseCard';
 import FolderPage from './Pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
@@ -44,6 +44,12 @@ function App() {
        <Route path="/clips" element={<VideoPage/>} />
        <Route path="/folder" element={<FolderPage/>} />
        <Route path="/announcements" element={<AnnouncementPage/>} />
+
+
+
+        <Route path="/folder" element={<FolderPage />} />
+        <Route path="/DSACourse" element={<StudentDashboard><DSACourse /></StudentDashboard>} />
+        <Route path="/Announcement" element={<StudentDashboard><AnnouncementPage /></StudentDashboard>} />
        
       </Routes>
     </Router>

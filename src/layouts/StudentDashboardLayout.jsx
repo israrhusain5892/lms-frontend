@@ -2,7 +2,7 @@
 import Header from "../Components/Header/Header";
 import Footer from "../Components/Footer/Footer";
 import SideBar from "../Components/SideBar/SideBar";
-import DSACourse from "../Components/DSA-Courses/DSACourses";
+// import DSACourse from "../Components/DSA-Courses/DSACourses";
 
 const StudentDashboardLayout = ({ children }) => {
   return (
@@ -10,7 +10,7 @@ const StudentDashboardLayout = ({ children }) => {
       <Header />
       <div className="d-flex flex-grow-1">
         <SideBar />
-        <main className="flex-grow-1 p-3">{<DSACourse/>}</main>
+        <main className="flex-grow-1 p-3">{children}</main>
       </div>
       <Footer />
     </div>
