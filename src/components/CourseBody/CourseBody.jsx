@@ -32,7 +32,7 @@ const CourseBody = () => {
   };
 
   return (
-    <div className="w-full courseBody lg:px-20 mx-auto space-y-12  ">
+    <div className="w-full courseBody lg:px-7 mx-auto space-y-12  ">
       {/* What You'll Learn Section */}
       <section>
         <h2 className="mb-4 p-4  font-bold font-poppins text-[24px] text-[#3D3D3D] learn ">

@@ -55,9 +55,14 @@
 
 .header .heading {
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 500;
-    color: #2563EB;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
 }
 
 /* Close Button */
@@ -97,8 +102,9 @@
     font-size: 1.1rem;
 }
 
-.active {
-    color: #2563EB;
+.activeLinks {
+    color: #2563EB !important;
+
 }
 
 /* Menu Button (for mobile & tablet) */

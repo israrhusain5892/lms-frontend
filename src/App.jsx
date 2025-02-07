@@ -21,26 +21,38 @@ import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
 import TrendingCourse from './Components/TopNewCourses/TopCourse';
+
 import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
+// import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
+
+import StudentDashboard from './Pages/VideoPage/VideoPage';
+
 // import CourseCard from './components/CourseCard/CourseCard';
+import FolderPage from './Pages/FolderReading/FolderPage';
+import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
+import VideoPage from './Pages/VideoPage/VideoPage';
 function App() {
   return (
     <div style={{ width: '100%' }} >
 
-      <Router>
-        <Routes>
-          <Route path="/" element={<AssignmentCarousel />} />
-          <Route path="/signup" element={<SignUpPage />} />
-          <Route path="/otp" element={<OTPVerification />} />
-          <Route path="/otp-verify" element={<OtpVerify />} />
-          <Route path="/successPage" element={<SuccsessPage />} />
-          <Route path="/course-detail" element={<CourseDetailPage />} />
-          <Route path="/home" element={<HomePage />} />
-          <Route path="/dashboard" element={<StudentDashboard />} />
-        </Routes>
-      </Router>
+    <Router>
+      <Routes>
+        <Route path="/" element={<AssignmentCarousel />} />
+        <Route path="/signup" element={<SignUpPage />} />
+        <Route path="/otp" element={<OTPVerification />} />
+        <Route path="/otp-verify" element={<OtpVerify />} />
+        <Route path="/successPage" element={<SuccsessPage/>} />
+        <Route path="/course-detail" element={<CourseDetailPage/>} />
+        <Route path="/home" element={<HomePage/>} />
+       <Route path="/clips" element={<VideoPage/>} />
+       <Route path="/folder" element={<FolderPage/>} />
+       <Route path="/announcements" element={<AnnouncementPage/>} />
+       
+      </Routes>
+    </Router>
+     
+  </div>
 
-    </div>
   )
 }
 

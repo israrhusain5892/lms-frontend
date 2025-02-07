@@ -71,7 +71,7 @@ function TopCourse(props) {
 
                 {
                     courses?.map((course,index)=>{
-                       return <div className='' key={index}>
+                       return <div className={`card-a card${index}`} key={index}>
                            <CourseCard course={course}/>
                         </div>
                        

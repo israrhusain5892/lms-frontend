@@ -22,6 +22,12 @@
     box-sizing: border-box;
 }
 
+
+.card-upperbody{
+  /* display: none!important; */
+}
+
+
 .courseHeroWrapper {
   width: 100%;
   margin: auto;
@@ -205,12 +211,18 @@
   font-weight: 700;
 }
 
+.mobile-courseHeroHeading{
+  display:none;
+}
+
 .mobilebadge{
   background-color: #bacdf5;
  width: 60px;
  border-radius: 3px;
  padding: 2px 11px;
  margin: 10px 2px;
+ 
+
 }
 
 /* Responsive Design */
@@ -245,7 +257,7 @@
     height: auto;
   }
 
-  .card-body h5 {
+  .card-bo h5 {
     font-size: 1.5rem;
   }
 
@@ -272,41 +284,74 @@
 
 /* For tablets */
 @media (max-width: 768px) {
+
+  .mobile-courseHeroHeading{
+    display:block;
+    color: #2563EB;
+  font-size: 1.6rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 31px;
+  text-align: left;
+  margin-top: 20px;
+  }
+
+  .courseHeroHeading{
+    display:none;
+  }
+
+  .courseHeroWrapper{
+    width:100%;
+  }
+
+  .courseHeroCardImage{
+    width:100%;
+  }
   .courseHeroContent {
     padding: 6px;
     text-align: start;
 
   }
   .courseHeroCustomBg{
+<<<<<<< HEAD
     /* flex-wrap: wrap-reverse; */
+=======
+    flex-wrap: wrap-reverse;
+    padding:0px 0px!important
+>>>>>>> d038c858476f6fe3d6499031031fdb6e4e3e3b56
   }
 
-  .courseHeroHeading {
+  /* .courseHeroHeading {
     font-size: 2.4rem;
-  }
+  } */
 
   .courseHeroBtnPrimary,
   .courseHeroBtnOutline {
     padding: 0.3rem 4rem;
+  }
+
+  .text-time{
+    font-size:12px;
   }
 }
 
 
 
 /* For desktops */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .courseHeroContent {
     padding: 60px;
     text-align: start;
 
-  }
+  } */
 
-  .courseHeroHeading {
+  /* .courseHeroHeading {
     font-size: 2.4rem;
-  }
+  
+  } */
 
-  .courseHeroBtnPrimary,
+  /* .courseHeroBtnPrimary,
   .courseHeroBtnOutline {
     padding: 0.3rem 4rem;
   }
-}
+} */

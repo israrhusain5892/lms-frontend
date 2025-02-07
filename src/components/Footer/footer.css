@@ -107,6 +107,7 @@
   .footerContainer {
     flex-direction: column;
     padding: 30px 20px;
+    width:100%;
   }
 
   .footerLeft {
