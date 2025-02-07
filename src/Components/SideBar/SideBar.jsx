@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './side-bar.css';
 import { IoIosArrowForward } from "react-icons/io";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
