@@ -81,7 +81,7 @@ export default function DSACourse() {
 
             {/* Progress Bar - Now Positioned at Bottom */}
             
-            <div className="absolute bottom-3 left-4  md:w-[600px] sm:w-[300px] lg:w-[850px] w-[200px] bg-gray-300 h-2 ">
+            <div className="absolute bottom-3 left-4  md:w-[550px] sm:w-[300px] lg:w-[500px] xl:w-[700px] w-[170px] bg-gray-300 h-2 ">
               <div
                 className="h-2 bg-green-500 transition-all duration-500 rounded-full"
                 style={{ width: `${course.progress}%` }}

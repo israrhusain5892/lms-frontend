@@ -17,10 +17,11 @@ import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
 import HomePage from './Pages/MainPage/HomePage';
 // import TrendingCourse from './Components/TopNewCourses/TopCourse';
 
-// import StudentDashboard from './Pages/StudentDashboard/StudentDashboard';
+import StudentDashboard from './layouts/StudentDashboardLayout';
+// import StudentVideoDashboard from './Pages/VideoPage/VideoPage';
+
 // import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
 
-import StudentDashboard from './Pages/VideoPage/VideoPage';
 
 // import CourseCard from './components/CourseCard/CourseCard';
 import FolderPage from './Pages/FolderReading/FolderPage';
