@@ -107,21 +107,21 @@ const CourseHero = () => {
             <img
               src={heroimage} /* Replace with the actual image path */
               alt="React Course"
-              className="courseHeroCardImage"
+              className="courseHeroCardImage xl:!w-[800px]"
             />
 
             <div className="webbadge hidden md:block text-black position-absolute">
               2023
             </div>
             <div className="card-body text-start  hidden md:block ">
-              <h5 className="fw-bold xl:!text-[36px] lg:!text-[25px]">
+              <h5 className="fw-bold xl:!text-[45px] lg:!text-[25px] ">
                 The Full Stack <br /> React Course
               </h5>
-              <p className="mb-0 lh-lg text-[16px] lg:text-[13px] xl:text-[14px]">
+              <p className="mb-0 lh-lg text-[16px] lg:text-[13px] xl:text-[20px]">
                 Build & Deploy E-Learning App <br />
-                <span className="fw-bold text-[16px] lg:text-[12px] xl:text-[14px]">From Zero to Hero</span>
+                <span className="fw-bold text-[16px] lg:text-[12px] xl:text-[20px]">From Zero to Hero</span>
               </p>
-              <p className="mt-2 text-[16px] lg:text-[12px] xl:text-[14px]">
+              <p className="mt-2 text-[16px] lg:text-[12px] xl:text-[20px]">
                 The Advanced Front-End Programming course <br /> sharpens
                 students critical thinking, creativity, <br /> and analytical
                 skills.

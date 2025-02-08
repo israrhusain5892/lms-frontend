@@ -3,15 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --primary-color: #DBE6FE;
-  --secondary-color: #656565;
-  --light-bg: #ffffff;
-  --info-color: #17a2b8;
-  --warning-color: #ffc107;
-  --text-muted: var(--secondary-color);
-  --border-radius: 1rem;
-} */
 
 
 
@@ -275,11 +266,6 @@
 
   }
 
-  .courseHeroCustomBg{
-    /* flex-wrap: wrap-reverse; */
-  }
-
-
 }
 
 /* For tablets */
@@ -312,13 +298,8 @@
     text-align: start;
 
   }
-  .courseHeroCustomBg{
-    /* flex-wrap: wrap-reverse; */
-  }
 
-  /* .courseHeroHeading {
-    font-size: 2.4rem;
-  } */
+
 
   .courseHeroBtnPrimary,
   .courseHeroBtnOutline {
@@ -333,20 +314,20 @@
 
 
 /* For desktops */
-/* @media (min-width: 1024px) {
+@media (min-width: 1024px) {
   .courseHeroContent {
     padding: 60px;
     text-align: start;
 
-  } */
+  } 
 
-  /* .courseHeroHeading {
+  .courseHeroHeading {
     font-size: 2.4rem;
   
-  } */
+  } 
 
-  /* .courseHeroBtnPrimary,
+   .courseHeroBtnPrimary,
   .courseHeroBtnOutline {
     padding: 0.3rem 4rem;
   }
-} */
+}
