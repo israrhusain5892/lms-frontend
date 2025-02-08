@@ -4,7 +4,7 @@ import { Breadcrumb } from "react-bootstrap";
 import FolderData from "./FolderData";
 import { FaSearch } from "react-icons/fa";
 import "./FolderPage.css";
-import StudentDashboardLayout from "../../layouts/StudentDashboardLayout";
+// import StudentDashboardLayout from "../../layouts/StudentDashboardLayout";
 
 const folderList = [
     { name: "Goa memories", date: "26/11/2019 8:02 pm", visibility: "Only you" },
@@ -74,7 +74,7 @@ const FolderPage = () => {
                 .includes(searchTerm.toLowerCase().replace(/[^a-z0-9]/gi, ""))
     );
     return (
-        <StudentDashboardLayout>
+        
         <div className="w-full bg-white px-4 mt-3">
        
             <div className="d-flex justify-content-between align-items-center py-3 folder-header">
@@ -117,7 +117,6 @@ const FolderPage = () => {
             <FolderData filteredFolders={filteredFolders} />
            
         </div>
-        </StudentDashboardLayout>
     );
 };
 

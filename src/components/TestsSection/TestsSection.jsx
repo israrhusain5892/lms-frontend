@@ -18,7 +18,7 @@ const TestsSection = () => {
   };
 
   return (
-    <section className="px-6 py-8 lg:w-[850px]">
+    <section className="p-2">
       <h1 className="mb-4 text-[#1e1e1e]">
         <nav aria-label="breadcrumb">
           <span>
@@ -65,7 +65,7 @@ const TestsSection = () => {
                     {type}
                   </Link>
                 </div>
-                <div className="flex items-center justify-between mt-2">
+                <div className="flex items-center justify-between gap-10 mt-2">
                   <div>
                     <i className="fa-solid fa-file m-2 text-[#555]"></i>
                     <span className="text-base font-semibold text-black">

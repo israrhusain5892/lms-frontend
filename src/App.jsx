@@ -11,22 +11,18 @@ import OtpVerify from './Pages/OtpVerify/OtpVerify';
 import SuccsessPage from './Pages/SuccessPage';
 
 
-// import CourseHero from './components/CourseHero/CourseHero';
 import CourseDetailPage from './Pages/CourseDetailPage/CourseDetailPage';
-// import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './Pages/MainPage/HomePage';
-// import TrendingCourse from './Components/TopNewCourses/TopCourse';
 
 import StudentDashboard from './layouts/StudentDashboardLayout';
-// import StudentVideoDashboard from './Pages/VideoPage/VideoPage';
 
-// import AnnouncementPage from './Components/AnnouncementPage/AnnouncementPage';
 
 import DSACourse from './Components/DSA-Courses/DSACourses';
-// import CourseCard from './components/CourseCard/CourseCard';
 import FolderPage from './Pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
 import VideoPage from './Pages/VideoPage/VideoPage';
+
+import TestPage from "./Components/TestsSection/TestsSection"
 function App() {
   return (
     <div style={{ width: '100%' }} >
@@ -41,13 +37,14 @@ function App() {
         <Route path="/course-detail" element={<CourseDetailPage/>} />
         <Route path="/dashboard" element={<StudentDashboard/>} />
         <Route path="/home" element={<HomePage/>} />
-       <Route path="/clips" element={<VideoPage/>} />
-       <Route path="/folder" element={<FolderPage/>} />
-       <Route path="/announcements" element={<AnnouncementPage/>} />
+       {/* <Route path="/clips" element={<VideoPage/>} /> */}
+       {/* <Route path="/Folder" element={<FolderPage/>} /> */}
+       {/* <Route path="/announcements" element={<AnnouncementPage/>} /> */}
 
 
 
-        <Route path="/folder" element={<FolderPage />} />
+        <Route path="/folder" element={<StudentDashboard><FolderPage /></StudentDashboard>} />
+        <Route path="/Testpage" element={<StudentDashboard><TestPage/></StudentDashboard>} />
         <Route path="/DSACourse" element={<StudentDashboard><DSACourse /></StudentDashboard>} />
         <Route path="/Announcement" element={<StudentDashboard><AnnouncementPage /></StudentDashboard>} />
        
