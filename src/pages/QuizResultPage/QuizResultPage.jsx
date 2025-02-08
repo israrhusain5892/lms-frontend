@@ -70,7 +70,7 @@ const QuizResultPage = () => {
 
     const backHandle = () => {
       setbackpopup(false);
-      navigate('/');
+      navigate('/Testpage');
     };
     const backCancel = () => {
       setbackpopup(false);
@@ -175,7 +175,7 @@ const QuizResultPage = () => {
 
 
 
-                <Link to="/quiz"><button type="submit" className='submitBtn'>Retry</button></Link>
+                <Link to="/Quizpage"><button type="submit" className='submitBtn'>Retry</button></Link>
             </form>
         </div>
     )

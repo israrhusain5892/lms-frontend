@@ -16,6 +16,8 @@ import HomePage from './Pages/MainPage/HomePage';
 
 import StudentDashboard from './layouts/StudentDashboardLayout';
 
+import Quizpage from "./pages/QuizPage/QuizPage"
+import QuizResultPage from "./pages/QuizResultPage/QuizResultPage"
 
 import DSACourse from './Components/DSA-Courses/DSACourses';
 import FolderPage from './Pages/FolderReading/FolderPage';
@@ -47,6 +49,10 @@ function App() {
         <Route path="/Testpage" element={<StudentDashboard><TestPage/></StudentDashboard>} />
         <Route path="/DSACourse" element={<StudentDashboard><DSACourse /></StudentDashboard>} />
         <Route path="/Announcement" element={<StudentDashboard><AnnouncementPage /></StudentDashboard>} />
+
+
+        <Route path="/Quizpage" element={<Quizpage/>}></Route>
+        <Route path="/QuizResultPage" element={<QuizResultPage/>}></Route>
        
       </Routes>
     </Router>

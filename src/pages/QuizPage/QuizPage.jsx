@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-/* eslint-disable react/jsx-key */
+
 
 import './quiz-page.css';
 import { GoArrowLeft } from "react-icons/go";
@@ -120,7 +120,7 @@ const QuizPage = () => {
 
   const backHandle = () => {
     setbackpopup(false);
-    navigate('/');
+    navigate('/Testpage');
   };
 
   const backCancel = () => {

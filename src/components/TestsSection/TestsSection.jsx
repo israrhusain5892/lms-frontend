@@ -59,7 +59,8 @@ const TestsSection = () => {
                   </span>
                   {/* <span className="text-sm font-medium p-2 rounded-lg bg-blue-600 text-white">{type}</span> */}
                   <Link
-                    to={`/${type}`}
+                    // to={`/${type}`}
+                    to={`/Quizpage`}
                     className="text-sm font-medium p-2 rounded-lg bg-blue-600 text-white no-underline	"
                   >
                     {type}
