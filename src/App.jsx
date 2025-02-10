@@ -16,15 +16,18 @@ import HomePage from './Pages/MainPage/HomePage';
 
 import StudentDashboard from './layouts/StudentDashboardLayout';
 
-import Quizpage from "./pages/QuizPage/QuizPage"
+import QuizPage from "./pages/QuizPage/QuizPage"
 import QuizResultPage from "./pages/QuizResultPage/QuizResultPage"
 
 import DSACourse from './Components/DSA-Courses/DSACourses';
 import FolderPage from './Pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
 import VideoPage from './Pages/VideoPage/VideoPage';
+import Header from './components/Header/Header';
+import TestPage from "./Components/TestsSection/TestsSection";
+import Footer from './components/Footer/Footer';
 
-import TestPage from "./Components/TestsSection/TestsSection"
+
 function App() {
   return (
     <div style={{ width: '100%' }} >
@@ -51,8 +54,8 @@ function App() {
         <Route path="/Announcement" element={<StudentDashboard><AnnouncementPage /></StudentDashboard>} />
 
 
-        <Route path="/Quizpage" element={<Quizpage/>}></Route>
-        <Route path="/QuizResultPage" element={<QuizResultPage/>}></Route>
+        <Route path="/Quizpage" element={<><Header/><QuizPage/><Footer/></>}></Route>
+        <Route path="/QuizResultPage" element={<><Header/><QuizResultPage/><Footer/></>}></Route>
        
       </Routes>
     </Router>
