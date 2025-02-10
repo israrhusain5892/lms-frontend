@@ -49,11 +49,11 @@ function App() {
 
 
         <Route path="/folder" element={<StudentDashboard><FolderPage /></StudentDashboard>} />
-        <Route path="/Testpage" element={<StudentDashboard><TestPage/></StudentDashboard>} />
         <Route path="/DSACourse" element={<StudentDashboard><DSACourse /></StudentDashboard>} />
         <Route path="/Announcement" element={<StudentDashboard><AnnouncementPage /></StudentDashboard>} />
 
 
+        <Route path="/Testpage" element={<StudentDashboard><TestPage/></StudentDashboard>} />
         <Route path="/Quizpage" element={<><Header/><QuizPage/><Footer/></>}></Route>
         <Route path="/QuizResultPage" element={<><Header/><QuizResultPage/><Footer/></>}></Route>
        
