@@ -22,7 +22,7 @@ import QuizResultPage from "./pages/QuizResultPage/QuizResultPage"
 import DSACourse from './Components/DSA-Courses/DSACourses';
 import FolderPage from './Pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
-import VideoPage from './Pages/VideoPage/VideoPage';
+// import VideoPage from './Pages/VideoPage/VideoPage';
 import Header from './components/Header/Header';
 import TestPage from "./Components/TestsSection/TestsSection";
 import Footer from './components/Footer/Footer';
