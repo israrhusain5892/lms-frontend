@@ -1,71 +1,25 @@
 import React from 'react';
+import "./TasksPage.css";
+
 const Task = ({ task }) => {
     return (
-        <div
-            className="task-container"
-            style={{
-                borderRadius: '12px',
-                padding: '20px',
-                backgroundColor: '#EEF2FF',
-            }}
-        >
-            <div
-                style={{
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    marginBottom: '12px',
-                }}
-            >
-
+        <div className="task-container p-3 rounded">
+            <div className="d-flex justify-content-between align-items-center mb-3">
                 <div>
-                    <div
-                        className="due-date-container"
-                        style={{
-                            padding: '10px',
-                            borderRadius: '30px',
-                            backgroundColor: '#DBE6FE',
-                            marginBottom: '12px',
-                            textAlign: 'center',
-                            width: "max-content", color: '#656565', fontSize: '12px'
-                        }}
-                    >
+                    <div className="px-3 py-2 rounded-pill text-center due-date">
                         {`Due: ${task.dueDate}`}
-
                     </div>
-                    <div style={{ fontSize: '16px', color: '#3D3D3D', marginBottom: '12px' }}>{task.title}</div>
-
-                    <div style={{ fontSize: '16px', color: '#656565' }}>{task.createdBy}</div>
+                    <div className="fs-5 text-dark mb-2">{task.title}</div>
+                    <div className="fs-6 text-secondary">{task.createdBy}</div>
                 </div>
-                <button
-                    className="view-btn"
-                    style={{
-                        padding: '8px 16px',
-                        backgroundColor: '#007bff',
-                        color: '#fff',
-                        border: 'none',
-                        borderRadius: '30px',
-                        cursor: 'pointer',
-                        fontSize: '16px',
-                    }}
-                >
+                <button className="btn btn-primary rounded-pill px-3">
                     View
                 </button>
-
-
             </div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
 
-
-                <div>
-                    <div
-                        style={{
-                            fontSize: '16px',
-                            fontWeight: 'bold',
-                        }}
-                    >
-                        Created Date: {task.createdDate}
-                    </div>
+            <div className="task-info">
+                <div className="fw-bold">
+                    Created Date: {task.createdDate}
                 </div>
                 <div
                     className="task-status"
@@ -82,3 +36,4 @@ const Task = ({ task }) => {
 };
 
 export default Task;
+

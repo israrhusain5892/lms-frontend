@@ -12,3 +12,61 @@
 .custom-breadcrumb .breadcrumb-item.active {
     color: #1E1E1E80;
 }
+
+.task-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 4px;
+    font-size: 14px;
+}
+
+
+.tasks-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 4px;
+}
+
+.total-mark {
+    font-size: 18px;
+    color: #000000;
+    text-align: center;
+    margin-top: 22px;
+}
+
+.task-container {
+    background-color: #EEF2FF;
+    height: auto;
+    padding: 12px;
+}
+
+.due-date {
+    background-color: #DBE6FE;
+    width: max-content;
+    color: #656565;
+    font-size: 12px;
+}
+
+.task-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    margin-top: 0;
+}
+
+@media (max-width: 768px) {
+    .task-info {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 4px;
+        font-size: 14px;
+    }
+
+    .tasks-container {
+        margin-top: 36px;
+        gap: 3px;
+    }
+}
