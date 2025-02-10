@@ -198,11 +198,11 @@ const MidtermTest = () => {
             <i className="fa-solid fa-clipboard text-2xl w-10 h-10 flex justify-center items-center text-[#3d5cff] p-2 bg-[#e6eeff] rounded-full"></i>
             <div>
               <h2 className="text-lg font-semibold text-gray-800">Task 1</h2>
-              <p className="text-[#555]">fadil | sep 18, 2024</p>
+              <p className="text-sm sm:text-lg text-[#555]">fadil | sep 18, 2024</p>
             </div>
           </div>
           <div className="flex gap-12 justify-center items-center">
-            <span className="text-green-600 font-medium">Submitted</span>
+            <span className="text-[#4CD964] font-medium">Submitted</span>
             <i className="fa-solid fa-ellipsis-vertical"></i>
           </div>
         </div>
@@ -243,10 +243,10 @@ const MidtermTest = () => {
         {/* Text Editor */}
         <div>
           <div className="flex justify-between items-center">
-            <h3 className="text-lg font-semibold text-black mb-2">
+            <h3 className="text-sm sm:text-lg font-semibold text-black mb-2">
               Attachments (1)
             </h3>
-            <h3 className="text-lg font-semibold text-[#fc0909] mb-2 mr-2">
+            <h3 className="text-sm sm:text-lg font-semibold text-[#fc0909] mb-2 mr-2">
               Due date 22/09/2024
             </h3>
           </div>
