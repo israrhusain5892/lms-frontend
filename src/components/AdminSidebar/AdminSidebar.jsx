@@ -40,18 +40,20 @@ const Sidebar = () => {
       </nav>
       
       <div className={`absolute mt-3 md:mt-10 ${isOpen? "w-[266px] bg-[#f0f0f0] hover:bg-[#dfdddd]":""} rounded-md  h-[34px]  flex justify-center items-center`}>
-        <NavItem icon={<FiLogOut />} text="Log out" isOpen={isOpen} />
+      <NavItem icon={<FiLogOut />} text="Log out" isOpen={isOpen} noHover={true} />
+
       </div>
     </div>
   );
 };
 
-const NavItem = ({ icon, text, isOpen, subItem = false }) => (
-  <li className={`flex items-center space-x-3 p-3   cursor-pointer ${subItem ? "pl-10" : "pl-4"}`}>
-    {icon && <span className="text-xl">{icon}</span>}
-    <span className={`text-base ${isOpen ? "block" : "hidden"} transition-all text-[#191D23]`}>{text}</span>
-  </li>
-);
+const NavItem = ({ icon, text, isOpen, subItem = false, noHover = false }) => (
+    <li className={`flex items-center space-x-3 p-3 cursor-pointer ${subItem ? "pl-10" : "pl-4"} ${noHover ? "" : "hover:bg-[#dbe8fe]"}`}>
+      {icon && <span className="text-xl">{icon}</span>}
+      <span className={`text-base ${isOpen ? "block" : "hidden"} transition-all text-[#191D23]`}>{text}</span>
+    </li>
+  );
+  
 
 const NavDropdown = ({ icon, text, children, isOpen }) => {
   const [open, setOpen] = useState(false);
