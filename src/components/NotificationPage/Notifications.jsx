@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import dayjs from "dayjs";
 import UserIcon from "../../assets/icons/user.svg";
+import "./Notifications.css";
 
 const notificationsData = [
     {
@@ -47,7 +48,7 @@ const formatDate = (timestamp) => {
 
 const Notifications = () => {
     return (
-        <div className="container my-4">
+        <div className="container ">
             <div>
                 {notificationsData.map((notification) => (
                     <div key={notification.id} className="d-flex justify-content-between align-items-center  border-bottom border-1 p-3">
@@ -72,7 +73,6 @@ const Notifications = () => {
                             <br />
                             <small className="" style={{ color: "#7E92A2", fontsize: "16px", }}>{formatDate(notification.timestamp)}</small>
                         </div>
-
                     </div>
                 ))}
             </div>
