@@ -1,21 +1,19 @@
 
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-import MidtermTest from './components/MidtermTest/MidtermTest';
 
+import Sidebar from './Components/AdminSidebar/AdminSidebar';
 
 
 function App() {
   return (
     <>
         
-           <Header/>
+         
 
-          <MidtermTest/>
+          <Sidebar/>
            
            
 
-           <Footer/>
+       
         
     </>
   );
