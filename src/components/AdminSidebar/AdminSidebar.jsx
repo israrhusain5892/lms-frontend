@@ -21,7 +21,7 @@ const Sidebar = () => {
         </button>
       </div>
       
-        <p onClick={() => setIsOpen(!isOpen)} className="cursor-pointer px-2 md:px-3 text-[#64748B] text-extrabold text-base">MENU</p>
+        <p onClick={() => setIsOpen(!isOpen)} className="cursor-pointer px-2 md:px-3 text-[#64748B] font-semibold text-base">MENU</p>
       <nav className="mt-4 md:border-b-2 md:border-[#D0D5DD] ">
         <ul className="space-y-2">
           <NavItem icon={<FiGrid />} text="Dashboard" isOpen={isOpen} />
@@ -50,7 +50,7 @@ const Sidebar = () => {
 const NavItem = ({ icon, text, isOpen, subItem = false, noHover = false }) => (
     <li className={`flex items-center space-x-3 p-3 cursor-pointer ${subItem ? "pl-10" : "pl-4"} ${noHover ? "" : "hover:bg-[#dbe8fe]"}`}>
       {icon && <span className="text-xl">{icon}</span>}
-      <span className={`text-base ${isOpen ? "block" : "hidden"} transition-all text-[#191D23]`}>{text}</span>
+      <span className={`text-base font-semibold ${isOpen ? "block" : "hidden"} transition-all text-[#191D23]`}>{text}</span>
     </li>
   );
   
@@ -60,9 +60,9 @@ const NavDropdown = ({ icon, text, children, isOpen }) => {
   return (
     <div>
       <div className="flex items-center space-x-3 p-3 hover:bg-[#dbe8fe] cursor-pointer pl-4" onClick={() => setOpen(!open)}>
-      <div className="flex items-center space-x-3">
+      <div className="flex items-center space-x-3 font-semibold">
       <span className="text-xl">{icon}</span>
-        <span className={`${isOpen ? "block" : "hidden"} transition-all`}>{text}</span>
+        <span className={`${isOpen ? "block" : "hidden"}font-semibold transition-all`}>{text}</span>
       </div>
       <FiChevronDown className={`text-xl transition-transform ${open ? "rotate-180" : "rotate-0"}`} />
       </div>
