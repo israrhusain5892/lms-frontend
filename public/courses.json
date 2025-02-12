@@ -1,0 +1,97 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to Photography and Editing",
+      "instructor": "Eleanor Pena",
+      "duration": "3 hr",
+      "price": "$10.99",
+      "originalPrice": "$32",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1593644311729-d0b478c97d95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Bestseller"
+    },
+    {
+      "id": 2,
+      "title": "Mastering Public Speaking and Presentation",
+      "instructor": "Devon Lane",
+      "duration": "1 hr",
+      "price": "$12.99",
+      "originalPrice": "$36",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1528605105345-5344ea20e269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Top Author"
+    },
+    {
+      "id": 3,
+      "title": "Cooking Gourmet Meals at Home",
+      "instructor": "Cameron Williamson",
+      "duration": "2 hr",
+      "price": "$10.99",
+      "originalPrice": "$32",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Editor's Choice"
+    },
+    {
+      "id": 4,
+      "title": "Personal Finance Management Essentials",
+      "instructor": "Arlene McCoy",
+      "duration": "30 m",
+      "price": "$10.99",
+      "originalPrice": "$32",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://plus.unsplash.com/premium_photo-1682433070003-ebc1dff983ed?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Bestseller"
+    },
+    {
+      "id": 5,
+      "title": "Creative Writing, From Idea to Manuscript",
+      "instructor": "Kristin Watson",
+      "duration": "50 m",
+      "price": "$12.99",
+      "originalPrice": "$36",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Most Popular"
+    },
+    {
+      "id": 2,
+      "title": "Mastering Public Speaking and Presentation",
+      "instructor": "Devon Lane",
+      "duration": "1 hr",
+      "price": "$12.99",
+      "originalPrice": "$36",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1528605105345-5344ea20e269?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Top Author"
+    },{
+      "id": 1,
+      "title": "Introduction to Photography and Editing",
+      "instructor": "Eleanor Pena",
+      "duration": "3 hr",
+      "price": "$10.99",
+      "originalPrice": "$32",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1593644311729-d0b478c97d95?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Bestseller"
+    },{
+      "id": 3,
+      "title": "Cooking Gourmet Meals at Home",
+      "instructor": "Cameron Williamson",
+      "duration": "2 hr",
+      "price": "$10.99",
+      "originalPrice": "$32",
+      "rating": "4.5",
+      "reviews": "2,980",
+      "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "badge": "Editor's Choice"
+    }
+  ]
+  
