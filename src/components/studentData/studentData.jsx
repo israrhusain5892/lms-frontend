@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { FaFilter, FaSearch, FaSort } from "react-icons/fa";
 import { FiX } from "react-icons/fi";
-
+import "./studentdata.css";
 const studentData = [
   { id: "#12345", name: "Lorri Warf", email: "s.t.sharkey@outlook.com", phone: "(813) 752-5611" },
   { id: "#12346", name: "Stephanie Sharkey", email: "dennis416@gmail.com", phone: "(401) 715-3344" },
@@ -33,7 +33,7 @@ export default function StudentManagement() {
           <FaFilter /> Filter
         </button>
 
-        <h2 className="text-[#534FEB] text-bold">Clear filters</h2>
+        <h2 className="text-[#534FEB] font-semibold">Clear filters</h2>
         </div>
 
         <div className="mb-4">
@@ -104,9 +104,9 @@ export default function StudentManagement() {
               />
             )}
           </div>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Create Account</button>
+          <button className="bg-[#3B76F6] hover:bg-blue-600 text-white px-4 py-2 rounded-md accountfont">Create Account</button>
         </div>
-        <h2 className="text-xl font-bold mb-3">Student Management</h2>
+        <h2 className="text-xl font-bold mb-3 fontstyle">Student Management</h2>
         <div className="overflow-x-auto">
           <table className="min-w-full border-collapse border border-gray-300">
             <thead>
