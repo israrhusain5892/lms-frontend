@@ -1,10 +1,11 @@
-import NotificationPage from './components/NotificationPage/NotificationPage.jsx';
+import StudentPage from "./components/StudentPage/StudentPage.jsx";
+
 function App() {
 
   return (
     <>
       <div>
-        <NotificationPage />
+        <StudentPage />
       </div>
     </>
   )
