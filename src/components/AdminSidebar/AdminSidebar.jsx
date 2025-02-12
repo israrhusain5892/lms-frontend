@@ -11,7 +11,7 @@ const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(true);
 
   return (
-      <div className={`h-screen ${isOpen ? "w-72" : "w-16"} ${isOpen ? "p-4 bg-white":"bg-[#f8fafc]"}  shadow-lg transition-all duration-300 fixed top-0 left-0  sm:overflow-hidden overflow-scroll z-50`}>      
+      <div className={`h-screen ${isOpen ? "w-76" : "w-16"} ${isOpen ? "p-4 bg-white fixed":"bg-[#f8fafc] relative"}  shadow-lg transition-all duration-300 fixed top-0 left-0  sm:overflow-hidden overflow-scroll z-50`}>      
         <img src={logo} alt="adminpannel logo" className={`p-3 md:hidden ${!isOpen ? "block" : "hidden"}`}/>
       <div className="p-4 flex items-center md:justify-normal gap-3 justify-between">
         <img src={logo} alt="adminpannel logo" className="w-10 hidden md:block"/>
