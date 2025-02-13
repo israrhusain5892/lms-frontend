@@ -1,12 +1,11 @@
 import Sidebar from './Components/AdminSidebar/AdminSidebar';
 import "./index.css";
-import StudentManagement from "./components/studentData/studentData";
-
+import AddCourse from './components/AddCourse/AddCourse';
 function App() {
   return (
     <div className="flex flex-row">
       <Sidebar/>
-      <StudentManagement/>
+      <AddCourse/>
      
 
     </div>
