@@ -6,13 +6,13 @@ const Courses = () => {
   return (
     <div className="p-6 bg-white text-gray-800">
       {/* Heading */}
-      <h1 className="text-2xl font-bold text-gray-800 mb-4">{courseData.courseTitle}</h1>
+      <h1 className="text-3xl font-bold text-black mb-4">{courseData.courseTitle}</h1>
 
       {/* Map through sections */}
       {courseData.sections.map((section) => (
         <section key={section.id} className="mb-6">
-          <h2 className="text-lg font-semibold text-[#0F172A] mb-2">{section.title}</h2>
-          <p className="text-[#475569]">{section.content}</p>
+          <h2 className="text-2xl font-semibold text-[#0F172A] mb-2">{section.title}</h2>
+          <p className="text-[#475569] text-xl">{section.content}</p>
 
           {/* If there are lists */}
           {section.list && (
