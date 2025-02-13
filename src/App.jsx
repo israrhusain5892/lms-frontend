@@ -1,27 +1,17 @@
-
-import CourseDetails from './components/CourseDetails/CourseDetails';
-import Footer from './components/Footer/Footer';
-import Header from './components/Header/Header';
-// import TestsSection from './components/TestsSection/TestsSection';
-// import Courses from "./components/CourseDetails/Courses"
-
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import CourseDetails from "./components/CourseDetails/CourseDetails";
+import CoursePage from "./components/CourseDetails/Courses";
+import Header from "./components/Header/Header";
 function App() {
   return (
-    <>
-        
-           <Header/>
-
-           {/* <TestsSection/> */}
-           <CourseDetails/>
-           {/* <Courses/> */}
-           
-
-           <Footer/>
-        
-    </>
+    <Router>
+      <Header/>
+      <Routes>
+        <Route path="/" element={<CourseDetails />} />
+        <Route path="/courses/:id" element={<CoursePage />} />
+      </Routes>
+    </Router>
   );
 }
-
-
 
 export default App;

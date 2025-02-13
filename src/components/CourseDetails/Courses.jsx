@@ -11,8 +11,8 @@ const Courses = () => {
       {/* Map through sections */}
       {courseData.sections.map((section) => (
         <section key={section.id} className="mb-6">
-          <h2 className="text-lg font-semibold text-black mb-2">{section.title}</h2>
-          <p className="text-[#555]">{section.content}</p>
+          <h2 className="text-lg font-semibold text-[#0F172A] mb-2">{section.title}</h2>
+          <p className="text-[#475569]">{section.content}</p>
 
           {/* If there are lists */}
           {section.list && (
@@ -30,7 +30,7 @@ const Courses = () => {
             <img src={pdf} width={30} alt="pdf file"/>
             <a
               href="#"
-              className="text-blue-600 underline text-sm mt-2 inline-block"
+              className="text-[#3D5CFF] underline text-lg font-medium mt-2 inline-block"
             >
               {section.pdfLink}
             </a>
