@@ -598,17 +598,21 @@ const AddCourse = () => {
 
               <label className="block mt-4 text-sm font-medium">Description</label>
               <textarea
-                placeholder="Add description"
-                className="w-full p-2 border-[#D8DDE3] border shadow-sm rounded mt-1 h-24"
-                value={module.description}
-                onChange={(e) =>
-                  setModulesList(
-                    modulesList.map((m) =>
-                      m.id === module.id ? { ...m, description: e.target.value } : m
-                    )
-                  )
-                }
-              ></textarea>
+  placeholder="Add description"
+  className="w-full p-2 border-[#D8DDE3] border shadow-sm rounded mt-1 h-24"
+  value={text} // Ensure 'text' is correctly defined in state
+  onChange={(e) => {
+    handleTextChange(e); // Call the function to update text state
+    setModulesList((prevModules) =>
+      prevModules.map((m) =>
+        m.id === module.id ? { ...m, description: e.target.value } : m
+      )
+    );
+  }}
+  ref={textareaRef}
+  style={textareaStyle}
+/>
+
 
               <div className="mt-3 flex flex-wrap gap-2">
                 <button
