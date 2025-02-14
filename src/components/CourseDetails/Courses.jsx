@@ -5,6 +5,8 @@ import pdf from "../../assets/images/pdf.png";
 const Courses = () => {
   return (
     <div className="p-6 bg-white text-gray-800">
+          <nav className="text-md text-[#555] mb-4">Home &gt; Reading &gt; HTML & CSS Basics </nav>
+
       {/* Heading */}
       <h1 className="text-3xl font-bold text-black mb-4">{courseData.courseTitle}</h1>
 
