@@ -97,8 +97,8 @@ const BatchManagement = () => {
     <div className="p-6 bg-gray-100  w-full">
       {/* Sidebar */}
       <div className="flex justify-between items-center mb-6">
-        <h1 className="text-3xl font-bold flex items-center">
-          Hello Ibrahim <PiHandWavingBold className="text-3xl transform scale-x-[-1] ml-2"/>
+        <h1 className="text-4xl font-bold font-[Raleway] flex items-center">
+          Hello Ibrahim <PiHandWavingBold className="text-4xl transform scale-x-[-1] ml-2"/>
         </h1>
         <div className="flex items-center gap-4">
           <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center cursor-pointer">
