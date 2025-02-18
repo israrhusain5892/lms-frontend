@@ -1,0 +1,43 @@
+{
+    "courseTitle": "HTML & CSS Basics",
+    "sections": [
+      {
+        "id": 1,
+        "title": "Analytical thinking and evaluation",
+        "content": "Responsive design is vital in modern web development. As users access websites on various devices, it ensures pages look and function well on all screen sizes. This article explores its fundamentals, importance, and best practices."
+      },
+      {
+        "id": 2,
+        "title": "What is Responsive Design?",
+        "content": "Responsive design adapts websites to automatically adjust their layout and content based on the device’s screen size and orientation, ensuring a seamless user experience."
+      },
+      {
+        "id": 3,
+        "title": "Why is Responsive Design Important?",
+        "content": "Responsive design is essential because it ensures websites provide a consistent user experience across different devices and screen sizes.",
+        "list": [
+          "Fluid Grids: Use relative units like percentages for layouts.",
+          "Flexible Images: Ensure images scale within their containers.",
+          "Media Queries: Apply different styles based on screen size."
+        ],
+        "pdfLink": "CSS Integration.Pdf"
+      },
+      {
+        "id": 4,
+        "title": "Best Practices",
+        "content": "Following best practices for responsive design helps create more adaptable and user-friendly websites.",
+        "list": [
+          "Mobile-First: Design for small screens first, then enhance for larger ones.",
+          "Touch-Friendly: Size and space buttons for touch inputs.",
+          "Optimize Performance: Minimize load times with optimized images and code.",
+          "Test Across Devices: Regularly test on various devices to ensure compatibility."
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Conclusion",
+        "content": "Responsive design is essential for a diverse digital audience. By following its principles and best practices, you enhance user experience, SEO, and maintenance efficiency. Embrace responsive design to meet the needs of all users."
+      }
+    ]
+  }
+  
