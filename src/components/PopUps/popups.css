@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media(max-width:768px){
+    .popups{
+        width: 90%!important;
+        /* height: 200px; */
+        font-size: 14px;
+        line-height: 20px;
+        /* padding-top: 10px!important; */
+    }
+}

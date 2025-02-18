@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sen:wght@400..800&display=swap');
+
+* {
+    font-family: 'Poppins', serif;
+}
+
+.reviewcomment {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0%;
+
+}
+
+.sort span {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.inputComment {
+    border-bottom: 1px solid #0000001A;
+    width: 100%;
+    font-family: 'Roboto',serif;
+    font-family: 14px;
+}
+
+.video-title {
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    letter-spacing: 0%;
+
+}
+
+.replies-text {
+    font-family: 'Roboto',serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #3D5CFF;
+
+
+}
+
+.para-review p {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #656565;
+
+
+}
+
+.like {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #606060;
+
+
+}
+
+.commentDate {
+    font-family: 'Roboto', serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    color: #606060;
+    letter-spacing: 0%;
+
+}
+
+.username-review {
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    color: #0F0F0F;
+
+
+}
+
+.review-text {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0%;
+    color: #0F0F0F;
+    padding-top: 10px;
+
+}
+
+.reply-review {
+    font-family: 'Poppins', serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 32px;
+    letter-spacing: 0.5px;
+    color: #0F0F0F;
+
+}

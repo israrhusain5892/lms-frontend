@@ -1,0 +1,186 @@
+.custom-breadcrumb .breadcrumb-item+.breadcrumb-item::before {
+    content: '>';
+    color: #1E1E1E80;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.custom-breadcrumb .breadcrumb-item a {
+    text-decoration: none;
+    color: #1E1E1E80;
+    font-family: "Poppins",serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.custom-breadcrumb .breadcrumb-item.active {
+    color: #1E1E1E80;
+    font-weight: 500;
+    font-family: "Poppins",serif;
+}
+
+.announcement-card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    max-width: 915px;
+    margin: 16px auto;
+    height: 248px;
+    margin-left: 30px;
+    box-shadow: 0 3px 8px rgba(91, 104, 113, 0.24), 0 1px 3px rgba(26, 32, 36, 0.24);
+}
+
+.announcement-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.announcement-profile {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.announcement-info {
+    flex-grow: 1;
+    padding-left: 15px;
+}
+
+.announcement-name {
+    font-size: 16px;
+    color: #191D23;
+    margin: 0;
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.announcement-meta {
+    font-size: 14px;
+    color: #64748b;
+    margin-top: 4px;
+    font-family: "Poppins",serif;
+    font-weight: 400;
+    line-height: 15.6px;
+}
+
+.announcement-stars {
+    margin-top: 8px;
+    display: flex;
+}
+
+.teacher-badge {
+    display: flex;
+    align-items: center;
+    color: #064E3B;
+    background-color: #ecfdf5;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    gap: 4px;
+}
+
+.announcement-message p {
+    color: #191d23;
+    font-size: 16px;
+    margin-left: 56px;
+    padding: 0;
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    line-height: 26.24px;
+    text-align: left;
+
+
+}
+
+@media (max-width: 768px) {
+    .announcement-card {
+        max-width: 100%;
+        width: 363px;
+        height: 210px;
+        padding: 12px;
+        border-radius: 6px;
+        margin: 12px auto;
+        box-shadow: 0 3px 8px rgba(91, 104, 113, 0.24), 0 1px 3px rgba(26, 32, 36, 0.24);
+    }
+
+    .announcement-header {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 4px;
+        padding-left: 10px;
+    }
+
+    .announcement-profile {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        margin-right: 14px;
+    }
+
+    .announcement-info {
+        flex-grow: 1;
+        padding-left: 8px;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .announcement-name {
+        font-size: 12px;
+        font-weight: bold;
+        margin: 0 0 4px 0;
+        color: #191d23;
+    }
+
+    .announcement-meta {
+        font-size: 10px;
+        color: #64748b;
+        line-height: 1.2;
+        margin-top: 4px;
+        padding-top: 4px;
+    }
+
+    .announcement-stars {
+        margin-top: 2px;
+        margin: 0 0 4px 0;
+        padding-top: 4px;
+    }
+
+    .teacher-badge {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ecfdf5;
+        color: #064e3b;
+        font-size: 10px;
+        padding: 2px 6px;
+        border-radius: 4px;
+        gap: 4px;
+        margin: 0;
+
+    }
+
+    .announcement-message {
+        color: #191d23;
+        font-size: 10px;
+        padding: 0;
+        margin-left: 71px;
+        height: auto;
+        overflow: visible;
+        white-space: normal;
+        margin-bottom: 24px;
+    }
+
+    .custom-breadcrumb {
+        padding-left: 20px;
+    }
+}
