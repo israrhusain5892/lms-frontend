@@ -11,10 +11,10 @@ import SuccsessPage from './pages/SuccessPage';
 
 
 import CourseDetailPage from './pages/CourseDetailPage/CourseDetailPage';
-import HeroSection from './components/HeroSection/HeroSection'
+// import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './pages/MainPage/HomePage';
-import TrendingCourse from './components/TopNewCourses/TopCourse';
-import StudentDashboard from './Pages/VideoPage/VideoPage';
+// import TrendingCourse from './components/TopNewCourses/TopCourse';
+// import StudentDashboard from './Pages/VideoPage/VideoPage';
 // import CourseCard from './components/CourseCard/CourseCar;
 import FolderPage from './pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
