@@ -1,17 +1,17 @@
-import Header from "../../components/Header/header";
+import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import VideoLecture from "../../components/VideoLecture/VideoLecture";
 // import ReviewCard from "../../components/ReviewPage/ReviewPage";
 
-const VideoLecturePage=()=>{
+const VideoLecturePage = () => {
 
-    return(
-        <>  
-            <Header/>
-            
-            <VideoLecture/>
-            
-            <Footer/>
+    return (
+        <>
+            <Header />
+
+            <VideoLecture />
+
+            <Footer />
         </>
     )
 }
