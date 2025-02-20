@@ -13,13 +13,13 @@ import SuccsessPage from './pages/SuccessPage';
 import CourseDetailPage from './pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './pages/MainPage/HomePage';
-import TrendingCourse from './Components/TopNewCourses/TopCourse';
+import TrendingCourse from './components/TopNewCourses/TopCourse';
 import StudentDashboard from './Pages/VideoPage/VideoPage';
 // import CourseCard from './components/CourseCard/CourseCard';
 import FolderPage from './pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
 import VideoPage from './pages/VideoPage/VideoPage';
-import VideoLecturePage from './Pages/VideoLecturePage/VideoLecturePage';
+import VideoLecturePage from './pages/VideoLecturePage/VideoLecturePage';
 import TestPage from './pages/TestPage/TestPage';
 import QuizPage from './pages/QuizPage/QuizPage';
 import TasksPage from './pages/TaskPage/TaskPage';
