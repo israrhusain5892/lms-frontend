@@ -9,7 +9,7 @@ import OTPVerification from './pages/OtpVerifyPage/OTPVerification';
 import OtpVerify from './pages/OtpVerify/OtpVerify';
 import SuccsessPage from './pages/SuccessPage';
 
-// import CourseHero from './components/CourseHero/C';
+
 import CourseDetailPage from './pages/CourseDetailPage/CourseDetailPage';
 import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './pages/MainPage/HomePage';
