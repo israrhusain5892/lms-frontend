@@ -15,7 +15,7 @@ import HeroSection from './components/HeroSection/HeroSection'
 import HomePage from './pages/MainPage/HomePage';
 import TrendingCourse from './components/TopNewCourses/TopCourse';
 import StudentDashboard from './Pages/VideoPage/VideoPage';
-// import CourseCard from './components/CourseCard/CourseCard';
+// import CourseCard from './components/CourseCard/CourseCar;
 import FolderPage from './pages/FolderReading/FolderPage';
 import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
 import VideoPage from './pages/VideoPage/VideoPage';
