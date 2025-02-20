@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import CourseCard from '../CourseCard/CourseCard';
 import '../TrendingCourseSection/TrendingCourse.css';
-import imga from '../../assets/images/imagea.png';
-import imgb from '../../assets/images/imageb.png';
-import imgc from '../../assets/images/imagec.png';
-import imgd from '../../assets/images/imaged.png';
-import imge from '../../assets/images/imagee.png';
+import imga from '../../assets/images/Imagea.png';
+import imgb from '../../assets/images/Imageb.png';
+import imgc from '../../assets/images/Imagec.png';
+import imgd from '../../assets/images/Imaged.png';
+import imge from '../../assets/images/Imagee.png';
 import { IoIosArrowForward } from "react-icons/io";
 import { useNavigate } from 'react-router-dom';
 
