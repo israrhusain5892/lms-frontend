@@ -17,7 +17,7 @@ import HomePage from './pages/MainPage/HomePage';
 // import StudentDashboard from './Pages/VideoPage/VideoPage';
 // import CourseCard from './components/CourseCard/CourseCar;
 import FolderPage from './pages/FolderReading/FolderPage';
-import AnnouncementPage from './Pages/AnnouncementPage/AnnouncementPage';
+import AnnouncementPage from './pages/AnnouncementPage/AnnouncementPage';
 import VideoPage from './pages/VideoPage/VideoPage';
 import VideoLecturePage from './pages/VideoLecturePage/VideoLecturePage';
 import TestPage from './pages/TestPage/TestPage';
