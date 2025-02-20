@@ -1,5 +1,5 @@
 import React from 'react';
-import CourseCard from '../CourseCard/CourseCard';
+
 import '../TrendingCourseSection/TrendingCourse.css';
 import imga from  '../../assets/images/imagea.png';
 import imgb from  '../../assets/images/imageb.png';
@@ -7,6 +7,7 @@ import imgc from  '../../assets/images/imagec.png';
 import imgd from  '../../assets/images/imaged.png';
 import imge from  '../../assets/images/imagee.png';
 import { IoIosArrowForward } from "react-icons/io";
+import CourseCard from '../CourseCard/CourseCard';
 import './top.css';
 
 

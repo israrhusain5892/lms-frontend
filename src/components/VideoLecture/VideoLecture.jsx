@@ -11,7 +11,7 @@ import { HiMenuAlt1 } from "react-icons/hi";
 import { FaCheckSquare } from "react-icons/fa";
 import { LuCirclePlay } from "react-icons/lu";
 import ReviewPage from '../ReviewPage/ReviewPage';
-import Header from '../Header/header';
+import Header from '../Header/Header';
 import { IoMdClose } from "react-icons/io";
 function VideoLecture() {
     const playerRef = useRef(null); // Reference to ReactPlayer
