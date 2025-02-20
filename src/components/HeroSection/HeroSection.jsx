@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 import './hero-section.css';
 import student from '../../assets/images/College_student.png';
-import banner from '../../assets/images/banner.png';
+import banner from '../../assets/images/Banner.png';
 
 const HeroSection = () => {
   return (
