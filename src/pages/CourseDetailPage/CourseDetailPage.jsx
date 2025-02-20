@@ -1,7 +1,7 @@
-import CourseHero from "../../Components/CourseHero/CourseHero";
-import CourseBody from "../../Components/CourseBody/CourseBody";
-import Footer from "../../Components/Footer/Footer";
-import Header from "../../Components/Header/Header";
+import CourseHero from "../../components/CourseHero/CourseHero";
+import CourseBody from "../../components/CourseBody/CourseBody";
+import Footer from "../../components/Footer/Footer";
+import Header from "../../components/Header/Header";
 
  const CourseDetailPage=()=>{
       

@@ -8,8 +8,8 @@ import { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Popup from '../../components/PopUps/PopUps'; // Import your Popup component
 import Loader from '../../components/Loader/Loader';
-import Header from '../../Components/Header/Header';
-import Footer from '../../Components/Footer/Footer';
+import Header from '../../components/Header/Header';
+import Footer from '../../components/Footer/Footer';
 
 const QuizPage = () => {
   const navigate = useNavigate();

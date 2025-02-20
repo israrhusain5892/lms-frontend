@@ -1,11 +1,11 @@
-import HeroSection from "../../Components/HeroSection/HeroSection";
-import Header from "../../Components/Header/Header";
-import TrendingCourse from '../../Components/TrendingCourseSection/TrendingCourse';
+import HeroSection from "../../components/HeroSection/HeroSection";
+import Header from "../../components/Header/Header";
+import TrendingCourse from '../../components/TrendingCourseSection/TrendingCourse';
 // import "bootstrap/dist/css/bootstrap.min.css";
-import TopTutors from  "../../Components/TopTutors/TopTutors";
-import DiscountPage from "../../Components/Discount/DiscountPage";
-import Footer from "../../Components/Footer/Footer";
-import TopCourse from '../../Components/TopNewCourses/TopCourse';
+import TopTutors from  "../../components/TopTutors/TopTutors";
+import DiscountPage from "../../components/Discount/DiscountPage";
+import Footer from "../../components/Footer/Footer";
+import TopCourse from '../../components/TopNewCourses/TopCourse';
 
 const HomePage=()=>{
 

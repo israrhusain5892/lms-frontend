@@ -1,12 +1,13 @@
-import Header from "../../Components/Header/header";
-import Footer from "../../Components/Footer/Footer";
-import VideoLecture from "../../Components/VideoLecture/VideoLecture";
-import ReviewCard from "../../Components/ReviewPage/ReviewPage";
+import Header from "../../components/Header/header";
+import Footer from "../../components/Footer/Footer";
+import VideoLecture from "../../components/VideoLecture/VideoLecture";
+// import ReviewCard from "../../components/ReviewPage/ReviewPage";
 
 const VideoLecturePage=()=>{
 
     return(
-        <>
+        <>  
+            <Header/>
             
             <VideoLecture/>
             

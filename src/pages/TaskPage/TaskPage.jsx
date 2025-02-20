@@ -65,8 +65,8 @@
 
 import React from 'react';
 import Breadcrumb from 'react-bootstrap/Breadcrumb';
-import "../../Components/Task/task.css";
-import Task from '../../Components/Task/Task';
+import "../../components/Task/task.css";
+import Task from '../../components/Task/Task';
 import StudentDashboardLayout from '../../layouts/StudentDashboardLayout';
 
 const TasksPage = () => {
