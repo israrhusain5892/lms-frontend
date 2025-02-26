@@ -6,21 +6,21 @@ import './FolderPage.css'
 
 const FolderData = ({ filteredFolders = [] }) => {
     return (
-        <Table responsive className="bg-white table1">
+        <Table responsive className="bg-white table1 mx-auto w-full">
             <thead>
-                <tr>
+                <tr className="d">
                     <th
-                        className="d-flex align-items-center"
-                        style={{ paddingBottom: "36px", paddingLeft: "48px" }}
+                        className="d-flex align-items-center md:pl-[48px]"
+                        style={{ paddingBottom: "36px"}}
                     >
                         Name
                         <FaArrowUp />
                     </th>
                     <th style={{ paddingBottom: "36px" }}></th>
-                    <th style={{ paddingBottom: "36px" }}>
+                    <th  className=" " style={{ paddingBottom: "36px" }}>
                         Modified
                     </th>
-                    <th style={{ paddingBottom: "36px" }}>
+                    <th className="" style={{ paddingBottom: "36px" }}>
                         Who can access
                     </th>
                 </tr>
@@ -34,27 +34,30 @@ const FolderData = ({ filteredFolders = [] }) => {
             >
                 {filteredFolders.length > 0 &&
                     filteredFolders?.map((folder, index) => (
-                        <tr key={index} className="py-2 ">
+                        <tr key={index} className="md:py-2  py-1">
                            
-                            <td className="d-flex align-items-center cursor md:pl-[48px] pl-0" >
-                               
-                               <Link to={"/material/1"} className="d-flex align-items-center">
+                            <td className=" cursor " >
+                               <div>
+                               <Link  to={"/material/1"} className="d-flex align-items-center md:gap-2">
                               
-                                <FaFolder style={{ color: "#A1C9F7" }} />
-                                <span className="md:pl-[8px] pl-0">
+                               <FaFolder className="folde d-block" style={{ color: "#A1C9F7" }} />
+                              
+                               
+                                <span className="">
                                     {folder.name}
                                 </span>
                                 </Link>
+                                </div>
                                 
                             </td>
                           
-                            <td>
+                            <td className="md:pl-0 pl-[4px] w-[40px]">
                                 <MdOutlineStarOutline
                                     style={{ color: "#524A3E66" }}
                                 />
                             </td>
                             <td>{folder.date}</td>
-                            <td>{folder.visibility}</td>
+                            <td className="">{folder.visibility}</td>
                         </tr>
                     ))}
 

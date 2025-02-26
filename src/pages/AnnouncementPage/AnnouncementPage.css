@@ -103,10 +103,10 @@
     .announcement-card {
         max-width: 100%;
         width: 363px;
-        height: 210px;
-        padding: 12px;
+        height: auto;
+        padding: 15px;
         border-radius: 6px;
-        margin: 12px auto;
+        margin: 10px auto;
         box-shadow: 0 3px 8px rgba(91, 104, 113, 0.24), 0 1px 3px rgba(26, 32, 36, 0.24);
     }
 
@@ -116,6 +116,12 @@
         align-items: center;
         margin-bottom: 4px;
         padding-left: 10px;
+        
+    }
+
+    .custom-breadcrumb {
+        margin-left: 10px;
+        margin-top: 20px!important;
     }
 
     .announcement-profile {
@@ -132,10 +138,21 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        font-size: 10px!important;
+    }
+    .announcement-info h5{
+        font-size: 10px;
+        margin-top: 10px;
+        line-height: 0px;
+    }
+    .announcement-meta span{
+        font-size: 10px;
+
     }
 
+
     .announcement-name {
-        font-size: 12px;
+        font-size: 12px!important;
         font-weight: bold;
         margin: 0 0 4px 0;
         color: #191d23;
@@ -161,23 +178,30 @@
         justify-content: center;
         background-color: #ecfdf5;
         color: #064e3b;
-        font-size: 10px;
+        font-size: 10px!important;
         padding: 2px 6px;
         border-radius: 4px;
         gap: 4px;
         margin: 0;
 
     }
+    .teacher-badge span{
+        font-size: 10px!important;
+    }
 
     .announcement-message {
         color: #191d23;
-        font-size: 10px;
+        font-size: 10px!important;
         padding: 0;
-        margin-left: 71px;
+        /* margin-left: 71px; */
         height: auto;
         overflow: visible;
         white-space: normal;
         margin-bottom: 24px;
+    }
+    .announcement-message p{
+        font-size: 10px!important;
+        line-height: 16px;
     }
 
     .custom-breadcrumb {

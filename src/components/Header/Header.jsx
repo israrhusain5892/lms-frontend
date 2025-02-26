@@ -14,6 +14,9 @@ const Header = () => {
   const goToCourse=()=>{
     navigate("/Clips")
   }
+  const home=()=>{
+    navigate("/home")
+  }
 
   return (
     <header className="headerContainer relative"> {/* Main header container */}
@@ -26,7 +29,7 @@ const Header = () => {
         <i className="fa-solid fa-bars text-[#00000095]"></i> {/* FontAwesome hamburger icon */}
       </div>
       {/* Logo Section */}
-      <div className="headerLogo">
+      <div className="headerLogo" onClick={home}>
         <img src={logo} className="headerLogoImg" alt="logo" /> {/* Logo image */}
         LearnPro {/* Brand name */}
       </div>

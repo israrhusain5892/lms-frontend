@@ -7,7 +7,7 @@ const VideoLecturePage = () => {
 
     return (
         <>
-            <Header />
+          
 
             <VideoLecture />
 

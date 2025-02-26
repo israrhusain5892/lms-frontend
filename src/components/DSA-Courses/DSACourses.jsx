@@ -3,8 +3,11 @@ import courseimg from "../../assets/images/course.png";
 import { FaSearch } from "react-icons/fa";
 import './dsacourses.css';
 import './dsa.css';
+import { Navigate, useNavigate } from "react-router-dom";
 
 export default function DSACourse() {
+
+  const navigate=useNavigate();
   const courses = [
     {
       id: 1,
@@ -31,6 +34,11 @@ export default function DSACourse() {
       progress: 80,
     },
   ];
+
+
+  const learn=()=>{
+      navigate("/lecture")
+  }
 
   return (
     <div className="p-0  lg:p-6 max-w-6xl mx-auto dsaContainer">
@@ -74,7 +82,7 @@ export default function DSACourse() {
               </div>
 
               {/* Start Learning Button */}
-              <button className="bg-blue-600 text-white px-1 md:p-[10px€]  py-2 rounded-3xl mt-3 sm:mt-0 sm:ml-4 md:w-[131px] text-[10px] md:text-[16px] w-[100px]">
+              <button onClick={learn} className="bg-blue-600 text-white px-1 md:p-[10px€]  py-2 rounded-3xl mt-3 sm:mt-0 sm:ml-4 md:w-[131px] text-[10px] md:text-[16px] w-[100px]">
                 Start Learning
               </button>
             </div>

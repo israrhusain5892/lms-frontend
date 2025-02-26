@@ -28,7 +28,7 @@ function SideBar() {
     return (
         <>
             {/* Menu Button (only visible on mobile & tablet) */}
-            <button className="menu-btn flex  md:hidden justify-center items-center text-blue-600 mt-4" onClick={() => setIsOpen(true)}>
+            <button className="menu-btn flex  md:hidden justify-center items-center text-blue-600 " onClick={() => setIsOpen(true)}>
             <p className=''>Menu</p><IoMdMenu size={20} />
             </button>
 

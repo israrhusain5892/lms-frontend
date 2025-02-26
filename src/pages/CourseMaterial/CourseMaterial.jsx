@@ -4,6 +4,7 @@ import courseMaterialsData from "../../utils/courseMaterials/courseMaterials.jso
 import pdf from "../../assets/images/pdf.png";
 import { FiFileText } from "react-icons/fi";
 import StudentDashboardLayout from "../../layouts/StudentDashboardLayout";
+import './coursedetails.css';
 
 const iconMap = {
   "fas fa-file-alt": <FiFileText className="text-xl mr-2" />,
@@ -16,13 +17,13 @@ const CourseMaterial = () => {
   return (
     <StudentDashboardLayout>
     <div className="p-6 lg:w-[850px]">
-      <nav className="text-md text-[#555] mb-4">Home &gt; Reading &gt; Material</nav>
+      <nav className="text-md  text-[#555] mb-4">Home &gt; Reading &gt; Material</nav>
 
-      <header className="mb-6">
-        <h1 className="text-2xl font-semibold">Data Structure & Algorithms</h1>
+      <header className="mb-6 material-title">
+        <h1 className="md:text-2xl font-semibold">Data Structure & Algorithms</h1>
       </header>
 
-      <section className="mb-4 pb-5 border-b-2 border-gray-200  flex justify-between items-center">
+      <section className="mb-4 pb-5 border-b-2 border-gray-200 pdf-file  flex justify-between items-center">
         <a href="#" className="flex items-center text-[#555] hover:underline">
           <img src={pdf} alt="PDF Icon" className="w-10 h-10 mr-2" />
           Frame Works and Algorithms.pdf
@@ -34,7 +35,7 @@ const CourseMaterial = () => {
       </section>
 
       <section>
-        <h2 className="text-2xl font-extrabold mb-4 text-[#3D3D3D]">Course Materials</h2>
+        <h2 className="md:text-2xl text-xl font-extrabold mb-4 text-[#3D3D3D]">Course Materials</h2>
         <ul className="space-y-2">
           {courseMaterialsData.map((material) => (
             <li key={material.id} className="">

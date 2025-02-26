@@ -40,7 +40,7 @@ const ReviewCard = ({ review,index }) => {
         {/* <span style={{ color: "#3D5CFF" }}>★<span style={{ color: "#1B2128" }}> {review.rating} star</span></span> */}
       </div>
       <div className="d-flex align-items-start  gap-2 w-full" >
-        <div className='w-[50px] md:w-[40px]' >
+        <div className='w-[50px] md:w-[42px]' >
         <img
           src={review.photo}
           alt={review.name}

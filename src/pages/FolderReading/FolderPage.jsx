@@ -75,13 +75,13 @@ const FolderPage = () => {
     );
     return (
         <StudentDashboardLayout>
-        <div className="w-full bg-white px-4 mt-[-10px]">
+        <div className="w-full mx-auto bg-white px-2 md:px-4 mt-[-10px]">
        
-            <div className="d-flex justify-content-between align-items-center py-3 folder-header">
-                <h1 className="">
+            <div className="d-flex justify-content-between  align-items-center md:py-3 py-0 folder-header">
+                <h1 className="folder-dsa">
                     Data Structure & Algorithms
                 </h1>
-                <div style={{ maxWidth: "200px", position: "relative" }}>
+                <div className="hidden md:block" style={{ maxWidth: "200px", position: "relative" }}>
                     <FaSearch
                         className="text-primary"
                         style={{

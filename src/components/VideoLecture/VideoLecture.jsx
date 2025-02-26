@@ -110,7 +110,7 @@ function VideoLecture() {
             </div>
 
             <Header/>
-        <div className="d-flex w-100% mt-4" style={{background:mobile==false && 'transparent',opacity:mobile==false &&'0.5'}}>
+        <div className="d-flex w-100% mt-4" style={{background:mobile===false && 'transparent',opacity:mobile===false &&'0.5'}}>
             <div className='aside' style={{ width: '40%', marginLeft: flag ? '-40%' : '3%', transition: '0.3s' }}>
                 <div onClick={() => setFlag(true) }>  <HiMenuAlt1 className=' menu' /> <span className='close'>close menu</span></div>
                 <h4 className='courseHeading'>Course Content</h4>
@@ -147,7 +147,7 @@ function VideoLecture() {
                     {flag && <div onClick={() => setFlag(false)} style={{ left: '0px', position: 'absolute', cursor: 'pointer', zIndex: 20 }}>  <HiMenuAlt1 className=' menu ' /> <span className='close'>open menu</span></div>
                     }
                     {
-                        mobile && <div onClick={() => setMobile(false)} style={{ left: '0px', position: 'absolute', cursor: 'pointer', zIndex: 20 }}>  <HiMenuAlt1 className=' menu ' /> <span className='close'>open menu</span></div>
+                        mobile && <div className='block md:hidden' onClick={() => setMobile(false)} style={{ left: '0px', position: 'absolute', cursor: 'pointer', zIndex: 20 }}>  <HiMenuAlt1 className=' menu ' /> <span className='close'>open menu</span></div>
                     }
                     <ReactPlayer
                         ref={playerRef}

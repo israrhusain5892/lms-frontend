@@ -47,13 +47,13 @@ const announcementsData = [
 const AnnouncementPage = () => {
     return (
         <StudentDashboardLayout>
-        <div className="mt-[-30px]">
-            <Breadcrumb className="custom-breadcrumb md:pl-7" style={{ marginTop: '44px' }}>
+        <div className="md:mt-[-30px]">
+            <Breadcrumb className="custom-breadcrumb md:pl-7 pl-[30px] d-block " style={{ marginTop: '44px' }}>
                 <Breadcrumb.Item href="#">Home</Breadcrumb.Item>
                 <Breadcrumb.Item active>Announcements</Breadcrumb.Item>
             </Breadcrumb>
 
-            <div className="" style={{ marginTop: '36px', marginleft: "30px" }}>
+            <div className="md:mt-[36px]" style={{  marginleft: "30px" }}>
                 {announcementsData.map((announcement) => (
                     <Announcements key={announcement.id} announcement={announcement} />
                 ))}

@@ -49,7 +49,7 @@ function TopTutors() {
 
         {/* Card 3 */}
         <div className="col">
-          <div className="card text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
+          <div className="card-top text-center border-1 rounded-3" style={{ borderColor: "#D9E2FF", height: "250px" }}>
             <img
               src={weekly_top_tutor3}
               className="card-img-top rounded-circle mx-auto mt-4"

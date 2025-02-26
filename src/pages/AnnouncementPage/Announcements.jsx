@@ -99,7 +99,7 @@ const Announcements = ({ announcement }) => {
                 </div>
             </div>
 
-            <div className="announcement-message">
+            <div className="announcement-message ">
                 {announcement.message.split('\n').map((line, index) => (
                     <p key={index}>{line}</p>
                 ))}
