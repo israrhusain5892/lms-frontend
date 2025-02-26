@@ -1,115 +1,189 @@
-import React from 'react'
-import VectorIcon from "../../assets/icons/Vector.svg"
-import AdditionalInfoPage from './AdditionalInfoPage'
+import React, { useState } from 'react';
+import Header from '../Header/Header';
+import AdditionalInfoPage from './AdditionalInfoPage';
 import AcademicPage from './AcademicPage';
-import { Button } from "react-bootstrap";
+import ButtonPage from './ButtonPage';
+import "./StudentPage.css";
 
 const StudentPage = () => {
+    const [formData, setFormData] = useState({
+        fullName: '',
+        traineeId: '',
+        gender: '',
+        dob: '',
+        city: '',
+        address: '',
+        state: '',
+        pinCode: '',
+        country: '',
+        phoneNumber: '',
+        email: '',
+        collegeName: '',
+        stream: '',
+        yearOfCompletion: '',
+        stateAcademic: '',
+        profileFileName: '',
+        resumeFileName: ''
+    });
+
+    const [errors, setErrors] = useState({});
+    const [successMessage, setSuccessMessage] = useState('');
+
+    const handleChange = (e) => {
+        const { id, value } = e.target;
+        setFormData({ ...formData, [id]: value });
+    };
+
+    const validate = () => {
+        let tempErrors = {};
+
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (formData.email && !emailPattern.test(formData.email)) {
+            tempErrors.email = 'Please enter a valid email';
+        }
+
+        if (!formData.profileFileName) {
+            tempErrors.profileFileName = 'Profile Picture is required';
+        }
+        if (!formData.resumeFileName) {
+            tempErrors.resumeFileName = 'Resume is required';
+        }
+
+        setErrors(tempErrors);
+        return Object.keys(tempErrors).length === 0;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validate()) {
+            console.log('Form Data:', formData);
+
+            window.alert("Form Submitted Successfully!");
+
+            setFormData({
+                fullName: '',
+                traineeId: '',
+                gender: '',
+                dob: '',
+                city: '',
+                address: '',
+                state: '',
+                pinCode: '',
+                country: '',
+                phoneNumber: '',
+                email: '',
+                collegeName: '',
+                stream: '',
+                yearOfCompletion: '',
+                stateAcademic: '',
+                profileFileName: '',
+                resumeFileName: ''
+            });
+
+            setTimeout(() => {
+                setSuccessMessage('');
+            }, 3000);
+        }
+    };
+
     return (
-        <>
+        <form onSubmit={handleSubmit} style={{ backgroundColor: "#D9E2FF", width: "100%", padding: "20px" }}>
             <div>
-                <h1 style={{ fontSize: "34x" }}>Hello Ibrahim <img src={VectorIcon} alt="" /></h1>
-                <h3 style={{ fontSize: "28x", color: "#2556EB" }}>Create Student Account</h3>
-                <h5 style={{ fontSize: "22px" }}>Personal Information</h5>
+                <Header />
+                <h3 className='fw-bold heading' style={{ fontSize: "28px", color: "#2556EB", marginTop: "45px" }}>Create Student Account</h3>
+                <h5 className='fw-bold heading' style={{ fontSize: "22px", marginTop: "46px" }}>Personal Information</h5>
             </div>
 
-            <div class="form-row d-flex flex-row align-items-center">
-                <div class="me-3">
-                    <label for="exampleInputEmail1" class="form-label">Full Name</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Full Name"
-                        style={{ width: "449px", height: "54px" }} />
+            <div className="form-row row" style={{ marginTop: "32px" }}>
+                <div className="col-12 col-md-6">
+                    <label htmlFor="fullName" className="form-label fw-semibold label-custom" style={{ fontSize: "18px" }}>Full Name</label>
+                    <input
+                        type="text"
+                        className={`form-control ${errors.fullName ? 'is-invalid' : ''}`}
+                        id="fullName"
+                        placeholder="Full Name"
+                        value={formData.fullName}
+                        onChange={handleChange}
+                        required
+                        style={{ height: "54px", marginTop: "13px" }}
+                    />
                 </div>
-                <div>
-                    <label for="exampleInputPassword1" class="form-label">Trainee Id</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Trainee Id"
-                        // style="width: 449px; height: 54px;" />
-                        style={{ width: "449px", height: "54px" }} />
+                <div className="col-12 col-md-6">
+                    <label htmlFor="traineeId" className="form-label fw-semibold label-custom" style={{ fontSize: "18px" }}>Trainee Id</label>
+                    <input
+                        type="text"
+                        className={`form-control ${errors.traineeId ? 'is-invalid' : ''}`}
+                        id="traineeId"
+                        placeholder="Enter Trainee Id"
+                        value={formData.traineeId}
+                        onChange={handleChange}
+                        required
+                        style={{ height: "54px", marginTop: "13px" }}
+                    />
                 </div>
-
             </div>
 
-            <div class="form-row d-flex flex-row align-items-center mt-3">
-                <div class="me-3">
-                    <label for="genderSelect" class="form-label">Gender</label>
-                    <select class="form-select" id="genderSelect" style={{ width: "449px", height: "54px" }}>
-                        <option selected disabled>Choose Gender</option>
+            <div className="form-row row" style={{ marginTop: "32px" }}>
+                <div className="col-12 col-md-6">
+                    <label htmlFor="gender" className="form-label fw-semibold label-custom" style={{ fontSize: "18px" }}>Gender</label>
+                    <select
+                        className={`form-select ${errors.gender ? 'is-invalid' : ''}`}
+                        id="gender"
+                        value={formData.gender}
+                        onChange={handleChange}
+                        required
+                        style={{ height: "54px", marginTop: "13px" }}>
+                        <option value="" disabled>Choose Gender</option>
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                         <option value="other">Other</option>
                     </select>
                 </div>
-                <div>
-                    <label for="dob" class="form-label">Date of Birth</label>
-                    <input type="date" class="form-control" id="dob"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-            </div>
-            <div class="form-row d-flex flex-row align-items-center">
-                <div class="me-3">
-                    <label for="exampleInputEmail1" class="form-label">City</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter City"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-                <div>
-                    <label for="exampleInputPassword1" class="form-label">Address</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Address"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-            </div>
-            <div class="form-row d-flex flex-row align-items-center">
-                <div class="me-3">
-                    <label for="exampleInputEmail1" class="form-label">State</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter State"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-                <div>
-                    <label for="exampleInputPassword1" class="form-label">Pin Code</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Pin Code"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-            </div>
-            <div class="form-row d-flex flex-row align-items-center">
-                <div class="me-3">
-                    <label for="exampleInputEmail1" class="form-label">Country</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter Country"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-                <div>
-                    <label for="exampleInputPassword1" class="form-label">Phone Number</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter Phone Number"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-            </div>
-            <div class="form-row d-flex flex-row align-items-center">
-                <div class="me-3">
-                    <label for="exampleInputEmail1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email"
-                        style={{ width: "449px", height: "54px" }} />
-                </div>
-            </div>
-            <AcademicPage />
 
-            <AdditionalInfoPage />
-
-            <div className="d-flex gap-3 mt-4">
-                {/* Create Button */}
-                <Button
-                    className="fw-bold"
-                    style={{ width: "142px", height: "56px", backgroundColor: "#3B76F6" }}
-                >
-                    Create
-                </Button>
-
-                {/* Edit Button */}
-                <Button
-                    className="fw-bold"
-                    style={{ width: "142px", height: "56px", backgroundColor: "#DCDCDC", color: "#1E1E1E" }}
-                >
-                    Edit
-                </Button>
+                <div className="col-12 col-md-6">
+                    <label htmlFor="dob" className="form-label fw-semibold label-custom" style={{ fontSize: "18px" }}>Date of Birth</label> <br />
+                    <input
+                        type="date"
+                        className={`form-control ${errors.dob ? 'is-invalid' : ''}`}
+                        id="dob"
+                        value={formData.dob}
+                        onChange={handleChange}
+                        required
+                        style={{ height: "54px", marginTop: "13px" }}
+                    />
+                </div>
             </div>
-        </>
-    )
-}
 
-export default StudentPage
+            <div className="form-row row" style={{ marginTop: "32px" }}>
+                <div className="col-12 col-md-6">
+                    <label htmlFor="email" className="form-label fw-semibold label-custom" style={{ fontSize: "18px" }}>Email</label>
+                    <input
+                        type="email"
+                        className={`form-control ${errors.email ? 'is-invalid' : ''}`}
+                        id="email"
+                        placeholder="Enter email"
+                        value={formData.email}
+                        onChange={handleChange}
+                        required
+                        style={{ height: "54px", marginTop: "13px" }}
+                    />
+                    {errors.email && <div className="invalid-feedback">{errors.email}</div>}
+                </div>
+            </div>
+
+            <AcademicPage
+                formData={formData}
+                setFormData={setFormData}
+            />
+
+            <AdditionalInfoPage
+                formData={formData}
+                setFormData={setFormData}
+                errors={errors}
+            />
+            <ButtonPage />
+        </form>
+    );
+};
+
+export default StudentPage;
