@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Sidebar Default (Visible on Desktop) */
+.sideBarContainer {
+    width: 403px;
+    height: 100vh;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid #EFEFEF;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+/* Sidebar Hidden for Mobile & Tablet (Initially) */
+@media (max-width: 1023px) {
+    .sideBarContainer {
+        transform: translateX(-100%); /* Hide it off-screen */
+        position: fixed;
+        top: 0px; /* Push below header */
+        left: 0;
+        width: 300px;
+        height: calc(100vh - 56px);
+        background-color: white;
+        border-right: 1px solid #EFEFEF;
+        transition: transform 0.3s ease-in-out;
+        z-index: 1000;
+    }
+
+    /* Show Sidebar when Open */
+    .sideBarContainer.open {
+        transform: translateX(0);
+    }
+}
+
+/* Sidebar Overlay for Mobile & Tablet */
+.sidebar-overlay {
+    position: fixed;
+    top: 0px; /* Start below header */
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px); 
+    z-index: 999;
+}
+
+/* Header Section */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #EFEFEF;
+}
+
+.header .heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color:#2563EB;
+
+
+}
+
+/* Close Button */
+.close-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #3D3D3D;
+}
+
+@media (max-width: 1023px) {
+    .close-btn {
+        display: block; /* Show close button in mobile & tablet */
+    }
+}
+
+/* Links */
+.linksContainer {
+    margin-top: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    /* margin-bottom: 1rem; */
+    cursor: pointer;
+    color: #3D3D3D;
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+.links .icon {
+    font-size: 1.1rem;
+}
+
+.activeLinks {
+    color: #2563EB !important;
+
+}
+
+/* Menu Button (for mobile & tablet) */
+.menu-btn {
+    display: none;
+    position: absolute;
+    top: 70px; /* Below Header */
+    left: 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    /* z-index: 1100; */
+}
+
+/* Show Menu Button on Mobile & Tablet */
+@media (max-width: 1023px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
+/* Close Button */
+.close-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #3D3D3D;
+}
+
+.sideBarContainer.open .close-btn {
+    display: block; /* Ensure close button shows when sidebar is open */
+}
+
+/* Sidebar on smaller screens (tablet/mobile) */
+@media (max-width: 768px) {
+    .close-btn {
+        display: block; /* Show close button on mobile & tablet */
+    }
+
+    .menu-btn {
+        display: block;
+    }
+}

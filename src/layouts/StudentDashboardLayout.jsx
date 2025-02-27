@@ -1,16 +1,14 @@
-/* eslint-disable react/prop-types */
-import Header from "../Components/Header/Header";
-import Footer from "../Components/Footer/Footer";
-import SideBar from "../Components/SideBar/SideBar";
-// import DSACourse from "../Components/DSA-Courses/DSACourses";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import SideBar from "../components/SideBar/SideBar";
 
 const StudentDashboardLayout = ({ children }) => {
   return (
-    <div className="d-flex flex-column min-vh-100">
+    <div className="md:d-flex md:flex-column md:min-vh-100">
       <Header />
-      <div className="d-flex flex-grow-1">
+      <div className="d-flex md:flex-grow-1 align-items-start justify-content-between">
         <SideBar />
-        <main className="flex-grow-1 p-3">{children}</main>
+        <main className="md:w-[70%] w-full  md:p-3 md:mt-0 mt-4">{children}</main>
       </div>
       <Footer />
     </div>

@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.main {
+    width: 95%;
+    margin: auto;
+}
+
+.headerContainer {
+    border-bottom: 1px solid #DADADA;
+    padding-bottom: 30px;
+}
+
+.backBtn {
+    border: none;
+    background: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3D5CFF;
+
+}
+
+.backIcon {
+
+    font-weight: 400;
+    color: #3D5CFF;
+    font-size: 18px;
+}
+
+.quiz {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    margin-bottom: 16px;
+
+
+}
+
+.quizAssign {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00000080;
+
+
+}
+
+.rightPart p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+    opacity: 0.8;
+
+}
+
+.rightPart span {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: var(--Dark_gray, #555555);
+
+
+}
+
+/* quiz container */
+
+.quizContainer {
+    padding: 30px 120px;
+    border: 1px solid #DADADA;
+    margin-top: 40px;
+
+}
+
+.quizContainer .timer {
+    font-family: 'Poppins', sans-serif;
+    font-size: 31.56px;
+    font-weight: 400;
+    line-height: 30.18px;
+    /* text-align: left; */
+    color: #3D5CFF;
+    float: right;
+
+
+}
+
+.questionStore {
+
+    margin-top: 10px;
+
+}
+
+.questionContainer {
+    margin-top: 40px;
+    width: 100%;
+}
+
+.questionContainer .marksButton {
+    background: #EEF2FF;
+    border: 1px solid #3D5CFF;
+    color: #3D5CFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    padding: 3px 10px;
+    border-radius: 4px;
+
+
+}
+
+.question p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000;
+
+}
+
+.question label {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.checkbox {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    /* text-align: left; */
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #3D5CFF;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+}
+
+.name {
+
+    font-weight: 600;
+}
+
+.last {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1E1E1E80;
+    margin-top: 20px;
+
+
+}
+
+.submitBtn {
+    width: 231px;
+    height: 52px;
+    padding: 10px;
+    border-radius: 8px;
+    opacity: 0px;
+    background: #3D5CFF;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFF;
+    margin-top: 50px;
+
+
+}
+
+.resultSection {
+    background: #D9E2FF;
+    height: 121px;
+    border-bottom: 1px solid #DADADA;
+    padding: 20px 40px;
+
+
+}
+
+.resultSection p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    width: 240px;
+    margin: auto;
+    padding-bottom: 15px;
+
+}
+
+.resultSection span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #DC2626;
+
+
+}
+
+.result {
+    width: 570px;
+    margin: auto;
+}
+
+
+
+.resultSection h6 {
+    font-family: 'Poppins', sans-serif;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #00000080;
+    margin: auto;
+    width: 570px;
+
+
+}
+
+.resultSection button {
+    padding: 4px 12px;
+    height: 34px;
+    border-radius: 8px;
+    background: #3D5CFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FFFF;
+    border: none;
+
+}
+
+.correctCard {
+
+    background: #F0FDF4;
+    padding: 10px 16px;
+    border: 1px solid #22C55E;
+    border-radius: 8px;
+    width:100%;
+
+}
+
+.correctCard p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+
+
+}
+
+.correctCard span {
+    font-family: 'Poppins',sans-serif;
+    font-size: 14.68px;
+    font-weight: 400;
+    line-height: 24.46px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.wrongCard {
+    background: #FEF2F2;
+    padding: 10px 16px;
+    border-radius: 8px;
+    border: 1.22px solid #EF4444;
+}
+.wrongCard p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: left;
+    color: #000000;
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+
+@media(max-width:768px) {
+
+    .headerContainer{
+        width: 100%;
+        padding: 12px 10px;
+    }
+    .rightPart {
+        display: none !important;
+    }
+
+    .rightPartmobile {
+        margin-top: 20px;
+        display: flex !important;
+    }
+
+    .quiz {
+        font-size: 14px;
+        width: 100%;
+        padding: 0px;
+        margin-right: 0px!important;
+        line-height: 12px;
+    }
+
+    .quizAssign {
+        font-size: 12px;
+    }
+
+    .backBtn {
+        font-size: 14px;
+    }
+
+    .rightPartmobile p {
+        font-size: 12px;
+    }
+
+    .rightPartmobile span {
+        font-size: 12px;
+        font-family: 'Poppins',serif;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        color: #555555;
+
+
+    }
+    .quizContainer{
+        padding: 10px 20px!important;
+        /* margin-top: 10px; */
+    }
+    .question p{
+        font-size: 14px!important;
+        line-height: 26px;
+        /* width: 100%; */
+    }
+    .question .options{
+        font-size:12px;
+        margin: -4px;
+        gap:-2px;
+    }
+
+    .quizContainer .timer{
+        font-size:16px;
+    }
+    .questionStore{
+        margin-top: 30px;
+    }
+    .last{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .question button{
+        font-size: 10px;
+        padding: 0px 0px;
+        width:120px!important;
+    }
+    .question .error{
+        font-size: 12px;
+    }
+
+  
+    .name{
+        font-size: 10px;
+    }
+    .agree{
+        font-size: 10px;
+        line-height: 15px;
+    }
+   .quizContainer .submitBtn{
+        width: 125px;
+        height: 50px;
+        /* padding: 20px 10px; */
+        padding: 10px 10px!important;
+        font-size: 12px;
+        text-align: center;
+   }
+   .resultSection{
+     width: 100% !important;
+     display: flex!important;
+     align-items: start!important;
+     gap:10px;
+     justify-content: center!important;
+   }
+   .result{
+     width: 100%;
+   }
+   .resultSection h6{
+    width: 100% !important;
+    margin-bottom: 0px!important;
+    text-align: left;
+    /* line-height: 0px; */
+    font-size: 12px;
+   }
+   .resultSection p{
+    margin: 0px!important;
+    /* line-height: 0px; */
+    font-size: 14px;
+    padding: 0px;
+   }
+   .resultSection p span{
+    font-size: 14px;
+   }
+   .result .bannerButton{
+    width: 74;
+    height: 34;
+    gap: 10px;
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-right: 12px;
+    padding-bottom: 4px;
+    padding-left: 12px;
+    font-size: 12px!important;
+    font-weight: 400!important;
+   }
+   .main{
+     width:100%;
+   }
+   .leftPart{
+     /* width: 100%!important; */
+     /* padding: 0px!important; */
+     /* justify-content: start!important; */
+   }
+   .correctCard{
+     width: 100%!important;
+     padding: 10px;
+   }
+   .correctCard p{
+      font-size: 12px!important;
+      width: 100%!important;
+      line-height: 18px;
+   }
+   .correctCard svg{
+      width:20px;
+      height: 20px;
+   }
+   .wrongCard{
+    width: 100%!important;
+    padding: 10px;
+    font-size: 12px;
+   }
+   .wrongCard span{
+      font-size: 14px;
+      font-family: 'Poppins',serif;
+      font-weight: 400;
+   }
+   .wrongCard p{
+     font-size: 12px!important;
+     line-height: 18px;
+     width: 100%!important;
+   }
+   .wrongCard svg{
+    width:20px;
+    height: 20px;
+   }
+   .marksButton{
+     width: 120px !important;
+     font-size: 12px!important;
+     padding: 4px!important;
+     text-align: center!important;
+   }
+}
+
