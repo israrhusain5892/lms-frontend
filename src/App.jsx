@@ -11,7 +11,7 @@ import SuccsessPage from './pages/SuccessPage';
 
 
 import CourseDetailPage from './pages/CourseDetailPage/CourseDetailPage';
-// import HeroSection from './components/HeroSection/HeroSection'
+
 import HomePage from './pages/MainPage/HomePage';
 // import TrendingCourse from './components/TopNewCourses/TopCourse';
 // import StudentDashboard from './Pages/VideoPage/VideoPage';
