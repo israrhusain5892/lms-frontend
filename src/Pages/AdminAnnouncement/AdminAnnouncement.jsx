@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import { MdOutlineWavingHand } from "react-icons/md";
 import { FaCheck } from "react-icons/fa6";
-
+import { IoMdNotificationsOutline } from "react-icons/io";
+import { PiHandWavingBold } from "react-icons/pi";
+import profile from "../../assets/images/profile.png"
 const announcements = [
   {
     id: 1,
@@ -98,7 +100,18 @@ const Announcements = () => {
 
   return (
     <div className="bg-blue-50 mx-auto p-6 min-h-screen">
-      <h1 className="text-3xl Raleway font-bold flex gap-2 items-center">Hello Ibrahim <MdOutlineWavingHand/> </h1> 
+    <div className="flex justify-between items-center mb-6">
+        <h1 className="text-4xl font-bold font-[Raleway] flex items-center">
+          Hello Ibrahim <PiHandWavingBold className="text-4xl transform scale-x-[-1] ml-2"/>
+        </h1>
+        <div className="flex items-center gap-4">
+          <div className="w-10 h-10 rounded-full bg-gray-300 flex items-center justify-center cursor-pointer">
+            <img src={profile} alt="profile"/>
+          </div>
+          <IoMdNotificationsOutline className="text-3xl cursor-pointer" />
+
+        </div>
+      </div>
       <div className="flex justify-between items-center mt-4">
         <h2 className="text-xl Raleway font-bold">Announcements</h2>
         <button onClick={() => setShowPopup(true)} className="bg-[#3B76F6] text-white px-10 Inter py-3 rounded-lg">Add</button>
