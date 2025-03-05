@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import './side-bar.css';
 import { IoIosArrowForward } from "react-icons/io";
-import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { useNavigate ,Link,useLocation} from 'react-router-dom';
+import {  IoMdClose } from "react-icons/io";
+import { HiOutlineMenuAlt1 } from "react-icons/hi";
 
 function SideBar() {
-    // const [activeLink, setActiveLink] = useState('');
+    const [activeLink, setActiveLink] = useState('Clips');
     const [isOpen, setIsOpen] = useState(false); // Sidebar visibility state for mobile/tablet
-    
 
     const links = [
         { name: 'Clips' },
@@ -17,26 +16,18 @@ function SideBar() {
         { name: 'Announcements' }
     ];
 
-    const location = useLocation(); // Get current route
-    const navigate = useNavigate();  
-  
-    const handleLinkClick = (link) => {
-      if (location.pathname === `/${link}`) return; // Prevent re-updating if already active
-      navigate(`/${link}`); // Navigate to new route
-    };
-
     return (
         <>
             {/* Menu Button (only visible on mobile & tablet) */}
-            <button className="menu-btn flex  md:hidden justify-center items-center text-blue-600 " onClick={() => setIsOpen(true)}>
-            <p className=''>Menu</p><IoMdMenu size={20} />
+            <button className="menu-btn !flex lg:!hidden justify-center items-center text-blue-600" onClick={() => setIsOpen(true)}>
+            <p className=''>Menu</p><HiOutlineMenuAlt1 size={20} />
             </button>
 
             {/* Overlay effect when sidebar is open (only on mobile & tablet) */}
             {isOpen && <div className="sidebar-overlay" onClick={() => setIsOpen(false)}></div>}
 
             {/* Sidebar */}
-            <div className={` mt-2 sideBarContainer ${isOpen ? 'open' : ''}`}>
+            <div className={`sideBarContainer ${isOpen ? 'open' : ''}`}>
                 <div className='header'>
                     <h4 className='heading'>Data Structure & Algorithms</h4>
                     {/* Close Button for mobile & tablet */}
@@ -46,19 +37,16 @@ function SideBar() {
                 </div>
 
                 <div className='linksContainer'>
-                    {links.map((link, index) => {
-                          const isActive = location.pathname === `/${link.name}`
-                         return<div
+                    {links.map((link, index) => (
+                        <div 
                             key={index} 
-                            onClick={() => handleLinkClick(link.name)}
-                            className={`links ${isActive ? "activeLinks" : ""}`}
+                            onClick={() => setActiveLink(link.name)} 
+                            className={`links ${activeLink === link.name ? 'active' : ''}`}
                         >
-                            <p  className={`links ${isActive ? "activeLinks" : ""}`}>{link.name}</p>
+                            <p className='link'>{link.name}</p>
                             <IoIosArrowForward className='icon' />
                         </div>
-                        
-                       
-})}
+                    ))}
                 </div>
             </div>
         </>

@@ -1,5 +1,5 @@
 import { useState } from "react"; // Importing useState hook for state management
-import "./otp-veri.css"; 
+import "./otp-veri.css"; // Linking to the CSS file for styling
 import { useLocation,useNavigate } from 'react-router-dom';
 import ProgresssBar from "../../components/ProgressBar/ProgressBar";
 

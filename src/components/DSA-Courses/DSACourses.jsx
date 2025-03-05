@@ -3,11 +3,8 @@ import courseimg from "../../assets/images/course.png";
 import { FaSearch } from "react-icons/fa";
 import './dsacourses.css';
 import './dsa.css';
-import { Navigate, useNavigate } from "react-router-dom";
 
 export default function DSACourse() {
-
-  const navigate=useNavigate();
   const courses = [
     {
       id: 1,
@@ -34,11 +31,6 @@ export default function DSACourse() {
       progress: 80,
     },
   ];
-
-
-  const learn=()=>{
-      navigate("/lecture")
-  }
 
   return (
     <div className="p-0  lg:p-6 max-w-6xl mx-auto dsaContainer">
@@ -82,14 +74,14 @@ export default function DSACourse() {
               </div>
 
               {/* Start Learning Button */}
-              <button onClick={learn} className="bg-blue-600 text-white px-1 md:p-[10px€]  py-2 rounded-3xl mt-3 sm:mt-0 sm:ml-4 md:w-[131px] text-[10px] md:text-[16px] w-[100px]">
+              <button className="bg-blue-600 text-white px-1 md:px-4  py-2 rounded-3xl mt-3 sm:mt-0 sm:ml-4 md:w-[220px] text-[10px] md:text-[16px] w-[100px]">
                 Start Learning
               </button>
             </div>
 
             {/* Progress Bar - Now Positioned at Bottom */}
             
-            <div className="absolute bottom-3 left-4  md:w-[600px] sm:w-[300px] lg:w-[80%] w-[200px] bg-gray-300 h-2 ">
+            <div className="absolute bottom-3 left-4  md:w-[550px] sm:w-[300px] lg:w-[500px] xl:w-[700px] w-[170px] bg-gray-300 h-2 ">
               <div
                 className="h-2 bg-green-500 transition-all duration-500 rounded-full"
                 style={{ width: `${course.progress}%` }}

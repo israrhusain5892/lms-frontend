@@ -1,26 +1,25 @@
 import { Table } from "react-bootstrap";
 import { FaFolder, FaArrowUp } from "react-icons/fa6";
 import { MdOutlineStarOutline } from "react-icons/md";
-import { Link } from "react-router-dom";
 import './FolderPage.css'
 
 const FolderData = ({ filteredFolders = [] }) => {
     return (
-        <Table responsive className="bg-white table1 mx-auto w-full">
+        <Table responsive className="bg-white table1">
             <thead>
-                <tr className="d">
+                <tr>
                     <th
-                        className="d-flex align-items-center md:pl-[48px]"
-                        style={{ paddingBottom: "36px"}}
+                        className="d-flex align-items-center"
+                        style={{ paddingBottom: "36px", paddingLeft: "48px" }}
                     >
                         Name
                         <FaArrowUp />
                     </th>
                     <th style={{ paddingBottom: "36px" }}></th>
-                    <th  className=" " style={{ paddingBottom: "36px" }}>
+                    <th style={{ paddingBottom: "36px" }}>
                         Modified
                     </th>
-                    <th className="" style={{ paddingBottom: "36px" }}>
+                    <th style={{ paddingBottom: "36px" }}>
                         Who can access
                     </th>
                 </tr>
@@ -34,30 +33,20 @@ const FolderData = ({ filteredFolders = [] }) => {
             >
                 {filteredFolders.length > 0 &&
                     filteredFolders?.map((folder, index) => (
-                        <tr key={index} className="md:py-2  py-1">
-                           
-                            <td className=" cursor " >
-                               <div>
-                               <Link  to={"/material/1"} className="d-flex align-items-center md:gap-2">
-                              
-                               <FaFolder className="folde d-block" style={{ color: "#A1C9F7" }} />
-                              
-                               
-                                <span className="">
+                        <tr key={index} className="py-2 ">
+                            <td className="d-flex align-items-center" style={{ paddingLeft: "48px" }}>
+                                <FaFolder style={{ color: "#A1C9F7" }} />
+                                <span className="" style={{ paddingLeft: "8px" }}>
                                     {folder.name}
                                 </span>
-                                </Link>
-                                </div>
-                                
                             </td>
-                          
-                            <td className="md:pl-0 pl-[4px] w-[40px]">
+                            <td>
                                 <MdOutlineStarOutline
                                     style={{ color: "#524A3E66" }}
                                 />
                             </td>
                             <td>{folder.date}</td>
-                            <td className="">{folder.visibility}</td>
+                            <td>{folder.visibility}</td>
                         </tr>
                     ))}
 
