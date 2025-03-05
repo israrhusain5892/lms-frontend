@@ -1,9 +1,10 @@
-import React from 'react'
-import AdminAnn from "./Components/AdminAnnouncement/AdminAnnouncement"
+// import AdminAnnouncement from "./Components/AdminAnnouncement/AdminAnnouncement";
+import Adminannouncementpage from "./Pages/AdminAnnouncement/AdminAnnouncement";
 const App = () => {
   return (
     <div>
-    <AdminAnn/>
+    {/* <AdminAnnouncement/> */}
+    <Adminannouncementpage/>
       
     </div>
   )
