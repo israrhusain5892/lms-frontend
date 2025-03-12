@@ -1,13 +1,15 @@
 // import AdminAnnouncement from "./Components/AdminAnnouncement/AdminAnnouncement";
 // import Adminannouncementpage from "./Pages/AdminAnnouncement/AdminAnnouncement";
 
-import TestDB from "./Pages/TestDatabase/TestDatabase"
+import AnnouncementsPopup from "./Components/AnnouncePopup/AnnouncePopup";
+// import TestDB from "./Pages/TestDatabase/TestDatabase";
 const App = () => {
   return (
     <div>
     {/* <AdminAnnouncement/> */}
     {/* <Adminannouncementpage/> */}
-      <TestDB/>
+      {/* <TestDB/> */}
+      <AnnouncementsPopup/>
     </div>
   )
 }
