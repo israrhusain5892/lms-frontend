@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&family=Raleway:wght@700&display=swap');
+
+
+.announcement-container {
+    width: 931px;
+    height: 575px;
+}
+
+.form-label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+}
+
+.btn-primary {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}

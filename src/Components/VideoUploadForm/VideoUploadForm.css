@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Manrope:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+
+/* Font for Video Heading */
+.video-heading {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    display: inline-block;
+    border-bottom: 1px solid #D0D0D0;
+    padding-bottom: 10px;
+}
+
+.form-label {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.upload-icon {
+    position: absolute;
+    right: 15px;
+    top: 70%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #3B76F6;
+}
+
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    width: 142px;
+    height: 56px;
+    font-size: 20px;
+}
+
+input {
+    height: 54px;
+}
+
+textarea {
+    height: 90px;
+}
